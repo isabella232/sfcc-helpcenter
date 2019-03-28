@@ -1,0 +1,12 @@
+{
+    "title":"Persona 2",
+    "description":"Description for persona 2",
+    "img":"illus-setting-up.svg",
+    "themes":{
+        "theme1":{
+            "title": "Theme 1",
+            "img": "illus-setting-up.svg",
+            "description": "Description theme 1"
+        }
+    }
+}
