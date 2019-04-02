@@ -1,0 +1,17 @@
+{
+    "title":"Using the SFCC cartridge",
+    "description":"You want to know how to use the cartridge in Salesforce Commerce Cloud? We're here to help you.",
+    "img":"illus-using.svg",
+    "themes":{
+        "first-steps":{
+            "title": "Your first steps with SFCC cartridge",
+            "img": "illus-first-steps.svg",
+            "description": "You are very new to SFCC cartridge and you don't know where to begin. Here are a few articles to help you understand the basics. Enjoy!"
+        },
+        "find-data":{
+            "title": "Where to find my PIM data?",
+            "img": "illus-products.svg",
+            "description": "Do you need a map to find the data from your PIM that you have synchronized in SFCC? Follow the guide!"
+        }
+    }
+}
