@@ -1,26 +1,29 @@
 ---
 id: trigger
 themes: first-steps
-title: How to trigger the cartridge?
+title: How to use the cartridge?
 popular: false
-related:
+related: overview, what-data
 ---
 
-# How to trigger the cartridge?
+# How to use the cartridge?
 
 ## How do I go to the cartridge jobs page in SFCC?
 
-Click on the `Administration` menu then go to `Operations : Jobs`:
+1. Click on the `Administration` menu
+2. Then go to `Operations : Jobs`:
 
 ![Cartridge jobs](../img/sfcc-jobs.png)
 
 ## How to manually trigger each jobs?
 
-Select the job you want to start and click on the `Run` button.
+1. Select the job you want to start
+2. Then click on the `Run` button to trigger the selected job
+3. Wait until the process ends. You can refresh the job status by clicking on the `Refresh` button.
 
 ![Cartridge jobs page](../img/sfcc-jobs-page.png)
 
-You can refresh the job status by clicking on the `Refresh` button. Wait until the process ends.
+
 
 The Job import process is completed when its status changes to `Ok`.
 
@@ -37,19 +40,20 @@ Then click on the `Schedule and History` tab and define the job scheduling setti
 ::: warning
 - In the case of an automatic trigger, be sure to properly schedule all jobs to have time to import all PIM data between each scheduled import process.
 - In the case of a manual triggering, be careful not to combine the manual and automatic processes.
-- Use the differential import of products as much as possible, which will optimize the import time.
+- Use the differential import of products as much as possible, which will optimize the time of import.
 :::
 
 # How to check that all jobs have been executed correctly?
 
-Click on the `Administration` menu then go to `Operations : Jobs History`:
+1. Click on the `Administration` menu.
+2. Then go to `Operations : job History`:
 
 ![Cartridge jobs history](../img/sfcc-jobs-history.png)
 
-On this page, you will find a list of jobs that have been done before. By browsing this list, you will be able to find the Akeneo SFCC cartridge jobs that have been executed and know the status of those.
+On this page, you will find a list of jobs that have been executed before. You will be able to find the Akeneo SFCC cartridge jobs that have been executed and know its status by browsing this list.
 
 ![Cartridge jobs history page](../img/sfcc-jobs-history-page.png)
 
 ::: info
-If you experience an error with one of the cartridge jobs : by clicking on the small icon in the "log file" column, you can download the log file and give it to your technical team for analysis.
+If you experience an error with one of the cartridge jobs : click on the small icon in the "log file" column to download the log file. You can give it to your technical team for analysis.
 :::
