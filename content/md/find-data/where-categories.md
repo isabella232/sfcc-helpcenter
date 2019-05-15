@@ -14,7 +14,7 @@ related: where-attributes, where-family, where-groups, where-product-association
 ![Categories](../img/sfcc-where-categories.png)
 
 :::info
-Depending on the [configuration of your cartridge](categories-configuration.html), by browsing through categories and subcategories on this page, you will find all PIM categories as well as products associated with these categories.
+Depending on the [configuration of your cartridge](06-categories-configuration.html), by browsing through categories and subcategories on this page, you will find all PIM categories as well as products associated with these categories.
 :::
 
 # How to see categories associated with a specific product?
@@ -27,5 +27,5 @@ Depending on the [configuration of your cartridge](categories-configuration.html
 ![Product categories](../img/sfcc-where-product-categories.png)
 
 :::info
-Depending on the [configuration of your cartridge](categories-configuration.html), you will find in the `Status` column which categories are online.
+Depending on the [configuration of your cartridge](06-categories-configuration.html), you will find in the `Status` column which categories are online.
 :::

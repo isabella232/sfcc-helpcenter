@@ -1,9 +1,9 @@
 ---
-id: configure-PIM-API
+id: 02-configure-PIM-API
 themes: cartridge-configuration
 title: Configure your PIM API
 popular: false
-related: where-configuration, mapping-configuration, import-images-configuration, categories-configuration, products-filter-configuration
+related: 01-where-configuration, 05-mapping-configuration, 04-import-images-configuration, 06-categories-configuration, 03-products-filter-configuration
 ---
 
 # How to configure my PIM API?
@@ -19,7 +19,7 @@ Then note these information from your PIM :
 
 # How to configure the cartridge with my PIM API information?
 
-In the [cartridge configuration page](where-configuration.html), fill in the following parameters with the PIM information collected in the previous step :
+In the [cartridge configuration page](01-where-configuration.html), fill in the following parameters with the PIM information collected in the previous step :
 
 | Cartridge parameter           | PIM information    |
 | :-----------------------------| :-----------------:|

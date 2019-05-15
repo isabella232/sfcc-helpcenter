@@ -8,7 +8,7 @@ related: trigger, overview
 
 # Attribute types
 
-The SFCC cartride imports all these PIM attribute types:
+The SFCC cartridge imports all these PIM attribute types:
 - Text
 - Text area
 - Date
@@ -34,17 +34,18 @@ The SFCC cartride imports all these PIM attribute types:
 As SFCC does not have a table attribute type, the cartridge imports table data into an SFCC **text area** attribute as a **JSON structure**.  
 :::
 
+
 # Attributes
 
 The SFCC cartridge imports all your PIM products attributes.
 
 If you have some **localizable** attributes (attributes that can have different values per **locale**): the SFCC cartridge imports the content of these attributes in the different languages of SFCC product.
 
-If you have some **scopable** attributes (attributes that can have different values per **channel**): depending on your [channel configuration](products-filter-configuration.html), the SFCC cartridge imports the channel content of these attributes.
+If you have some **scopable** attributes (attributes that can have different values per **channel**): depending on your [channel configuration](03-products-filter-configuration.html), the SFCC cartridge imports the channel content of these attributes.
 
 # Categories
 
-Depending on your category configuration, the SFCC cartridge imports the selected PIM category tree.
+Depending on your [category configuration](06-categories-configuration.html), the SFCC cartridge imports all PIM category trees.
 
 ::: info
 **Mapping between your PIM and SFCC:**<br>
@@ -54,7 +55,7 @@ Because you **PIM categories contain** only a title while **SFCC categories** al
 
 # Products, Product models
 
-Depending on your filter configuration, the SFCC cartridge imports products and product models of your PIM catalog.
+Depending on your [product filter configuration](03-products-filter-configuration.html), the SFCC cartridge imports products and product models of your PIM catalog.
 
 ::: info
 **Mapping between your PIM and SFCC:**<br>
@@ -76,12 +77,16 @@ The SFCC cartridge maps PIM product model like this :
 
 # Product associations
 
-Depending on your product association configuration, the SFCC cartridge imports your PIM product associations.
+Depending on your [product association mapping configuration](05-mapping-configuration.html), the SFCC cartridge imports your PIM product associations.
 
-::: info
 **Mapping between your PIM and SFCC:**<br>
 The SFCC cartridge maps PIM `product associations` with SFCC `product recommendations`.<br>
-Depending on your product association configuration, each PIM `product association type` is mapped with SFCC `product recommendation type`.
+Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` is mapped with SFCC `product recommendation type`.
+
+::: info
+** With the SFCC Cartridge since V19.3.3 **
+The SFCC cartridge can also map PIM `product associations` with SFCC `product links`.<br>
+Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` is mapped with SFCC `product link type`.
 :::
 
 # Currencies

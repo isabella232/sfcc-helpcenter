@@ -40,8 +40,6 @@ The SFCC cartridge maps PIM product model like this :
 - PIM product model variation `level 1`+ variation part `level 2` are mapped onto SFCC `Variation products`
 :::
 
-![Product list](../img/sfcc-where-products-list.png)
-
 # How to find my PIM product attributes in SFCC?
 
 1. On the **Products** page, search your product
@@ -60,7 +58,7 @@ After your product attributes review, **don't forget to click on the `Unlock` li
 
 You will find on this page all your PIM product attributes.
 
-Depending on the [configuration of your cartridge](mapping-configuration.html) concerning the mapping of SFCC attributes:
+Depending on the [configuration of your cartridge](05-mapping-configuration.html) concerning the mapping of SFCC attributes:
 - Some PIM attributes will be mapped with SFCC product default attributes
 - Some PIM attributes will be visible in the `Akeneo Attributes` part of the page
 
@@ -86,4 +84,4 @@ As a result, the cartridge has to retrieve all PIM attributes of all PIM familie
 
 # What about PIM "scopable" attributes in SFCC?
 
-Depending on the [configuration of your cartridge](products-filter-configuration.html) concerning the scope filter: the cartridge only imports the attribute content of the specified channel.
+Depending on the [configuration of your cartridge](03-products-filter-configuration.html) concerning the scope filter: the cartridge only imports the attribute content of the specified channel.

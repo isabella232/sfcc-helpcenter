@@ -38,7 +38,7 @@ Each job is responsible for importing part of PIM data. The order in which the j
 - **PIM attribute options** (from simple and multi select attribute type)
 
 ::: info
-Depending on your [cartridge configuration](mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
+Depending on your [cartridge configuration](05-mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
 :::
 
 ## Akeneo-Import-Media-Assets-Pricebook
@@ -52,11 +52,8 @@ Depending on your [cartridge configuration](mapping-configuration.html), some at
 
 These 2 jobs are really similar and **don't have to be used at the same time**: they both import products from Akeneo PIM.
 
-`3-2- Akeneo-Full-Import-Products` imports **all products** from Akeneo PIM.
-
-when
-
-`3-1- Akeneo-Differential-Import-Products` imports **only new products** since the last "**successful**" import made.
+- `3-2- Akeneo-Full-Import-Products` imports **all products** from Akeneo PIM.
+- `3-1- Akeneo-Differential-Import-Products` imports **only new products** since the last "**successful**" import made.
 
 These jobs import:
 - PIM categories
@@ -64,5 +61,5 @@ These jobs import:
 - PIM product associations
 
 ::: info
-Depending on your [cartridge configuration](products-filter-configuration), you can create some filters that allow you to import only products that match the defined criteria.
+Depending on your [cartridge configuration](03-products-filter-configuration), you can create some filters that allow you to import only products that match the defined criteria.
 :::

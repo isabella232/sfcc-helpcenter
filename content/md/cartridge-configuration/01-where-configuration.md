@@ -1,9 +1,9 @@
 ---
-id: where-configuration
+id: 01-where-configuration
 themes: cartridge-configuration
-title: Where can I find the cartridge configuration page?
+title: Where can I find the cartridge configuration?
 popular: true
-related: configure-PIM-API, mapping-configuration, import-images-configuration, categories-configuration, products-filter-configuration
+related: 02-configure-PIM-API, 05-mapping-configuration, 04-import-images-configuration, 06-categories-configuration, 03-products-filter-configuration
 ---
 
 # Where is the cartridge configuration page?
@@ -18,10 +18,10 @@ related: configure-PIM-API, mapping-configuration, import-images-configuration, 
 
 Yes, in the cartridge configuration page, you can define a specific parameter for each SFCC site.
 
+Click on the `Edit Across Sites` link:
+
 ![Cartridge site configuration 1](../img/sfcc-cartridge-site1.png)
 
-Click on the `Edit Across Sites` link.
+Then type the specific configuration for your sites:
 
 ![Cartridge site configuration 2](../img/sfcc-cartridge-site2.png)
-
-Then type the specific configuration for your sites.

@@ -1,9 +1,9 @@
 ---
-id: import-images-configuration
+id: 04-import-images-configuration
 themes: cartridge-configuration
 title: How to configure the cartridge to import PIM images?
 popular: false
-related: where-configuration, configure-PIM-API, mapping-configuration, categories-configuration, products-filter-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration, 06-categories-configuration, 03-products-filter-configuration
 ---
 
 # But what "images" are we talking about exactly!?
@@ -16,7 +16,7 @@ The cartridge can retrieve images from either `Image` attributes or from `Asset 
 
 # How can I retrieve images from "image" attributes?
 
-In the [cartridge configuration page](where-configuration.html), you need to select `Images` for the following parameter if you want to retrieve images from "image" attributes.
+In the [cartridge configuration page](01-where-configuration.html), you need to select `Images` for the following parameter if you want to retrieve images from "image" attributes.
 
 | Cartridge parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
@@ -25,7 +25,7 @@ In the [cartridge configuration page](where-configuration.html), you need to sel
 
 # How can I retrieve images from "asset collection" attributes?
 
-In the [cartridge configuration page](where-configuration.html), you need to select `Assets` for the following parameter if you want to retrieve images from "asset collection" attributes.
+In the [cartridge configuration page](01-where-configuration.html), you need to select `Assets` for the following parameter if you want to retrieve images from "asset collection" attributes.
 
 | Cartridge parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
@@ -42,7 +42,7 @@ In addition, an SFCC attribute is created for each "Asset collection" PIM attrib
 
 # How can I retrieve images from my "image" and "asset collection" attributes at the same time?
 
-In the [cartridge configuration page](where-configuration.html), you need to select `Both` for the following parameter if you want to retrieve images from "image" AND "asset collection" attributes.
+In the [cartridge configuration page](01-where-configuration.html), you need to select `Both` for the following parameter if you want to retrieve images from "image" AND "asset collection" attributes.
 
 | Cartridge parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
@@ -50,7 +50,7 @@ In the [cartridge configuration page](where-configuration.html), you need to sel
 
 # How to define SFCC image view types to import PIM images?
 
-In the [cartridge configuration page](where-configuration.html), you can define the SFCC image view types for your images.
+In the [cartridge configuration page](01-where-configuration.html), you can define the SFCC image view types for your images.
 
 | Cartridge parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
@@ -72,7 +72,7 @@ Here is an example of content for this "Akeneo Image View Types" parameter:
 
 # How to define which PIM attribute is a variation value for product images?
 
-In the [cartridge configuration page](where-configuration.html), you can define which PIM attribute is a variation value for product images:
+In the [cartridge configuration page](01-where-configuration.html), you can define which PIM attribute is a variation value for product images:
 
 | Cartridge parameter                     | PIM information                      |
 | :---------------------------------------| :----------------------------------: |

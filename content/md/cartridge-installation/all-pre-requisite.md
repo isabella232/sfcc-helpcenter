@@ -1,5 +1,5 @@
 ---
-id: pre-requisite
+id: all-pre-requisite
 themes: cartridge-installation
 title: Prerequisites for installing the cartridge
 popular: true
@@ -10,16 +10,16 @@ related: download-cartridge, where-configuration
 
 ## PIM compatibility
 
-Please refer to our [Marketplace website](https://marketplace.akeneo.com/extension/salesforce-commerce-cloud-cartridge) to identify which **PIM versions** the last cartridge release is compatible with.
+Please refer to our [**Marketplace website**](https://marketplace.akeneo.com/extension/salesforce-commerce-cloud-cartridge) to identify which **PIM versions** the last cartridge release is compatible with.
 
 ## SFCC compatibility
 
-SFCC is a cloud solution that **automatically updates itself**. The cartridge is compatible with your SFCC version as soon as its `compatibility mode` has been configured on **17.7**.
+SFCC is a cloud solution that **automatically updates itself**.<br>
+The last cartridge version is therefore compatible with the current SFCC version.
 
 ## SFRA compatibility
 
 Since the cartridge **doesn't deal with any storefront features** (The current Cartridge version is in "**Script**" mode), the cartridge is therefore **SFRA compatible**.
-
 
 # Who can install the cartridge?
 

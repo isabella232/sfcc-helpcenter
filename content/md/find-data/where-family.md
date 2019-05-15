@@ -9,6 +9,8 @@ related: where-categories, where-attributes, where-groups, where-product-associa
 # How to find my PIM families in SFCC?
 
 
-Since the notion of **attribute family** (attribute set) does not exist in SFCC, the cartridge **can't import** PIM families.
+**Since the notion of "attribute family" (attribute set) does not exist in SFCC, the cartridge can't import PIM families.**
 
-All attributes from PIM families are imported into SFCC. Each SFCC product therefore contains all PIM attributes and only attributes related to the product are filled in.
+All attributes from PIM families are therefore imported into SFCC.
+
+Each SFCC product contains all PIM attributes and only attributes related to the product are filled in.

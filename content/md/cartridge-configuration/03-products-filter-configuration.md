@@ -1,14 +1,14 @@
 ---
-id: products-filter-configuration
+id: 03-products-filter-configuration
 themes: cartridge-configuration
 title: How can I filter only PIM products I want to import in SFCC?
 popular: false
-related: where-configuration, configure-PIM-API, mapping-configuration, import-images-configuration, categories-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration, 04-import-images-configuration, 06-categories-configuration
 ---
 
 # How to import PIM product data from a specific channel?
 
-In the [**cartridge configuration page**](where-configuration.html), you can filter from which **PIM channel** you want to retrieve your product information.
+In the [**cartridge configuration page**](01-where-configuration.html), you can filter from which **PIM channel** you want to retrieve your product information.
 
 | Cartridge parameter   | PIM information  |
 | :---------------------| :--------------: |
@@ -16,7 +16,7 @@ In the [**cartridge configuration page**](where-configuration.html), you can fil
 
 # How can I filter PIM products according to product properties, product model properties or product values ?
 
-In the [**cartridge configuration page**](where-configuration.html), with the following parameter, you can choose between a `Simple` or an `Advanced` filter to retrieve PIM data :
+In the [**cartridge configuration page**](01-where-configuration.html), with the following parameter, you can choose between a `Simple` or an `Advanced` filter to retrieve PIM data :
 
 | Cartridge parameter   | Filter mode      |
 | :---------------------| :------------------: |
