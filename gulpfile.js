@@ -5,7 +5,7 @@ var del = require('del');
 var requireDir = require('require-dir');
 var tasks = requireDir('./tasks');
 
-var majorVersion = 'v20';
+var majorVersion = 'v19';
 
 // Clean dist directory
 gulp.task('clean-dist', function () {

@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var merge = require('merge-stream');
 
-var majorVersion = 'v20';
+var majorVersion = 'v19';
 
 gulp.task('copy-assets', ['clean-dist'], function(){
     var lib = gulp.src([
