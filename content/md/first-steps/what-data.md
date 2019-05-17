@@ -8,7 +8,7 @@ related: trigger, overview
 
 # Attribute types
 
-The SFCC cartridge imports all these PIM attribute types:
+The Akeneo connector imports the following PIM attribute types to SFCC:
 - Text
 - Text area
 - Date
@@ -25,87 +25,87 @@ The SFCC cartridge imports all these PIM attribute types:
 - Table attribute (5)
 
 ::: info
-(1) The cartridge imports all **attribute options** with their translations.<br>
-(2) As **metric attributes** do not exist in SFCC, the cartridge converts this into **text attribute** type.<br>
-(3) As SFCC does not support the import of binary files other than images, we only import **the relative PIM path** for this attribute.<br>
-(4) As SFCC does not support the import of binary files other than images, we only import **image assets binaries**.<br>
-(5) `Table attribute` type doesn't exist by default in the PIM, it is an add-on that has been developed by [Flagbit](https://marketplace.akeneo.com/extension/table-attribute) and [Webkul](https://marketplace.akeneo.com/extension/akeneo-table-attribute) company and allows you to add an additional "table" attribute type in your PIM.
-**The cartridge is therefore compatible with these 2 extensions !** :-)
-As SFCC does not have a table attribute type, the cartridge imports table data into an SFCC **text area** attribute as a **JSON structure**.  
+(1) The connector imports all **attribute options** with their translations.<br>
+(2) As **metric attributes** do not exist in SFCC, the connector converts this into **text attribute** type.<br>
+(3) As SFCC does not support the import of binary files other than images, the connector only imports **the relative PIM path** for this attribute.<br>
+(4) As SFCC does not support the import of binary files other than images, the connector only imports **image assets binaries**.<br>
+(5) `Table attribute` type does not exist by default in the PIM. Such attribute type has been developed as an add-on by our Solution Partner [Flagbit](https://marketplace.akeneo.com/extension/table-attribute), and also the [Webkul](https://marketplace.akeneo.com/extension/akeneo-table-attribute) company.
+**Please note the Akeneo connector for SFCC is compatible with any of these add-ons**.
+As SFCC does not have a table attribute type, the connector imports table data into a SFCC **text area** attribute as a **JSON structure**.  
 :::
 
 
 # Attributes
 
-The SFCC cartridge imports all your PIM products attributes.
+The Akeneo connector for SFCC imports all your PIM products attributes to Salesforce Commerce Cloud.
 
-If you have some **localizable** attributes (attributes that can have different values per **locale**): the SFCC cartridge imports the content of these attributes in the different languages of SFCC product.
+If you have some **localizable** attributes (attributes that can have different values per **locale**): the Akeneo connector will import the content of these attributes in the different languages of a SFCC product.
 
-If you have some **scopable** attributes (attributes that can have different values per **channel**): depending on your [channel configuration](03-products-filter-configuration.html), the SFCC cartridge imports the channel content of these attributes.
+If you have some **scopable** attributes (attributes that can have different values per **channel**): depending on your [channel configuration](03-products-filter-configuration.html), the Akeneo connector will import the attributes values of the defined channel.
 
 # Categories
 
-Depending on your [category configuration](06-categories-configuration.html), the SFCC cartridge imports all PIM category trees.
+Depending on your [category configuration](06-categories-configuration.html), the Akeneo connector could import all PIM category trees.
 
 ::: info
-**Mapping between your PIM and SFCC:**<br>
-The SFCC cartridge maps PIM categories with SFCC categories.<br>
-Because you **PIM categories contain** only a title while **SFCC categories** allow you to have more information (description, image, ...), the SFCC cartridge only imports PIM category title information in SFCC category.
+**Mapping between Akeneo PIM and SFCC:**<br>
+The Akeneo connector maps PIM categories with SFCC categories.<br>
+Because your **PIM categories** has only one title while **SFCC categories** have more information (description, image, etc.), the Akeneo connector for SFCC will only import the PIM category title information to SFCC.
 :::
 
 # Products, Product models
 
-Depending on your [product filter configuration](03-products-filter-configuration.html), the SFCC cartridge imports products and product models of your PIM catalog.
+Depending on your [product filter configuration](03-products-filter-configuration.html), the Akeneo connector will import products and product models of your PIM catalog.
 
 ::: info
-**Mapping between your PIM and SFCC:**<br>
-The SFCC cartridge maps PIM products with SFCC `products`.
+**Mapping between Akeneo PIM and SFCC:**<br>
+The Akeneo connector maps PIM products with SFCC `products`.
 :::
 
 ::: info
-**Mapping between your PIM and SFCC:**<br>
-The SFCC cartridge maps PIM product model like this :
+**Mapping between Akeneo PIM and SFCC:**<br>
+The Akeneo connector maps PIM product models this way:
 
-**PIM Product model with 1 level of variation:**<br>
-- PIM product model `common` part with SFCC `Variation master`<br>
-- PIM product model variation `level 1` part with SFCC `Variation products`
+**PIM Product models with 1 level of variation:**<br>
+- PIM product models `common` part with SFCC `Variation master`<br>
+- PIM product models variation `level 1` part with SFCC `Variation products`
 
-**PIM Product model with 2 level of variation:**<br>
-- PIM product model `common` part with SFCC `Variation master`<br>
-- PIM product model variation `level 1`+ variation part `level 2` with SFCC `Variation products`
+**PIM Product models with 2 level of variation:**<br>
+- PIM product models `common` part with SFCC `Variation master`<br>
+- PIM product models variation `level 1`+ variation `level 2` parts with SFCC `Variation products`
 :::
 
 # Product associations
 
-Depending on your [product association mapping configuration](05-mapping-configuration.html), the SFCC cartridge imports your PIM product associations.
+Depending on your [product association mapping configuration](05-mapping-configuration.html), the Akeneo connector will import your PIM product associations.
 
 **Mapping between your PIM and SFCC:**<br>
-The SFCC cartridge maps PIM `product associations` with SFCC `product recommendations`.<br>
-Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` is mapped with SFCC `product recommendation type`.
+The Akeneo connector maps PIM `product associations` with SFCC `product recommendations`.<br>
+Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` will be mapped with SFCC `product recommendation type`.
 
 ::: info
-** With the SFCC Cartridge since V19.3.3 **
-The SFCC cartridge can also map PIM `product associations` with SFCC `product links`.<br>
-Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` is mapped with SFCC `product link type`.
+** Since Akeneo connector V19.3.3 **
+The Akeneo connector can also map PIM `product associations` with SFCC `product links`.<br>
+Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` will be mapped with SFCC `product link type`.
 :::
 
 # Currencies
 
-The SFCC cartridge imports all your PIM currencies.
+The Akeneo connector also imports all your PIM currencies.
 
 ::: info
-**Mapping between your PIM and SFCC:**<br>
-The SFCC cartridge maps PIM `currencies` in the SFCC `Pricebook`.
+**Mapping between Akeneo PIM and SFCC:**<br>
+The Akeneo connector maps PIM `currencies` with SFCC `Pricebook`.
 :::
 
 # Product groups
 
 ::: warning
-As we have not found an equivalent notion in SFCC, the cartridge does not yet import PIM product groups.
+As there is no such thing as Product Groups in SFCC, the connector does not import PIM product groups yet.
 :::
 
 # Reference entities [EE] [3.x]
 
 ::: warning
-The current cartridge version does not yet take into account the import of **Reference Entities**. However, a new cartridge version is being prepared in 2019 to take into account theses **Reference Entities** in SFCC.
+The current Akeneo connector version does not take into account the import of **Reference Entities** yet. However, a new version is being prepared in 2019 to manage the **Reference Entities** in Salesforce Commerce Cloud.
 :::
