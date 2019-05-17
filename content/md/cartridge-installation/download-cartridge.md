@@ -6,33 +6,32 @@ popular: true
 related: all-pre-requisite, where-configuration
 ---
 
-# How to download the cartridge?
+# Where can I get Akeneo connector for SFCC?
 
-The cartridge is available in 2 versions:
+There are 2 ways to put your hands on Akeneo connector for SFCC:
 
-* The **free version** which is available on the [**Saleforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/).
+* On [**Saleforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download a free archive that includes the latest certified version of the connector. You need a Salesforce Xchange account to get access to this archive. Please note that this free version connector will not give you access to official support and maintenance from Akeneo teams.
 
-* The **premium version** which is available on our private **Github repository**.<br>
-**This version provides access to our latest patches, features and support services.**
+* On Akeneo Partner Portal, within a private **Github repository**.<br>
+**This up-to-date version provides early access to latest patches and new features for the connector. It is also supported and maintained by Akeneo teams.**
 
-Please [**contact us**](mailto:demandware@akeneo.com) to be able to access this **Github repository**.
-
-We will explain you how to access our cartridge via our [**Portal**](https://help.akeneo.com/portal/index.html) and how to get **premium support**.
+Please [**contact us**](mailto:demandware@akeneo.com) to get access to the private **Github repository** where the supported version of the connector is hosted.
+Akeneo teams will get back to you on how to download the connector via the Partner [**Portal**](https://help.akeneo.com/portal/index.html) and how to benefit from **Akeneo support**.
 
 # How to install the cartridge?
 
-Please, read the `README.md` file from the cartridge **Github repository** first.
+Please have a look at the `README.md` file from the connector **Github repository** first.
 
-This file will give you the **installation requirements**, a **technical overview** of the cartridge and will explain **how to install the cartridge**.
+This file will give you the **installation requirements**, a **technical overview** of the cartridge and will explain **how to install the cartridge** properly.
 
 ::: info
-Please also consult the **additional document** which is in the **"documentation"** directory from the **Github repository**.
+Please also read the **additional document** in the **"documentation"** folder of the **Github repository**.
 :::
 
 # What can I do if I have a question, if I want to report a bug or a suggestion for the cartridge?
 
-Please use our [**Help center**](https://helpdesk.akeneo.com) platform to contact us.
+Please use our [**Helpdesk**](https://helpdesk.akeneo.com) platform to contact us.
 
 ::: info
-Please note that we do not offer support on the SFCC Cartridge **free version** (Downloaded from the [Saleforce marketplace](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/))
+Please note that we do not offer support on the **free version** of Akeneo connector for SFCC (which you get from [Saleforce marketplace](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/))
 :::
