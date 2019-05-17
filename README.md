@@ -1,5 +1,5 @@
-# Akeneo PIM SFCC premium connector help center
-This repository holds the sources for our SFCC premium connector help center, made by hand with love.
+# Akeneo connector for SFCC help center
+This repository holds the sources of the Akeneo connector for SFCC help center, made by hand with love.
 
 **Install/preview the help center**
 
