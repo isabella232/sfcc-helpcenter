@@ -10,35 +10,36 @@ related: download-cartridge, where-configuration
 
 ## PIM compatibility
 
-Please refer to our [**Marketplace website**](https://marketplace.akeneo.com/extension/salesforce-commerce-cloud-cartridge) to identify which **PIM versions** the last cartridge release is compatible with.
+Akeneo connector for SFCC was originally built with Akeneo PIM 1.7. It has been maintained until then, to support the newer versions and features of Akeneo PIM.
+Please refer to our [**Marketplace website**](https://marketplace.akeneo.com/extension/salesforce-commerce-cloud-cartridge) to know if our connector is compatible with your **PIM version**.
 
 ## SFCC compatibility
 
-SFCC is a cloud solution that **automatically updates itself**.<br>
-The last cartridge version is therefore compatible with the current SFCC version.
+Salesforce Commerce Cloud is a Cloud solution that **automatically updates itself**.
+The latest connector version is therefore compatible with the latest SFCC version.
 
-## SFRA compatibility
+## SFRA compliance
 
-Since the cartridge **doesn't deal with any storefront features** (The current Cartridge version is in "**Script**" mode), the cartridge is therefore **SFRA compatible**.
+Since the Akeneo connector for SFCC was build in "**Script**" mode and **doesn't have any storefront feature**, the connector is therefore **compliant with the new StoreFront Reference Architecture** of Salesforce Commerce Cloud.
 
 # Who can install the cartridge?
 
-The cartridge installation is a **technical process** and requires a **very good knowledge of SFCC**.
+Installing the Akeneo connector for SFCC is a **technical process** that requires **advanced knowledge of Salesforce Commerce Cloud**.
 
 ::: warning
-We therefore recommend that you use someone with **very good SFCC technical skills** to install the cartridge.
+We therefore recommend that you refer to a technical resource **with proven track of SFCC skills** to perform the installation of such connector.
 :::
 
-# Does the cartridge work "out of the box"?
+# Does the Akeneo connector work "out-of-the-box"?
 
-As it is possible to create many **different catalog structures** with Akeneo's PIM, it depends on the modeling of your catalogue and the functionalities of your project.
+Akeneo PIM being flexible enough for you to create many **different catalog structures**, the modeling of your catalogue and the features of your project will impact the usage or your Akeneo connector.
 
-We have tried to do everything possible to ensure that the cartridge adapts to the different modeling required. The cartridge has **different parameters** to adapt to your needs.
+We did everything possible to ensure that this connector adapts to your modeling, hence the **different parameters** of this connector to adapt to your needs.
 
 ::: warning
-Please consult the documentation relating to the [**cartridge configuration**](themes-for-peter.html#cartridge-configuration) to fully understand the impact of each parameter.
+Please read the documentation related to the [**cartridge configuration**](themes-for-peter.html#cartridge-configuration) to understand the impact of each parameter.
 :::
 
-However, we know from experience that it is sometimes necessary to implement **specific customization** compared to your project. ;-) This is why we deliver **all the code sources** of the cartridge.
+However, we know from experience that it may be necessary to implement **specific customizations** for your project. This is why Akeneo provides you with the **source code** of this connector.
 
-The cartridge is developed in a **SFCC proprietary Javascript**. The customization of the cartridge therefore requires a development team **that knows this language perfectly**.
+The Akeneo connector for SFCC is developed in a **SFCC proprietary Javascript**. Its customization therefore requires a development team **aware of the Javascript language**.
