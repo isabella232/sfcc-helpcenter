@@ -6,17 +6,18 @@ popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration, 04-import-images-configuration, 03-products-filter-configuration
 ---
 
-# How to define which PIM catalog will be online on the site?
+# How to define which PIM master catalog I want to push to SFCC?
 
-In the [cartridge configuration page](01-where-configuration.html), fill the following parameter with your PIM catalog ID (you can set up several PIM catalogs):
+Within your Akeneo PIM instance, you may use different catalogs to manage your product data. The Akeneo connector for SFCC gives you the possibility to export one or several catalog IDs per website.
+In the [cartridge configuration page](01-where-configuration.html), fill in the following parameter with the PIM catalog IDs of your choice:
 
 | Cartridge parameter           | PIM information         |
 | :-----------------------------| :---------------------: |
 | Akeneo main catalogs          |  PIM catalogs ID        |
 
-# How to define that the SFCC category trees will be directly online or not?
+# How to define the status of your SFCC category trees?
 
-In the [cartridge configuration page](01-where-configuration.html), select `Yes` for the following parameter if you want that PIM category trees be directly online on you site, otherwise select `No`.
+In the [cartridge configuration page](01-where-configuration.html), select `Yes` for the below parameter if you want to push live the PIM category trees on your webstores directly. Otherwise, select `No`.
 
 | Cartridge parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
@@ -24,7 +25,7 @@ In the [cartridge configuration page](01-where-configuration.html), select `Yes`
 
 # How to define automatically the "Primary" category for my SFCC products?
 
-In the [cartridge configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become "primary" category for that product.
+In the [cartridge configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become your "primary" category for that product.
 
 | Cartridge parameter                | SFCC information        |
 | :----------------------------------| :---------------------: |
