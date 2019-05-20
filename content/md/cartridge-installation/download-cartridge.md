@@ -32,16 +32,16 @@ Please also read the **additional document** in the **"documentation"** folder o
 
 Please use our [**Helpdesk**](https://helpdesk.akeneo.com) platform to contact us.
 
-**In the case of a bug report, try to install the latest version of the connector and try to reproduce the bug again before reporting it**
+**In the event of a bug report, please install the latest version of the connector and try to reproduce the bug again before reporting it**
 
-If the problem occurs with the latest version of the cartridge, report the bug to us. Make sure you have all this information before you open a ticket on our Help Center:
-- The version of your PIM
-- The version of your Salesforce Commerce Cloud
+If the issue occurs with the latest version of the cartridge, feel free to report the bug to us. Please provide us with the below information when you open a ticket on our Help Center:
+- The version of your PIM instance
+- The version of your Salesforce Commerce Cloud instance
 - The version of the installed cartridge
-- A precise scenario for reproducing your bug (be as precise as possible). 
+- Steps to reproduce your issue (please be as precise as possible). 
 
 ::: warning
-**For our team to be able to take this bug into account, this scenario must be realized and reproducible using an uncustomized Akeneo connector for SFCC installed on an uncustomized SFCC and connected to an uncusomized PIM.**
+**For our Support team to be able to take this issue into account, the steps to reproduce should be performed in a non-customized environment on both Akeneo and SFCC sides, with a vanilla connector.**
 <br>
 Please note that we do not offer support on the **free version** of Akeneo connector for SFCC (which you get from [Saleforce marketplace](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/))
 :::
