@@ -8,18 +8,18 @@ related: 01-where-configuration, 05-mapping-configuration, 04-import-images-conf
 
 # How to configure my PIM API?
 
-Before starting to configure your cartridge to connect it to the PIM API, you must first generate a "client id" and "secret" couple in the PIM to allow the API connection.
+Before setting up the Akeneo connector for SFCC, you first need to generate a "client ID" and a "secret" couple in the PIM to enable the API connection.
 
-Please refer to our specific [documentation](https://api.akeneo.com/getting-started-admin.html) for this action.
+Please refer to our specific [documentation](https://api.akeneo.com/getting-started-admin.html) to do so.
 
-Then note these information from your PIM :
+Then, note the below information:
 1. Your PIM URL (ex: https://mypim.cloud.akeneo.com)
 2. Your PIM API `Client ID` and `Secret`
 3. Your PIM user dedicated to the use of the API (`Username` and `Password`).
 
 # How to configure the cartridge with my PIM API information?
 
-In the [cartridge configuration page](01-where-configuration.html), fill in the following parameters with the PIM information collected in the previous step :
+In the [cartridge configuration page](01-where-configuration.html), fill in the below parameters with the PIM information collected above:
 
 | Cartridge parameter           | PIM information    |
 | :-----------------------------| :-----------------:|
