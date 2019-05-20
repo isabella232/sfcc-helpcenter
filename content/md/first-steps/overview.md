@@ -8,7 +8,7 @@ related: trigger, what-data, where-configuration, products-filter-configuration
 
 # Cartridge overview
 
-Akeneo connector for SFCC is an add-on for Commerce Cloud.
+Akeneo connector for SFCC is an add-on for Salesforce Commerce Cloud.
 This add-on named "**cartridge**" is installed on SFCC side and communicates with Akeneo PIM **via Akeneo API**.
 
 The cartridge is an **unidirectional** system: it exports PIM data to SFCC. **No SFCC data is sent back to the PIM**.
