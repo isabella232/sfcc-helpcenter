@@ -12,7 +12,7 @@ Before setting up the Akeneo connector for SFCC, you first need to generate a "c
 
 Please refer to our specific [documentation](https://api.akeneo.com/getting-started-admin.html) to do so.
 
-Then, fill in the below information:
+Then, note the below information:
 1. Your PIM URL (ex: https://mypim.cloud.akeneo.com)
 2. Your PIM API `Client ID` and `Secret`
 3. Your PIM user dedicated to the use of the API (`Username` and `Password`).
