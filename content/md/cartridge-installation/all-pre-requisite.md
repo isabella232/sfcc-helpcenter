@@ -15,7 +15,7 @@ Please refer to our [**Marketplace website**](https://marketplace.akeneo.com/ext
 
 ## SFCC compatibility
 
-Salesforce Commerce Cloud is a Cloud solution that **automatically updates itself**.
+Salesforce Commerce Cloud is a Cloud solution that **automatically updates itself**.<br>
 The latest connector version is therefore compatible with the latest SFCC version.
 
 ## SFRA compliance
