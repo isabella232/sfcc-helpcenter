@@ -21,7 +21,7 @@ Depending on the [configuration of your cartridge](05-mapping-configuration.html
 
 # What about "product links" in SFCC?
 
-Salesforce recommends to use `Recommendations` instead of `Product links` in Commerce Cloud for product association. Please refer to Salesforce documentation for more details.
+Salesforce recommends to use `Recommendations` instead of `Product links` in Commerce Cloud for product association. Please refer to [Salesforce documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Products/LinkingProducts.html?resultof=%22%50%72%6f%64%75%63%74%22%20%22%70%72%6f%64%75%63%74%22%20%22%6c%69%6e%6b%22%20) for more details.
 
 :::info
 However, please note that some users could use the `product links` feature to handle their product associations in SFCC. We have also added the possibility to map **PIM product associations** with **SFCC Product links** since **version 19.3.3** of the Akeneo connector.<br>
