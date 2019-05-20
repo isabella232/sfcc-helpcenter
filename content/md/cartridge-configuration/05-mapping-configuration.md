@@ -72,7 +72,7 @@ Note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce 
 
 # Product association mapping
 
-## How to map PIM "Product Associations" type with Product "Recommendations" type in SFCC?
+## How to map PIM "Product Associations" with Product "Recommendations" in SFCC?
 
 In the [cartridge configuration page](01-where-configuration.html), you can define which PIM association type you want to map with SFCC product recommendation type.
 
@@ -93,6 +93,9 @@ Here is an example of content for this "Akeneo Recommendations Mapping" paramete
 	}
 }
 ```
+In this example:
+X_SELL is the PIM product association type ID.
+1 is the SFCC recommendation type number.
 :::
 
 ## How to map PIM "Product Associations" with Product "Links" in SFCC? (available for V19.3.3 of the connector and higher)
@@ -125,4 +128,7 @@ Here is an example of content for this "Akeneo Product Link Mapping" parameter:
 	}
 }
 ```
+In this example:
+"X_SELL" is the PIM product association type ID.
+"cross-sell" is the SFCC product link type ID.
 :::
