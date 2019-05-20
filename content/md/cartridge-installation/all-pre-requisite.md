@@ -42,4 +42,4 @@ Please read the documentation related to the [**cartridge configuration**](theme
 
 However, we know from experience that it may be necessary to implement **specific customizations** for your project. This is why Akeneo provides you with the **source code** of this connector.
 
-The Akeneo connector for SFCC is developed in a **SFCC proprietary Javascript**. Its customization therefore requires a development team **aware of the Javascript language**.
+The Akeneo connector for SFCC is developed in a **SFCC proprietary Javascript**. Its customization therefore requires a development team **aware of this specific Javascript language**.
