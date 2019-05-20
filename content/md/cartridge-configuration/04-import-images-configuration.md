@@ -8,11 +8,11 @@ related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration,
 
 # But what "images" are we talking about exactly!?
 
-Akeneo PIM has 2 ways to store images in your products.
+Akeneo PIM has 2 ways to store images for your products.
 
-Either by using several `Image` attributes or by using `Asset collection` attributes that point to one or more images from the `Assets` management functionality of your PIM Enterprise Edition.
+Either with several `Image` attributes or by using the `Asset collection` attribute that points to one or more images from the `Assets` management feature of your PIM Enterprise Edition.
 
-The cartridge can retrieve images from either `Image` attributes or from `Asset collection` attributes, or both.
+The Akeneo connector for SFCC can retrieve images from either `Image` attributes, from `Asset collection` attributes, or both.
 
 # How can I retrieve images from "image" attributes?
 
@@ -37,7 +37,7 @@ The order of images defined in the "Asset collection" attribute is well respecte
 
 ::: info
 PIM asset images are imported into the "Images" section of SFCC products.
-In addition, an SFCC attribute is created for each "Asset collection" PIM attribute to store image IDs and define the assets order.
+In addition, a SFCC attribute is created for each "Asset collection" PIM attribute to store image IDs and define the assets order.
 :::
 
 # How can I retrieve images from my "image" and "asset collection" attributes at the same time?
@@ -58,7 +58,7 @@ In the [cartridge configuration page](01-where-configuration.html), you can defi
 
 ::: warning
 This field must be in JSON format.
-Here is an example of content for this "Akeneo Image View Types" parameter:
+Here is an example of "Akeneo Image View Types" you can use for your connector:
 ```
 {
   "view-types": [
@@ -70,9 +70,9 @@ Here is an example of content for this "Akeneo Image View Types" parameter:
 ```
 :::
 
-# How to define which PIM attribute is a variation value for product images?
+# How to define which PIM attribute is a variant value for product images?
 
-In the [cartridge configuration page](01-where-configuration.html), you can define which PIM attribute is a variation value for product images:
+In the [cartridge configuration page](01-where-configuration.html), you can define which PIM attribute is a variant value for product images:
 
 | Cartridge parameter                     | PIM information                      |
 | :---------------------------------------| :----------------------------------: |
