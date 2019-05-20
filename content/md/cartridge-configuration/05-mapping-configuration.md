@@ -66,7 +66,7 @@ Here is an example of content for this "Akeneo Custom Attributes Mapping" parame
 	}
 }
 ```
-Again, each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
+Note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
 
 :::
 
