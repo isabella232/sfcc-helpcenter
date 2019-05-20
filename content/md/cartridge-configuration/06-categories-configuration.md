@@ -25,7 +25,7 @@ In the [cartridge configuration page](01-where-configuration.html), select `Yes`
 
 # How to define automatically the "Primary" category for my SFCC products?
 
-In the [cartridge configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become your "primary" category for that product (Please refer to [Salesforce documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Products/Classificationvsprimarycategory.html?resultof=%22%70%72%69%6d%61%72%79%22%20%22%63%61%74%65%67%6f%72%79%22%20) for better understand what is a primary category).
+In the [cartridge configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become your "primary" category for that product. (Please refer to [Salesforce documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Products/Classificationvsprimarycategory.html?resultof=%22%70%72%69%6d%61%72%79%22%20%22%63%61%74%65%67%6f%72%79%22%20) to better understand what a primary category is).
 
 | Cartridge parameter                | SFCC information        |
 | :----------------------------------| :---------------------: |
