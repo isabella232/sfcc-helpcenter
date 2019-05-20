@@ -6,7 +6,7 @@ popular: false
 related: where-attributes, where-family, where-groups, where-product-association
 ---
 
-# How to find my PIM categories in SFCC?
+# Where to find my PIM categories in SFCC?
 
 1. Select your SFCC site, then click on `Merchant Tools`
 2. Then click on `Catalogs` menu (in `Products and Catalogs`)
@@ -14,18 +14,18 @@ related: where-attributes, where-family, where-groups, where-product-association
 ![Categories](../img/sfcc-where-categories.png)
 
 :::info
-Depending on the [configuration of your cartridge](06-categories-configuration.html), by browsing through categories and subcategories on this page, you will find all PIM categories as well as products associated with these categories.
+Depending on the [configuration of your cartridge](06-categories-configuration.html), browsing through categories and sub-categories on this page will feature all PIM Categories as well as Products associated with these categories.
 :::
 
-# How to see categories associated with a specific product?
+# Where to see categories associated with a specific product?
 
 1. Select your SFCC site, then click on `Merchant Tools`
 2. Then click on `Products` menu
-3. Use the search engine to find the product you want to know about its product associations.
+3. Use the search engine to find the product associations bound to a specific product.
 4. Click on the `Categories` tab of this product.
 
 ![Product categories](../img/sfcc-where-product-categories.png)
 
 :::info
-Depending on the [configuration of your cartridge](06-categories-configuration.html), you will find in the `Status` column which categories are online.
+Depending on the [configuration of your cartridge](06-categories-configuration.html), you will find  which categories are online in the `Status` column.
 :::
