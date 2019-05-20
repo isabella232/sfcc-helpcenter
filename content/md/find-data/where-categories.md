@@ -27,5 +27,5 @@ Depending on the [configuration of your cartridge](06-categories-configuration.h
 ![Product categories](../img/sfcc-where-product-categories.png)
 
 :::info
-Depending on the [configuration of your cartridge](06-categories-configuration.html), you will find  which categories are onlinein the `Status` column.
+Depending on the [configuration of your cartridge](06-categories-configuration.html), you will find  which categories are online in the `Status` column.
 :::
