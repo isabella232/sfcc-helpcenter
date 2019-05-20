@@ -100,9 +100,9 @@ X_SELL is the PIM product association type ID.
 
 ## How to map PIM "Product Associations" with Product "Links" in SFCC? (available for V19.3.3 of the connector and higher)
 
-By default, according to Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations".
+By default, according to Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "link" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
 
-Since SFCC Cartridge V19.3.3, in the [cartridge configuration page](01-where-configuration.html), you can define that PIM "product associations" are mapped with SFCC product "links" by changing this parameter:
+But since SFCC Cartridge V19.3.3, in the [cartridge configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
 
 
 | Cartridge parameter            | PIM/SFCC information                                 |
