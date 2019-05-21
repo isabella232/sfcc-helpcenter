@@ -13,15 +13,3 @@ related: 02-configure-PIM-API, 05-mapping-configuration, 04-import-images-config
 3. Click on `Akeneo` (Akeneo config)
 
 ![Connector configuration](../img/sfcc-cartridge-configuration.png)
-
-# Can I define a specific connector configuration for each of my SFCC sites?
-
-Yes, in the connector configuration page, you can define a specific parameter for each SFCC site.
-
-Click on the `Edit Across Sites` link:
-
-![Connector site configuration 1](../img/sfcc-cartridge-site1.png)
-
-Then type the specific configuration for your sites:
-
-![Connector site configuration 2](../img/sfcc-cartridge-site2.png)
