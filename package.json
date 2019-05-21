@@ -1,5 +1,5 @@
 {
-  "name": "onboarder-helpcenter",
+  "name": "sfcc-helpcenter",
   "dependencies": {
     "bootstrap": "3.3.7",
     "docsearch.js": "2.4.1",
