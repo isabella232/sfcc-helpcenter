@@ -1,17 +1,17 @@
 {
-    "title":"Setting up the cartridge",
-    "description":"You don't know how to install and configure the cartridge?  Don't worry, you are in the right place!",
+    "title":"Setting up the connector",
+    "description":"You don't know how to install and configure the connector?  Don't worry, you are in the right place!",
     "img":"illus-setting-up.svg",
     "themes":{
         "cartridge-installation":{
-            "title": "Cartridge installation",
+            "title": "Connector installation",
             "img": "illus-coding-around.svg",
-            "description": "Ready to start? Ok... but how to download and install the cartridge?"
+            "description": "Ready to start? Ok... but how to download and install the connector?"
         },
         "cartridge-configuration":{
-            "title": "Configure the cartridge",
+            "title": "Configure the connector",
             "img": "illus-settings.svg",
-            "description": "Is the cartridge installed in SFCC, now? So, you are ready to configure its settings!"
+            "description": "Is the connector installed in SFCC, now? So, you are ready to configure its settings!"
         }
     }
 }

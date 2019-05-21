@@ -8,9 +8,9 @@ related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configur
 # Catalog mapping
 ## How to define which SFCC catalog will be used to spread your PIM product data?
 
-In the [cartridge configuration page](01-where-configuration.html), fill in the below parameter with your SFCC "master catalog ID" for your website:
+In the [connector configuration page](01-where-configuration.html), fill in the below parameter with your SFCC "master catalog ID" for your website:
 
-| Cartridge parameter           | SFCC information        |
+| Connector parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
 | Products Catalog ID           |  SFCC master catalog ID |
 
@@ -18,13 +18,13 @@ In the [cartridge configuration page](01-where-configuration.html), fill in the 
 ## Why should I map PIM attributes with SFCC "default" product attributes?
 
 By default, SFCC products include a handful of attributes assigned to each product: `Name`, `Brand`, `Manufacturer`, `Description`,...
-For performance and cleaning reasons, it will be more convenient to map the default attributes with the PIM ones to avoid duplicates in the SFCC product edit forms. If no mapping is performed on a default attribute, SFCC will import the PIM attribute as a custom one. The attribute value will be populated in this custom attribute rather than the standard one. 
+For performance and cleaning reasons, it will be more convenient to map the default attributes with the PIM ones to avoid duplicates in the SFCC product edit forms. If no mapping is performed on a default attribute, SFCC will import the PIM attribute as a custom one. The attribute value will be populated in this custom attribute rather than the standard one.
 
 ## How to map PIM attributes with SFCC "default" product attributes?
 
-In the [cartridge configuration page](01-where-configuration.html), you can define which PIM attributes you want to map with existing SFCC default product attributes.
+In the [connector configuration page](01-where-configuration.html), you can define which PIM attributes you want to map with existing SFCC default product attributes.
 
-| Cartridge parameter               | PIM/SFCC information                        |
+| Connector parameter               | PIM/SFCC information                        |
 | :---------------------------------| :-----------------------------------------: |
 | Akeneo Product attributes mapping |  akeneo_PIMAttributeID : SFCC attribute ID  |
 
@@ -47,9 +47,9 @@ Please note that each PIM attribute is prefixed with the "`akeneo_`" label in Sa
 
 ## How to map PIM attributes with SFCC "custom" product attributes?
 
-In the [cartridge configuration page](01-where-configuration.html), you can define which PIM attributes you want to map with SFCC custom product attributes.
+In the [connector configuration page](01-where-configuration.html), you can define which PIM attributes you want to map with SFCC custom product attributes.
 
-| Cartridge parameter               | PIM/SFCC information                               |
+| Connector parameter               | PIM/SFCC information                               |
 | :---------------------------------| :------------------------------------------------: |
 | Akeneo Custom Attributes Mapping  |  akeneo_PIMAttributeID : SFCC custom attribute ID  |
 
@@ -74,11 +74,11 @@ Note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce 
 
 ## How to map PIM "Product Associations" with Product "Recommendations" in SFCC?
 
-In the [cartridge configuration page](01-where-configuration.html), you can define which PIM association type you want to map with SFCC product recommendation type.
+In the [connector configuration page](01-where-configuration.html), you can define which PIM association type you want to map with SFCC product recommendation type.
 
-| Cartridge parameter            | PIM/SFCC information                           |
-| :------------------------------| :--------------------------------------------: |
-| Akeneo Recommendations Mapping |  PIM_association_ID/recommendation type number |
+| Connector parameter            | PIM/SFCC information                                 |
+| :------------------------------| :--------------------------------------------------: |
+| Akeneo Recommendations Mapping |  "PIM_association_ID" : "Recommendation type number" |
 
 ::: warning
 This field must be written in JSON format.
@@ -102,18 +102,18 @@ X_SELL is the PIM product association type ID.
 
 By default, according to Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
 
-But since SFCC Cartridge V19.3.3, in the [cartridge configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
+But since Akeneo connector for SFCC V19.3.3, in the [connector configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
 
 
-| Cartridge parameter            | PIM/SFCC information                                 |
+| Connector parameter            | PIM/SFCC information                                 |
 | :------------------------------| :--------------------------------------------------: |
 | Product Association Import to  | "Product Recommendation" (default) or "Product Link" |
 
 Then you can define which PIM "association type" you want to map with SFCC product "link" type with the following parameter:
 
-| Cartridge parameter         | PIM/SFCC information                  |
-| :---------------------------| :-----------------------------------: |
-| Akeneo Product Link Mapping |  PIM_association_ID/product link type |
+| Connector parameter         | PIM/SFCC information                        |
+| :---------------------------| :-----------------------------------------: |
+| Akeneo Product Link Mapping |  "PIM_association_ID" : "Product link type" |
 
 ::: warning
 This field must be written in JSON format.

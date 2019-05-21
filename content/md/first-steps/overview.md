@@ -1,17 +1,17 @@
 ---
 id: overview
 themes: first-steps
-title: SFCC cartridge overview
+title: Akeneo connector for SFCC overview
 popular: false
 related: trigger, what-data, where-configuration, products-filter-configuration
 ---
 
-# Cartridge overview
+# Connector overview
 
 Akeneo connector for SFCC is an add-on for Salesforce Commerce Cloud.
 This add-on named "**cartridge**" is installed on SFCC side and communicates with Akeneo PIM **via Akeneo API**.
 
-The cartridge is an **unidirectional** system: it exports PIM data to SFCC. **No SFCC data is sent back to the PIM**.
+The connector is an **unidirectional** system: it exports PIM data to SFCC. **No SFCC data is sent back to the PIM**.
 
 ![Overview](../img/overview.png)
 
@@ -19,7 +19,7 @@ The PIM is considered as the master tool for product data, it should not be hand
 
 # Process overview
 
-SFCC cartridge is composed by **4 main jobs** (4 main processes):
+The connector is composed by **4 main jobs** (4 main processes):
 - `1- Akeneo-Import-Attributes`									
 - `2- Akeneo-Import-Media-Assets-Pricebook`
 - `3-1- Akeneo-Differential-Import-Products`
@@ -38,14 +38,14 @@ Each job is responsible for importing PIM architecture and data into Salesforce 
 - **PIM attribute options** (from simple and multi select attribute type)
 
 ::: info
-Depending on your [cartridge configuration](05-mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
+Depending on your [connector configuration](05-mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
 :::
 
 ## Akeneo-Import-Media-Assets-Pricebook
 
 `2- Akeneo-Import-Media-Assets-Pricebook` job imports:
-- **PIM images from image attribute** type (depending on your [cartridge configuration](import-images-configuration.html))
-- **PIM images from asset attribute** type (depending on your [cartridge configuration](import-images-configuration.html))
+- **PIM images from image attribute** type (depending on your [connector configuration](04-import-images-configuration.html))
+- **PIM images from asset attribute** type (depending on your [connector configuration](04-import-images-configuration.html))
 - **PIM currencies** (to create a Pricebook in SFCC)
 
 ## Akeneo-Full-Import-Products & Akeneo-Differential-Import-Products
@@ -61,5 +61,5 @@ These jobs import:
 - PIM product associations
 
 ::: info
-Depending on your [cartridge configuration](03-products-filter-configuration), you can create some filters to run partial imports on products that match with the defined criteria.
+Depending on your [connector configuration](03-products-filter-configuration.html), you can create some filters to run partial imports on products that match with the defined criteria.
 :::

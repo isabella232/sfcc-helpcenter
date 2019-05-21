@@ -58,7 +58,7 @@ After your product attributes review, **don't forget to click on the `Unlock` li
 
 You will find on this page all your PIM product attributes.
 
-Depending on the [configuration of your cartridge](05-mapping-configuration.html) concerning the mapping of SFCC attributes:
+Depending on the [configuration of your connector](05-mapping-configuration.html) concerning the mapping of SFCC attributes:
 - Some PIM attributes could be mapped with SFCC product default attributes
 - The remaining PIM attributes will appear in the `Akeneo Attributes` part of the page
 
@@ -82,4 +82,4 @@ Indeed, there's no such thing as Family in Salesforce Commerce Cloud. Each produ
 
 # What about PIM "scopable" attributes in SFCC?
 
-Depending on the [configuration of your cartridge](03-products-filter-configuration.html) regarding the scope preference: the Akeneo connector will only import the attribute values of the specified channel.
+Depending on the [configuration of your connector](03-products-filter-configuration.html) regarding the scope preference: the Akeneo connector will only import the attribute values of the specified channel.

@@ -17,11 +17,11 @@ Then, note the below information:
 2. Your PIM API `Client ID` and `Secret`
 3. Your PIM user dedicated to the use of the API (`Username` and `Password`).
 
-# How to configure the cartridge with my PIM API information?
+# How to configure the connector with my PIM API information?
 
-In the [cartridge configuration page](01-where-configuration.html), fill in the below parameters with the PIM information collected above:
+In the [connector configuration page](01-where-configuration.html), fill in the below parameters with the PIM information collected above:
 
-| Cartridge parameter           | PIM information    |
+| Connector parameter           | PIM information    |
 | :-----------------------------| :-----------------:|
 | Akeneo Client ID              |  API Client ID     |
 | Akeneo Secret                 |  API Secret        |

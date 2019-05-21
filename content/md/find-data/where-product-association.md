@@ -16,7 +16,7 @@ related: where-categories, where-family, where-groups, where-attributes
 ![Product association](../img/sfcc-where-association.png)
 
 :::info
-Depending on the [configuration of your cartridge](05-mapping-configuration.html#product-association-mapping), the `Recommendation Type` column will indicate the PIM `association type` used.
+Depending on the [configuration of your connector](05-mapping-configuration.html#product-association-mapping), the `Recommendation Type` column will indicate the PIM `association type` used.
 :::
 
 # What about "product links" in SFCC?
