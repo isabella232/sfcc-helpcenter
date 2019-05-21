@@ -1,12 +1,12 @@
 {
-    "title":"Using the SFCC cartridge",
-    "description":"You want to know how to use the cartridge in Salesforce Commerce Cloud? We're here to help you.",
+    "title":"Using the connector",
+    "description":"You want to know how to use the connector in Salesforce Commerce Cloud? We're here to help you.",
     "img":"illus-using.svg",
     "themes":{
         "first-steps":{
-            "title": "Your first steps with SFCC cartridge",
+            "title": "Your first steps with the connector",
             "img": "illus-first-steps.svg",
-            "description": "You are very new with SFCC cartridges and you don't know where to begin. Here are a few articles to help you understand the basics. Enjoy!"
+            "description": "You are very new with Akeneo connector for SFCC and you don't know where to begin. Here are a few articles to help you understand the basics. Enjoy!"
         },
         "find-data":{
             "title": "Where to find my PIM data?",
