@@ -3,7 +3,7 @@ id: all-pre-requisite
 themes: cartridge-installation
 title: Prerequisites for installing the connector
 popular: true
-related: download-connector, where-configuration
+related: download-cartridge, 01-where-configuration
 ---
 
 # Connector Compatibility
