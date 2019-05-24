@@ -30,9 +30,9 @@ Installing the Akeneo Connector for SFCC is a **technical process** that require
 We therefore recommend that you refer to a technical resource **with proven track of SFCC skills** to perform the installation of such connector.
 :::
 
-# Does the Akeneo Connector work "out-of-the-box"?
+# Does the Akeneo Connector for SFCC work "out-of-the-box"?
 
-Akeneo PIM being flexible enough for you to create many **different catalog structures**, the modeling of your catalogue and the features of your project will impact the usage or your Akeneo connector.
+Akeneo PIM being flexible enough for you to create many **different catalog structures**, the modeling of your catalogue and the features of your project will impact the usage or your Akeneo Connector.
 
 We did everything possible to ensure that this connector adapts to your modeling, hence the **different parameters** of this connector to adapt to your needs.
 
