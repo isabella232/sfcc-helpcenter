@@ -10,7 +10,7 @@ related: all-pre-requisite, where-configuration
 
 There are 2 ways to put your hands on Akeneo Connector for SFCC:
 
-* On [**Saleforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download a free archive that includes the latest certified version of the connector. You need a Salesforce Xchange account to get access to this archive. **Please note that this free version connector will not give you access to official support and maintenance from Akeneo teams.**
+* On [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download a free archive that includes the latest certified version of the connector. You need a Salesforce Xchange account to get access to this archive. **Please note that this free version connector will not give you access to official support and maintenance from Akeneo teams.**
 
 * On [**Akeneo Partner Portal**](https://partners.akeneo.com), within a private **Github repository**.<br>
 **This up-to-date version provides early access to latest patches and new features for the connector. It is also supported and maintained by Akeneo teams.**
@@ -43,5 +43,5 @@ If the issue occurs with the latest version of the connector, feel free to repor
 ::: warning
 **For our Support team to be able to take this issue into account, the steps to reproduce should be performed in a non-customized environment on both Akeneo and SFCC sides, with a vanilla connector.**
 <br>
-Please note that we do not offer support on the **free version** of Akeneo connector for SFCC (which you get from [Saleforce marketplace](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/))
+Please note that we do not offer support on the **free version** of Akeneo connector for SFCC (which you get from [Salesforce marketplace](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/))
 :::
