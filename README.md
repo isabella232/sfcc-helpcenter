@@ -1,5 +1,5 @@
-# Akeneo connector for SFCC help center
-This repository holds the sources of the Akeneo connector for SFCC help center, made by hand with love.
+# Akeneo Connector for SFCC help center
+This repository holds the sources of the Akeneo Connector for SFCC help center, made by hand with love.
 
 **Install/preview the help center**
 
