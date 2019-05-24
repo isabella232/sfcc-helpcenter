@@ -29,7 +29,7 @@ If you are looking for a specific product, use the search bar.
 
 ::: info
 **Mapping between your PIM and SFCC instances:**
-The Akeneo connector maps PIM product models this way:
+Akeneo Connector for SFCC maps PIM product models this way:
 
 **PIM Product models with 1 level of variation:**
 - PIM product models `common` layer is mapped with SFCC `Variation master`
