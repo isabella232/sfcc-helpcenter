@@ -102,7 +102,7 @@ X_SELL is the PIM product association type ID.
 
 By default, according to Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
 
-But since Akeneo connector for SFCC V19.3.3, in the [connector configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
+But since Akeneo Connector for SFCC V19.3.3, in the [connector configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
 
 
 | Connector parameter            | PIM/SFCC information                                 |
