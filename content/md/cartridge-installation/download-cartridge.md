@@ -6,9 +6,9 @@ popular: true
 related: all-pre-requisite, where-configuration
 ---
 
-# Where can I get Akeneo connector for SFCC?
+# Where can I get Akeneo Connector for SFCC?
 
-There are 2 ways to put your hands on Akeneo connector for SFCC:
+There are 2 ways to put your hands on Akeneo Connector for SFCC:
 
 * On [**Saleforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download a free archive that includes the latest certified version of the connector. You need a Salesforce Xchange account to get access to this archive. **Please note that this free version connector will not give you access to official support and maintenance from Akeneo teams.**
 
