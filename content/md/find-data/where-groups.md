@@ -11,5 +11,5 @@ related: where-categories, where-family, where-attributes, where-product-associa
 In Akeneo PIM, Groups are used to bind some products together.
 
 :::warning
-As of now, Product Groups are not supported nor exported as is with the Akeneo connector.
+As of now, Product Groups are not supported nor exported as is with Akeneo Connector for SFCC.
 :::
