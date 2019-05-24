@@ -8,7 +8,7 @@ related: 01-where-configuration, 05-mapping-configuration, 04-import-images-conf
 
 # How to configure my PIM API?
 
-Before setting up the Akeneo connector for SFCC, you first need to generate a "client ID" and a "secret" couple in the PIM to enable the API connection.
+Before setting up the Akeneo Connector for SFCC, you first need to generate a "client ID" and a "secret" couple in the PIM to enable the API connection.
 
 Please refer to our specific [documentation](https://api.akeneo.com/getting-started-admin.html) to do so.
 
