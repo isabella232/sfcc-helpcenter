@@ -26,6 +26,8 @@ If you select `Simple` **all** PIM product will be imported in SFCC.
 
 If you select `Advanced`, the connector will **only import PIM products that match your search filters** defined in the `Import builder config` parameter.
 
+For example, you can filter on product properties or product values...
+
 ::: warning
 This field must be written in **JSON format**.<br>
 <br>
@@ -33,21 +35,40 @@ To know all the filtering possibilities and the **JSON syntax**, please refer to
 
 For example, the below filter enables to import products from `led_tvs` family whose completeness is greater than `99`% for `en_US` and `fr_FR` locales, for the channel `ecommerce`:
 
-```
+```json
 {
 	"search": {
-                "family":[{
-                        "operator":"IN",
-                         "value":["led_tvs"]
-                }],
+		"family":[{
+			"operator":"IN",
+			"value":["led_tvs"]
+			}],
+			"completeness": [{
+				"operator": ">",
+				"value": 99,
+				"locales": ["en_US", "fr_FR"],
+				"scope": "ecommerce"
+				}]
+			}
+		}
+```
+:::
+
+:::info
+Since SFCC Connector version 19.5.1, you can also filter "product value" and "locales".
+
+For example, the below filter enables to import products with a completeness greater than `99%` in the `en_US` and `fr_FR` locales ine the `ecommerce` channel **and only retrieves `name`, `description` and `mytext` attributes from these products**:
+
+```json
+{
+	"search": {
 		"completeness": [{
 			"operator": ">",
 			"value": 99,
 			"locales": ["en_US", "fr_FR"],
 			"scope": "ecommerce"
-		}]
+			}]
+		},
+		"attributes": ["name", "description", "mytext"]
 	}
-}
-
 ```
 :::

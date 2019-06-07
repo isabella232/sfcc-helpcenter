@@ -59,15 +59,16 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 ::: warning
 This field must be in JSON format.
 Here is an example of "Akeneo Image View Types" you can use for your connector:
-```
+```json
 {
   "view-types": [
-              "large",
-              "medium",
-              "small"
-              ]
+      "large",
+      "medium",
+      "small"
+  ]
 }
 ```
+Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
 :::
 
 # How to define which PIM attribute is a variant value for product images?

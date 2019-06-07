@@ -43,6 +43,7 @@ Here is an example of content for this "Akeneo Product attributes mapping" param
 ```
 Please note that each PIM attribute is prefixed with the "`akeneo_`" label in Salesforce Commerce Cloud.
 
+Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
 :::
 
 ## How to map PIM attributes with SFCC "custom" product attributes?
@@ -56,7 +57,7 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 ::: warning
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Custom Attributes Mapping" parameter:
-```
+```json
 {
 	"matching": {
                "akeneo_size": "size",
@@ -66,8 +67,9 @@ Here is an example of content for this "Akeneo Custom Attributes Mapping" parame
 	}
 }
 ```
-Note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
+Please, note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
 
+Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
 :::
 
 # Product association mapping
@@ -83,7 +85,7 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 ::: warning
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Recommendations Mapping" parameter:
-```
+```json
 {
 	"matching": {
               "X_SELL" : 1,
@@ -96,9 +98,11 @@ Here is an example of content for this "Akeneo Recommendations Mapping" paramete
 In this example:
 X_SELL is the PIM product association type ID.
 1 is the SFCC recommendation type number.
+
+Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
 :::
 
-## How to map PIM "Product Associations" with Product "Links" in SFCC? (available for V19.4.1 of the connector and higher)
+## How to map PIM "Product Associations" with Product "Links" in SFCC? (Connector V19.4.1 and higher)
 
 By default, according to Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
 
@@ -118,7 +122,7 @@ Then you can define which PIM "association type" you want to map with SFCC produ
 ::: warning
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Product Link Mapping" parameter:
-```
+```json
 {
 	"matching": {
 		"X_SELL": "cross-sell",
@@ -131,4 +135,34 @@ Here is an example of content for this "Akeneo Product Link Mapping" parameter:
 In this example:
 "X_SELL" is the PIM product association type ID.
 "cross-sell" is the SFCC product link type ID.
+
+Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
 :::
+
+# Product set (Connector V19.5.0 and higher)
+
+## How to create SFCC "Product set" with the PIM?
+
+As there is no concept of a **Product set** in the PIM, it is modelled by combining :
+* A specific **Family** (allowing "Product set" attributes to be defined)
+* A specific **Product association type** (allowing products to be associated with this "Product set").
+
+To set up a "Product set" in your PIM you need therefore:
+1. Create a "Product set" **Family** ()
+2. Create a "Product set" **Association type** ()
+3. Create a **Product** representing your "Product set" with the help of the "Product set" **Family** you previously created.
+4. **Associate products** with the help of your "Product set" **Association** type to populate your product set.
+
+## How to configure the Connector?
+
+First, in the [connector configuration page](01-where-configuration.html), configure your "Product set" Family:
+
+| Connector parameter         | PIM information              |
+| :---------------------------| :--------------------------: |
+| Product Set Family          |  PIM "Product set" Family ID |
+
+Then, configure your "Product set" Association type:
+
+| Connector parameter          | PIM information                        |
+| :----------------------------| :------------------------------------: |
+| Product Set Association Type |  PIM "Product set" Association type ID |

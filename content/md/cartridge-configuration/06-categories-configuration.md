@@ -8,12 +8,13 @@ related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration,
 
 # How to define which PIM master catalog I want to push to SFCC?
 
-Within your Akeneo PIM instance, you may use different catalogs to manage your product data. The Akeneo Connector for SFCC gives you the possibility to export one or several catalog IDs per website.
-In the [connector configuration page](01-where-configuration.html), fill in the following parameter with the PIM catalog IDs of your choice:
+Within your Akeneo PIM instance, you may use different catalogs to manage your product data. The Akeneo Connector for SFCC gives you the possibility to export one or several catalog per website.
+
+In the [connector configuration page](01-where-configuration.html), fill in the following parameter with the PIM categories ID of your choice:
 
 | Connector parameter           | PIM information         |
 | :-----------------------------| :---------------------: |
-| Akeneo main catalogs          |  PIM catalogs ID        |
+| Akeneo main catalogs          |  PIM categories ID      |
 
 # How to define the status of your SFCC category trees?
 
