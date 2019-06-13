@@ -33,11 +33,11 @@ This field must be written in JSON format.
 Here is an example of content for this "Akeneo Product attributes mapping" parameter:
 ```
 {
-  "matching": {
-    "akeneo_name": "name",
-    "akeneo_description": "longDescription",
-    "akeneo_shortDescription": "shortDescription",
-    "akeneo_ean": "EAN"
+	"matching": {
+    		"akeneo_name": "name",
+    		"akeneo_description": "longDescription",
+    		"akeneo_shortDescription": "shortDescription",
+    		"akeneo_ean": "EAN"
 	}
 }
 ```
