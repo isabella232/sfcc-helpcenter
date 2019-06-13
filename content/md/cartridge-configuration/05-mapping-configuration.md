@@ -31,14 +31,15 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 ::: warning
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Product attributes mapping" parameter:
-```
+```json
+
 {
-	"matching": {
-    		"akeneo_name": "name",
-    		"akeneo_description": "longDescription",
-    		"akeneo_shortDescription": "shortDescription",
-    		"akeneo_ean": "EAN"
-	}
+    "matching": {
+        "akeneo_name": "name",
+        "akeneo_description": "longDescription",
+        "akeneo_shortDescription": "shortDescription",
+        "akeneo_ean": "EAN"
+    }
 }
 ```
 Please note that each PIM attribute is prefixed with the "`akeneo_`" label in Salesforce Commerce Cloud.
@@ -58,13 +59,14 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Custom Attributes Mapping" parameter:
 ```json
+
 {
-	"matching": {
-               "akeneo_size": "size",
-               "akeneo_axisVar": "size",
-               "akeneo_color": "color",
-               "akeneo_displayDiagonal": "displaySize"            
-	}
+    "matching": {
+        "akeneo_size": "size",
+        "akeneo_axisVar": "size",
+        "akeneo_color": "color",
+        "akeneo_displayDiagonal": "displaySize"            
+    }
 }
 ```
 Please, note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
@@ -86,13 +88,14 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Recommendations Mapping" parameter:
 ```json
+
 {
-	"matching": {
-              "X_SELL" : 1,
-              "UPSELL" : 2,
-              "PACK" : 3,
-              "SUBSTITUTION" : 4
-	}
+    "matching": {
+        "X_SELL" : 1,
+        "UPSELL" : 2,
+        "PACK" : 3,
+        "SUBSTITUTION" : 4
+    }
 }
 ```
 In this example:
@@ -123,13 +126,14 @@ Then you can define which PIM "association type" you want to map with SFCC produ
 This field must be written in JSON format.
 Here is an example of content for this "Akeneo Product Link Mapping" parameter:
 ```json
+
 {
-	"matching": {
-		"X_SELL": "cross-sell",
-		"UPSELL": "up-sell",
-		"PACK": "other",
-		"SUBSTITUTION": "replacement"
-	}
+    "matching": {
+        "X_SELL": "cross-sell",
+        "UPSELL": "up-sell",
+        "PACK": "other",
+        "SUBSTITUTION": "replacement"
+    }
 }
 ```
 In this example:
