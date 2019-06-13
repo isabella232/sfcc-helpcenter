@@ -41,15 +41,15 @@ For example, the below filter enables to import products from `led_tvs` family w
 		"family":[{
 			"operator":"IN",
 			"value":["led_tvs"]
-			}],
-			"completeness": [{
-				"operator": ">",
-				"value": 99,
-				"locales": ["en_US", "fr_FR"],
-				"scope": "ecommerce"
-				}]
-			}
-		}
+		}],
+		"completeness": [{
+			"operator": ">",
+			"value": 99,
+			"locales": ["en_US", "fr_FR"],
+			"scope": "ecommerce"
+		}]
+	}
+}
 ```
 :::
 
@@ -66,9 +66,9 @@ For example, the below filter enables to import products with a completeness gre
 			"value": 99,
 			"locales": ["en_US", "fr_FR"],
 			"scope": "ecommerce"
-			}]
-		},
-		"attributes": ["name", "description", "mytext"]
-	}
+		}]
+	},
+	"attributes": ["name", "description", "mytext"]
+}
 ```
 :::
