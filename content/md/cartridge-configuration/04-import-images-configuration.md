@@ -69,7 +69,7 @@ Here is an example of "Akeneo Image View Types" you can use for your connector:
     ]
 }
 ```
-Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
+Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
 :::
 
 # How to define which PIM attribute is a variant value for product images?

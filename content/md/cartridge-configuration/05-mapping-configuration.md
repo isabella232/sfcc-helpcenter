@@ -71,7 +71,7 @@ Here is an example of content for this "Akeneo Custom Attributes Mapping" parame
 ```
 Please, note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
+Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
 :::
 
 # Product association mapping
@@ -102,7 +102,7 @@ In this example:
 X_SELL is the PIM product association type ID.
 1 is the SFCC recommendation type number.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
+Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
 :::
 
 ## How to map PIM "Product Associations" with Product "Links" in SFCC? (Connector V19.4.1 and higher)
@@ -140,7 +140,7 @@ In this example:
 "X_SELL" is the PIM product association type ID.
 "cross-sell" is the SFCC product link type ID.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
+Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
 :::
 
 # Product set (Connector V19.5.0 and higher)
