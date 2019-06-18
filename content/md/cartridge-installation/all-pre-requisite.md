@@ -55,6 +55,10 @@ We did everything possible to ensure that this connector adapts to your modeling
 Please read the documentation related to the [**connector configuration**](../themes-for-peter.html#cartridge-configuration) to understand the impact of each parameter.
 :::
 
-However, we know from experience that it may be necessary to implement **specific customizations** for your project. This is why Akeneo provides you with the **source code** of this connector.
+# So, can I customize Akeneo Connector for SFCC?
+
+If the multiple configurations of the Akeneo Connector don't suit your business logic, or if you want to have other possibilities for import, you can customize Akeneo Connector for SFCC.
+
+We know from experience that it may be necessary to implement **specific customizations** for your project. This is why Akeneo provides you with the **source code** of this Connector.
 
 The Akeneo Connector for SFCC is developed in a **SFCC proprietary Javascript**. Its customization therefore requires a development team **aware of this specific Javascript language**.
