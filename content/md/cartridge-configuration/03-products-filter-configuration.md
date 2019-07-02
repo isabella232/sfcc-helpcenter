@@ -55,9 +55,9 @@ For example, the below filter enables to import products from `led_tvs` family w
 :::
 
 :::info
-Since SFCC Connector version 19.5.1, you can also filter "product value" and "locales".
+Since SFCC Connector version 19.5.3, you can also filter "product value" and "locales".
 
-For example, the below filter enables to import products with a completeness greater than `99%` in the `en_US` and `fr_FR` locales ine the `ecommerce` channel **and only retrieves `name`, `description` and `mytext` attributes from these products**:
+For example, the below filter enables to import products with a completeness greater than `99%` in the `en_US` and `fr_FR` locales ine the `ecommerce` channel **and ONLY retrieves `name`, `description` and `mytext` attributes from these products**:
 
 ```json
 

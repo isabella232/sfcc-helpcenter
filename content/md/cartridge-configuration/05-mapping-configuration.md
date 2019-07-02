@@ -157,7 +157,7 @@ To set up a "Product set" in your PIM you need therefore:
 3. Create a **Product** representing your "Product set" with the help of the "Product set" **Family** you previously created.
 4. **Associate products** with the help of your "Product set" **Association** type to populate your product set.
 
-## How to configure the Connector?
+## How to configure the Connector for "Product set"?
 
 First, in the [connector configuration page](01-where-configuration.html), configure your "Product set" Family:
 
@@ -170,3 +170,35 @@ Then, configure your "Product set" Association type:
 | Connector parameter          | PIM information                        |
 | :----------------------------| :------------------------------------: |
 | Product Set Association Type |  PIM "Product set" Association type ID |
+
+# Product model
+
+## How to map PIM "product model" in SFCC?
+
+### Product model with 1 level of variation
+
+By default, without any configuration, PIM product models with 1 level of variation are modeled in this way in SFCC:
+
+**PIM Product models with 1 level of variation:**
+- PIM product models `common` layer is mapped with SFCC `Variation master`
+- PIM product models variation `level 1` part is mapped with SFCC `Variation products`
+
+### Product model with 2 levels of variation (since v19.6.0)
+
+Since SFCC v19.6.0, with the following parameter, you can obtain 2 types of modelization for product model with 2 levels of variation:
+
+| Connector parameter          | PIM information                                 |
+| :----------------------------| :--------------------------------------------:  |
+| Model Import                 |  "Master-Variation" or "Master-Group-Variation" |
+
+
+**Master-Variation modelization:**
+- PIM product models `common` part is mapped with SFCC `Variation master`
+- PIM product models variation `level 1`+ variation `level 2` parts are mapped with SFCC `Variation products`
+
+**Master-Group-Variation modelization:**
+- PIM product models `common` part is mapped with SFCC `Variation master`
+- PIM product models variation `level 1` part is mapped with SFCC `Variation group`
+- PIM product models variation `level 2` part is mapped with SFCC `Variation products`
+
+We advise you to use the "Master-Group-Variation" modelization instead, which will give you more flexibility in managing your product model with 2 levels of variation.
