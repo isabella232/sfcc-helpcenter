@@ -20,16 +20,22 @@ The Akeneo Connector imports the following PIM attribute types to SFCC:
 - Image
 - File (3)
 - Asset collection (EE) (4)
-- Price
+- Price (5)
 - Identifier
-- Table attribute (5)
+- Table attribute (6)
 
 ::: info
 (1) The connector imports all **attribute options** with their translations.<br>
+
 (2) As **metric attributes** do not exist in SFCC, the connector converts this into **text attribute** type.<br>
+
 (3) As SFCC does not support the import of binary files other than images, the connector only imports **the relative PIM path** for this attribute.<br>
+
 (4) As SFCC does not support the import of binary files other than images, the connector only imports **image assets binaries**.<br>
-(5) `Table attribute` type does not exist by default in the PIM. Such attribute type has been developed as an add-on by our Solution Partner [Flagbit](https://marketplace.akeneo.com/extension/table-attribute), and also the [Webkul](https://marketplace.akeneo.com/extension/akeneo-table-attribute) company.
+
+(5) As PIM should only manage "cold" information, your product **price** as well as **stock** information should not be retrieved by the cartridge. You should have a "direct" connection between your ERP and your SFCC for that. The PIM **price** attribute is only for the "reference price" of your product.  
+
+(6) `Table attribute` type does not exist by default in the PIM. Such attribute type has been developed as an add-on by our Solution Partner [Flagbit](https://marketplace.akeneo.com/extension/table-attribute), and also the [Webkul](https://marketplace.akeneo.com/extension/akeneo-table-attribute) company.
 **Please note the Akeneo Connector for SFCC is compatible with any of these add-ons**.
 As SFCC does not have a table attribute type, the connector imports table data into a SFCC **text area** attribute as a **JSON structure**.  
 :::
