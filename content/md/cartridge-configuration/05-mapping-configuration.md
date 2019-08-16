@@ -6,13 +6,29 @@ popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 06-categories-configuration, 07-multi-storefront-configuration
 ---
 # Catalog mapping
-## How to define which SFCC catalog will be used to spread your PIM product data?
+## How to define which SFCC master catalog will be used to spread your PIM product data?
 
 In the [connector configuration page](01-where-configuration.html), fill in the below parameter with your SFCC "master catalog ID" for your website:
 
 | Connector parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
-| Products Catalog ID           |  SFCC master catalog ID |
+| SFCC Master Catalog ID        |  SFCC master catalog ID |
+| (or Products Catalog ID)      |                         |
+
+## How to define which PIM categories will be used for my storefront catalog?
+
+Depending on your needs, since Akeneo connector **version 19.7.0**, you can configure witch PIM categories will be used for your storefront catalog.
+
+In the [connector configuration page](01-where-configuration.html), fill in the below parameter with your PIM level category ID that represent your storefront categories:
+
+| Connector parameter                       | PIM information         |
+| :-----------------------------------------| :---------------------: |
+| Top Level Category for Storefront Catalog |  PIM category ID        |
+
+::: info
+Please read our [documentation](07-multi-storefront-configuration.html) on how to manage multiple organizations, multiple storefronts with Akeneo Connector for SFCC if you want to know more about these settings.
+:::               
+
 
 # Attribute mapping
 ## Why should I map PIM attributes with SFCC "default" product attributes?
