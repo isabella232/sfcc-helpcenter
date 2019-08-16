@@ -3,7 +3,7 @@ id: 04-import-images-configuration
 themes: connector-configuration
 title: How to configure the cartridge to import PIM images?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration, 06-categories-configuration, 03-products-filter-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
 ---
 
 # But what "images" are we talking about exactly!?

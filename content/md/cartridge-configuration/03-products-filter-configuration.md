@@ -3,7 +3,7 @@ id: 03-products-filter-configuration
 themes: cartridge-configuration
 title: How can I filter only PIM products I want to import in SFCC?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 05-mapping-configuration, 04-import-images-configuration, 06-categories-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
 ---
 
 # How to import PIM product data from a specific channel?
@@ -32,6 +32,8 @@ For example, you can filter on product properties or product values...
 This field must be written in **JSON format**.<br>
 <br>
 To know all the filtering possibilities and the **JSON syntax**, please refer to this [documentation on the filters](https://api.akeneo.com/documentation/filter.html) of our API.
+<br>
+
 
 For example, the below filter enables to import products from `led_tvs` family whose completeness is greater than `99`% for `en_US` and `fr_FR` locales, for the channel `ecommerce`:
 
