@@ -69,6 +69,10 @@ Go to: `Administration > Sites : Manage Sites`
 * Women
 * Kids
 
+:::info
+Compared to our integration document (In `Documentation` Cartridge directory), be careful to properly associate the `bc_akeneo` cartridge in each site (`Administration >  Sites >  Manage Sites` then select the site and go to `Settings` tab and add `bc_akeneo` in `Cartridges` field)
+:::
+
 `2.` Create all **master** and **storefront** catalogs
 
 Go to: `Merchant Tools > Products and Catalogs : Catalogs`
