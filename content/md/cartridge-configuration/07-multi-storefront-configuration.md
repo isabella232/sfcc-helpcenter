@@ -6,9 +6,9 @@ popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration
 ---
 
-# How to create multiple organizations and Storefronts?
+# How to create multiple organizations and mutlitple storefront sites?
 
-Since Akeneo Connector for SFCC version `v19.7.0` of the cartridge, you can manage multiple organizations and Web sites in SFCC.
+Since Akeneo Connector for SFCC version `v19.7.0` of the cartridge, you can manage multiple organizations and storefront sites in SFCC.
 
 To illustrate the configuration of a model based on several organizations and several sites, we will start with an example containing:
 
@@ -27,11 +27,7 @@ With the following distribution:
 
 ## In the PIM
 
-To define the notion of organizations and sites in the PIM, we will implement **2 new category tree structures** (one for each **Business Unit**).
-
-![Electronic categories](../img/sfcc-cartridge-cat2.png)
-
-![Apparels categories](../img/sfcc-cartridge-cat1.png)
+To define the notion of organizations and storefront sites in the PIM, we will implement **2 new category tree structures** (one for each **Business Unit**).
 
 :::info
 Please read our [documentation](/pim/v3/articles/what-is-a-category.html#how-to-create-a-new-category) to create the following categories and sub-categories.
@@ -56,6 +52,12 @@ Please read our [documentation](/pim/v3/articles/what-is-a-category.html#how-to-
 `4.` **Under each sub-category** create a **sub-category tree** for each site compared to your needs. (Web site categories level)
 
 `5.` Then attach your products to sub-categories created in step `4.`.
+
+A the end, you'll have something like this in your PIM:
+![Electronic categories](../img/sfcc-cartridge-cat2.png)
+
+![Apparels categories](../img/sfcc-cartridge-cat1.png)
+
 
 ## In SFCC
 
@@ -96,13 +98,13 @@ Don't forget to configure the `site assignement` of these **storefront** catalog
 Select a Website then go to: `Merchant Tools > Site preferences : Custom preferences`
 
 :::info
-**You need to build one specific cartridge configuration for each Web site.**
+**You need to build one specific cartridge configuration for each storefront site.**
 
 You can use the `Edit Across Site` link (on the right of each cartridge parameter) to help you copy/paste certain settings from one site to another... ;-)
 :::
 
 :::warning
-**Pay particular attention to these 3 parameters for each Website:**<br>
+**Pay particular attention to these 3 parameters for each site:**<br>
 <br>
 * `Akeneo Main Catalogs`: you need to fill this parameter with the PIM `main category` tree ID code.<br>
 <br>
