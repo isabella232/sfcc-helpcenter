@@ -137,14 +137,11 @@ No need to configure the 5 storefronts because attribute information will only b
 
 Click on `2-Akeneo-Import-Media-Assets-Pricebook` job then go to `Job Steps` tab.
 
-Configure this job `Scope` with all storefronts.
+Configure the job `Scope` with 2 Storefronts of each Business Unit:
 
 **Scope:**
 * Instruments
-* Software
 * Gents
-* Women
-* Kids
 
 **3-1.1-Akeneo-Differential-Import-Master job**
 
