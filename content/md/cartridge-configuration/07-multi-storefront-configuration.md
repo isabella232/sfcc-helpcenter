@@ -127,10 +127,9 @@ Go to: `Administration > Operations : jobs`
 
 Click on `1-Akeneo-Import-Attributes` job then go to `Job Steps` tab.
 
-Configure the `Scope` of `job-workflow-step-attributes` and `job-workflow-step-prepare-attributes-import` with 2 Storefronts of each Business Unit:
+Configure the `Scope` of `job-workflow-step-attributes` and `job-workflow-step-prepare-attributes-import` with only one of your Storefronts:
 
 **Scope:**
-* Instruments
 * Gents
 
 Keep `job-workflow-step-attributes-import` on `Organization` Scope.
