@@ -3,7 +3,7 @@ id: 02-configure-PIM-API
 themes: cartridge-configuration
 title: Configure your PIM API
 popular: false
-related: 01-where-configuration, 05-mapping-configuration, 04-import-images-configuration, 06-categories-configuration, 03-products-filter-configuration
+related: 01-where-configuration, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
 ---
 
 # How to configure my PIM API?
