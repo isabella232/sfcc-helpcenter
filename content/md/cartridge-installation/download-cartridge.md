@@ -10,22 +10,74 @@ related: all-pre-requisite, where-configuration
 
 There are 2 ways to put your hands on Akeneo Connector for SFCC:
 
-* On [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download a free archive that includes the latest certified version of the connector. You need a Salesforce Xchange account to get access to this archive. **Please note that this free version connector will not give you access to official support and maintenance from Akeneo teams.**
+* On [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download the **free version** that includes the latest certified version of the connector.
 
-* On [**Akeneo Partner Portal**](https://partners.akeneo.com), within a private **Github repository**.<br>
-**This up-to-date version provides early access to latest patches and new features for the connector. It is also supported and maintained by Akeneo teams.**
+You will need a Salesforce Xchange account to get access to this archive.
+
+:::warning
+Please note that this **free version** connector **will not** give you access to the last version of Akeneo Connector for SFCC as well as the Akeneo official support.
+:::
+
+* On [**Akeneo Partner Portal**](https://partners.akeneo.com), within a private **Github repository**.
+
+:::warning
+This up-to-date version provides early access to **latest patches and new features** for Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
+:::
 
 Please [**contact us**](mailto:demandware@akeneo.com) to get access to the private **Github repository** where the supported version of the connector is hosted.
-Akeneo teams will get back to you on how to download the connector via the Partner [**Portal**](https://help.akeneo.com/portal/index.html) and how to benefit from **Akeneo support**.
 
-# How to install the connector?
+Akeneo teams will then get back to you on how to download the connector via our [**Partner Portal**](https://help.akeneo.com/portal/index.html) and how to benefit from **Akeneo support**.
 
-Please have a look at the `README.md` file from the connector **Github repository** first.
+# Download the connector
 
-This file will give you the **installation requirements**, a **technical overview** of the connector and will explain **how to install the connector** properly.
+Clone the repository by using this command:
+
+```bash
+git clone ssh://git@distribution.akeneo.com:443/sfcc-cartridge
+```
+
+If you encounter a HEAD error, please perform the following actions :
+
+`1.` Go to your project repository
+
+`2.` List all available tag:
+```bash
+git tag
+```
+
+`3.` Select the latest tag (**the following example is for 19.7.0**) to retrieve all files:
+```bash
+git checkout v19.7.0
+```
+
+`4.` Please read carefully all instructions from the previous Github command.
+
+
+# Install the connector
+
+:::info
+This connector has been designed to work with the Integration Framework. For those who are not familiar with the Integration Framework, we suggest to read the following articles:
+https://xchange.demandware.com/docs/DOC-11159
+https://xchange.demandware.com/docs/DOC-11951
+:::
+
+`1.` In the Business Manager go to `Administration > Site Development : Site Import & Export`, upload the `simple-akeneo-workflow_site-import.zip` file to the server and import it.
+
+This will automatically create the following elements:
+* Akeneo Custom Object for stock current token
+* All jobs as Akeneo connector
+* Akeneo configuration in Site Preferences
+
+`2.` Deploy the cartridge contained in the attached `simple-akeneo-workflow_cartridges.zip` file to your instance
+
+`3.` Add `bc_akeneo` to your `Business Manager` site cartridge path.
+
+Fill all Akeneo configuration present in [Site Preferences](../themes-for-peter.html#cartridge-configuration).
+
+[Schedule job](trigger.html) as needed, and start synchronization with Akeneo instance ! ;-)
 
 ::: info
-Please also read the **additional document** in the **"documentation"** folder of the **Github repository**.
+Please read also the **additional document** in the **"documentation"** folder of the **Github repository** to have more technical information around Akeneo Connector for SFCC.
 :::
 
 # What can I do if I have a question, if I want to report a bug or a suggestion for the connector?

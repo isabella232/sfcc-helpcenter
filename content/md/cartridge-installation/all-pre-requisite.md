@@ -31,11 +31,22 @@ Since the Akeneo Connector for SFCC was build in "**Script**" mode and **doesn't
 1. Set your API user credentials
 2. Create an API user who has the full permission to view, edit, and manage products
 3. Create currencies enabled in Akeneo that match with SFCC currencies
-4. Translate your families, attributes, and attribute options labels for all languages available in SFCC.
+4. Translate your families, attributes, and attribute options labels for all languages available in SFCC
 
 :::info
 If you need help setting up your Akeneo PIM, please refer to our [**PIM Help Center**](https://help.akeneo.com/pim/index.html).
 :::
+
+# Configure your Salesforce Commerce Cloud
+
+`1.` Set up at least one **site** activated for associate job to site scope<br>
+(`Administration > Sites : Manager sites`)
+
+`2.` Set up at least one **master catalog** to store details of all products<br>
+(`Merchant Tools > Products and Catalogs : Catalogs`)
+
+`3.` Set up at least one **storefront catalog** associate to your current site<br>
+(`Merchant Tools > Products and Catalogs : Catalogs`)
 
 # Who can install the connector?
 
