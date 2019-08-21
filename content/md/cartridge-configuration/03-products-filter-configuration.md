@@ -24,7 +24,7 @@ In the [**connector configuration page**](01-where-configuration.html), with the
 
 If you select `Simple` **all** PIM product will be imported in SFCC.
 
-If you select `Advanced`, the connector will **only import PIM products that match your search filters** defined in the `Import builder config` parameter.
+If you select `Advanced`, the connector will **only import PIM products that match your search filters** defined in `Import builder config` parameters (`Product Model Import builder config` for filtering on Product models and `Products Import builder config` for filtering on Products).
 
 For example, you can filter on product properties or product values...
 
