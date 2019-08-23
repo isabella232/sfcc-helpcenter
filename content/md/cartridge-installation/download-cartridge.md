@@ -61,24 +61,64 @@ https://xchange.demandware.com/docs/DOC-11159
 https://xchange.demandware.com/docs/DOC-11951
 :::
 
-`1.` In the Business Manager go to `Administration > Site Development : Site Import & Export`, upload the `simple-akeneo-workflow_site-import.zip` file to the server and import it.
+`1.`	In the cartridge bundle find `metadata/simple-akeneo-workflow_site-import` and compress it to generate `simple-akeneo-workflow_site-import.zip` file.
 
-This will automatically create the following elements:
-* Akeneo Custom Object for stock current token
-* All jobs as Akeneo connector
-* Akeneo configuration in Site Preferences
+`2.`	Go to Business Manager Menu: `Administration > Site Development : Site Import & Export`
 
-`2.` Deploy the cartridge contained in the attached `simple-akeneo-workflow_cartridges.zip` file to your instance
+`3.`	Under `Import : Upload archive`:
+Ensure that the radio button with label `Local` is enabled (Else click on the radio button to enable it).
 
-`3.` Add `bc_akeneo` to your `Business Manager` site cartridge path.
+`4.` Click on `Choose File` input field, select the `simple-akeneo-workflow_site-import.zip` file from `open dialog box` and click on `Upload` button.
+
+`5.`	After finishing the upload, from the `Archives` list click the radio button corresponding to `simple-akeneo-workflow_site-import.zip` and click on `Import` button.
+
+`6.`	Click on `OK` button of the confirmation box asking **Are you sure that you want to import the selected archive?**
+
+# Add the cartridge Path to your sites
+
+`1.`	Go to Business Manager Menu: `Administration > Sites : Manage Sites`.
+`2.`	Select your site.
+`3.`	Click on the `Settings` tab.
+`4.`	Append "`:bc_akeneo`" to the `Cartridges` field.
+`5.`	Click on `Apply` button.
+`6.`	Repeat steps `2.` to `5.` for all sites including Business Manager site.
 
 Fill all Akeneo configuration present in [Site Preferences](../themes-for-peter.html#cartridge-configuration).
 
 [Schedule job](trigger.html) as needed, and start synchronization with Akeneo instance ! ;-)
 
 ::: info
-Please read also the **additional document** in the **"documentation"** folder of the **Github repository** to have more technical information around Akeneo Connector for SFCC.
+Please read also the **additional documents** in the **"documentation"** folder of the **Github repository** to have more technical information around Akeneo Connector for SFCC.
 :::
+
+# I have an old "Pipeline" version of the connector, how can I migrate to the "Script" version
+
+If you have a **Pipeline** version (`< v19.3.1`) of the connector and want to update to the **Script** version, please follow these steps:
+
+## Step 1:  Uploading latest cartridge code to active code version
+
+* Get the latest cartridge code from Akeneo.
+* Replace the cartridge `bc_akeneo` in UX Studio (Eclipse).
+* Upload the cartridge in to the active code version of the sandbox
+
+## Step 2:  Re-import Jobs
+
+To setup Jobs, as mentioned below, import the `Jobs.xml` file which is available in `metadata` folder in the cartridge bundle. (`metadata/simple-akeneo-workflow_site-import`)
+
+* In the Business Manager, go to `Administration > Operations : Import & Export`
+* Under section titled as `Import & Export Files`, find the `Upload` button and click on it
+* Upload the `metadata/simple-akeneo-workflow_site-import/jobs.xml` file using the `Upload File` form
+* Come back to `Administration > Operations : Import & Export`
+* Under section titled as `Jobs`, find the `Import` button and click on it
+* Select the radio button corresponding to `jobs.xml` that you uploaded and click in `Next` button
+* After automatic validation of file, click on `Next` button
+When you import the `jobs.xml` properly, the jobs list under `Administration > Operations : Jobs` get updated with script version.
+* On re-import of Jobs, all the jobs are reset to use for SiteGenesis Site.
+* You may go through all the `Job Steps` in all the jobs.
+* Find the `Job Steps` which are assigned to SiteGenesis Site.
+* Reassign them to your preferred site(s).
+* Leave the `Job Steps` which are assigned to Organization intact.
+
 
 # What can I do if I have a question, if I want to report a bug or a suggestion for the connector?
 
