@@ -55,6 +55,26 @@ git checkout v19.7.0
 
 # Install the connector
 
+## Upload the cartridge
+
+Upload the `bc_akeneo` cartridge into the Salesforce Commerce Cloud Studio Workspace:
+
+*	Open **Salesforce Commerce Cloud Studio**.
+
+*	Click `File` -> `Import` -> `General` -> `Existing Projects into Workspace`.
+
+*	Browse to the directory where you have saved the `bc_akeneo` cartridge.
+
+*	Click on `Finish`.
+
+* Click `OK` when prompted to link the cartridge to the sandbox.
+
+## Metadata Import
+
+For Akeneo Connector for SFCC to work, the following object structures (metadata) need to be imported and configured in the Business manager.
+
+Follow the steps below:
+
 *	In the cartridge bundle find `metadata/simple-akeneo-workflow_site-import` and compress it to generate `simple-akeneo-workflow_site-import.zip` file.
 
 *	Go to Business Manager Menu: `Administration > Site Development : Site Import & Export`
@@ -68,7 +88,7 @@ Ensure that the radio button with label `Local` is enabled (Else click on the ra
 
 *	Click on `OK` button of the confirmation box asking "**Are you sure that you want to import the selected archive?**"
 
-# Add the cartridge Path to your sites
+# Add the cartridge to your sites
 
 `1.`	Go to Business Manager Menu: `Administration > Sites : Manage Sites`.
 
