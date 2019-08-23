@@ -15,7 +15,7 @@ There are 2 ways to put your hands on Akeneo Connector for SFCC:
 You will need a Salesforce Xchange account to get access to this archive.
 
 :::warning
-Please note that this **free version** connector **will not** give you access to the last version of Akeneo Connector for SFCC as well as the Akeneo official support.
+Please note that this **free version** connector **will not** give you access to the latest version of Akeneo Connector for SFCC as well as the Akeneo official support.
 :::
 
 * On [**Akeneo Partner Portal**](https://partners.akeneo.com), within a private **Github repository**.
@@ -55,32 +55,31 @@ git checkout v19.7.0
 
 # Install the connector
 
-:::info
-This connector has been designed to work with the Integration Framework. For those who are not familiar with the Integration Framework, we suggest to read the following articles:
-https://xchange.demandware.com/docs/DOC-11159
-https://xchange.demandware.com/docs/DOC-11951
-:::
+*	In the cartridge bundle find `metadata/simple-akeneo-workflow_site-import` and compress it to generate `simple-akeneo-workflow_site-import.zip` file.
 
-`1.`	In the cartridge bundle find `metadata/simple-akeneo-workflow_site-import` and compress it to generate `simple-akeneo-workflow_site-import.zip` file.
+*	Go to Business Manager Menu: `Administration > Site Development : Site Import & Export`
 
-`2.`	Go to Business Manager Menu: `Administration > Site Development : Site Import & Export`
-
-`3.`	Under `Import : Upload archive`:
+*	Under `Import : Upload archive`:
 Ensure that the radio button with label `Local` is enabled (Else click on the radio button to enable it).
 
-`4.` Click on `Choose File` input field, select the `simple-akeneo-workflow_site-import.zip` file from `open dialog box` and click on `Upload` button.
+* Click on `Choose File` input field, select the `simple-akeneo-workflow_site-import.zip` file from `open dialog box` and click on `Upload` button.
 
-`5.`	After finishing the upload, from the `Archives` list click the radio button corresponding to `simple-akeneo-workflow_site-import.zip` and click on `Import` button.
+*	After finishing the upload, from the `Archives` list click the radio button corresponding to `simple-akeneo-workflow_site-import.zip` and click on `Import` button.
 
-`6.`	Click on `OK` button of the confirmation box asking **Are you sure that you want to import the selected archive?**
+*	Click on `OK` button of the confirmation box asking "**Are you sure that you want to import the selected archive?**"
 
 # Add the cartridge Path to your sites
 
 `1.`	Go to Business Manager Menu: `Administration > Sites : Manage Sites`.
+
 `2.`	Select your site.
+
 `3.`	Click on the `Settings` tab.
+
 `4.`	Append "`:bc_akeneo`" to the `Cartridges` field.
+
 `5.`	Click on `Apply` button.
+
 `6.`	Repeat steps `2.` to `5.` for all sites including Business Manager site.
 
 Fill all Akeneo configuration present in [Site Preferences](../themes-for-peter.html#cartridge-configuration).
@@ -91,11 +90,11 @@ Fill all Akeneo configuration present in [Site Preferences](../themes-for-peter.
 Please read also the **additional documents** in the **"documentation"** folder of the **Github repository** to have more technical information around Akeneo Connector for SFCC.
 :::
 
-# I have an old "Pipeline" version of the connector, how can I migrate to the "Script" version
+# Migration: I have an old "Pipeline" version of the connector, how can I migrate to the "Script" version?
 
 If you have a **Pipeline** version (`< v19.3.1`) of the connector and want to update to the **Script** version, please follow these steps:
 
-## Step 1:  Uploading latest cartridge code to active code version
+## Step 1:  Upload latest cartridge code to active code version
 
 * Get the latest cartridge code from Akeneo.
 * Replace the cartridge `bc_akeneo` in UX Studio (Eclipse).
