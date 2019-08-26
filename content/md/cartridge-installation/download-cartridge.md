@@ -112,7 +112,7 @@ Please read also the **additional documents** in the **"documentation"** folder 
 
 # Migration: I have an old "Pipeline" version of the connector, how can I migrate to the "Script" version?
 
-If you have a **Pipeline** version (`< v19.3.1`) of the connector and want to update to the **Script** version, please follow these steps:
+If you have an old **Pipeline** version (`< v19.3.1`) of the connector and want to update to the **Script** version, please follow these steps:
 
 ## Step 1:  Upload latest cartridge code to active code version
 

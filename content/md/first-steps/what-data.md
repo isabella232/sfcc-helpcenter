@@ -79,6 +79,11 @@ Akeneo Connector for SFCC maps PIM product models this way:
 **PIM Product models with 2 level of variation:**<br>
 - PIM product models `common` part with SFCC `Variation master`<br>
 - PIM product models variation `level 1`+ variation `level 2` parts with SFCC `Variation products`
+
+Alternative: since version SFCC Connector **v19.6.0**, you can model PIM Product model with 2 levels of variation like this:
+- PIM product models `common` part is mapped with SFCC `Variation master`
+- PIM product models variation `level 1` part is mapped with SFCC `Variation group`
+- PIM product models variation `level 2` part is mapped with SFCC `Variation products`
 :::
 
 # Product associations
