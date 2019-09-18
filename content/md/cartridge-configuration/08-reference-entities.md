@@ -11,7 +11,7 @@ related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-config
 
 Since Akeneo Connector for SFCC `V19.8.0`, the Connector can manage PIM Reference Entity.
 
-There are no special objects in SFCC corresponding to PIM Reference Entities Because of this limit, the connector imports the PIM `Reference Entities` to special SFCC `Content Asset` objects.
+There are no special objects in SFCC corresponding to PIM Reference Entities. Because of this limit, the connector imports the PIM `Reference Entities` to special SFCC `Content Asset` objects.
 
 Each PIM `Reference Entity` will be represented by a `Content Asset` in SFCC.
 
