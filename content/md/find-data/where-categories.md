@@ -3,7 +3,7 @@ id: where-categories
 themes: find-data
 title: Where can find my PIM categories?
 popular: false
-related: where-attributes, where-family, where-groups, where-product-association
+related: where-attributes, where-family, where-groups, where-product-association, where-reference-entities
 ---
 
 # Where to find my PIM categories in SFCC?

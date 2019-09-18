@@ -3,7 +3,7 @@ id: where-groups
 themes: find-data
 title: Where can I find my PIM product groups?
 popular: false
-related: where-categories, where-family, where-attributes, where-product-association
+related: where-categories, where-family, where-attributes, where-product-association, where-reference-entities
 ---
 
 # Where to find my PIM Product Groups in SFCC?
