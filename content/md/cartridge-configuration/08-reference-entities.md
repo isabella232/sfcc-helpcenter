@@ -24,7 +24,7 @@ For example, after successfully importing all PIM reference entity records, the 
 :::warning
 **Scalability limit:** by default, the connector does not automatically add any PIM reference entity record (as SFCC custom attributes) to any attribute group. Importing PIM reference entity records as JSON code, makes the structure becomes heavier.
 
-Furthermore, having too many records may affect the loading of SFCC `Business Manager>Content Asset` page.
+Furthermore, having too many records may affect the loading of SFCC `Business Manager/Content Asset` page.
 :::
 
 Integrators/merchants can then choose one of these options:
