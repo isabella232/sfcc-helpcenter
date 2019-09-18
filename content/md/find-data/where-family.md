@@ -3,7 +3,7 @@ id: where-family
 themes: find-data
 title: Where can I find my PIM families?
 popular: false
-related: where-categories, where-attributes, where-groups, where-product-association
+related: where-categories, where-attributes, where-groups, where-product-association, where-reference-entities
 ---
 
 # Where to find my PIM families in SFCC?

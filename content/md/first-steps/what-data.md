@@ -115,8 +115,8 @@ Akeneo Connector for SFCC maps PIM `currencies` with SFCC `Pricebook`.
 As there is no such thing as Product Groups in SFCC, the connector does not import PIM product groups yet.
 :::
 
-# Reference entities [EE] [3.x]
+# Reference Entities [EE] [3.x]
 
-::: warning
-The current Akeneo Connector for SFCC version does not take into account the import of **Reference Entities** yet. However, a new version is being prepared in 2019 to manage the **Reference Entities** in Salesforce Commerce Cloud.
-:::
+Since Akeneo Connector for SFCC `V19.8.0`, the Connector can manage PIM Reference Entity Records.
+
+Depending on your [Reference entity configuration](08-reference-entities.html), PIM `Reference Entity Records` will be mapped with SFCC `Content assets`.

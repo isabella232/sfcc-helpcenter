@@ -3,7 +3,7 @@ id: 07-multi-storefront-configuration
 themes: cartridge-configuration
 title: How to configure multiple organizations, multiple web sites?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 08-reference-entities 
 ---
 
 # How to create multiple organizations and storefront sites?

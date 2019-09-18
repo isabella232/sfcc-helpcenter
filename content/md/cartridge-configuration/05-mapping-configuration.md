@@ -3,7 +3,7 @@ id: 05-mapping-configuration
 themes: cartridge-configuration
 title: How to map PIM data content with SFCC data content?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 06-categories-configuration, 07-multi-storefront-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
 ---
 # Catalog mapping
 ## How to define which SFCC master catalog will be used to spread your PIM product data?

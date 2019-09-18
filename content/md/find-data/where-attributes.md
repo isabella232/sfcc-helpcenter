@@ -3,7 +3,7 @@ id: where-attributes
 themes: find-data
 title: Where can I find my PIM product attributes?
 popular: false
-related: where-categories, where-family, where-groups, where-product-association
+related: where-categories, where-family, where-groups, where-product-association, where-reference-entities
 ---
 
 # Where to find my PIM products in SFCC?

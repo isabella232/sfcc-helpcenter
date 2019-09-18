@@ -3,7 +3,7 @@ id: 01-where-configuration
 themes: cartridge-configuration
 title: Where can I find the connector configuration?
 popular: true
-related: 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration 
+related: 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
 ---
 
 # Where is the connector configuration page?

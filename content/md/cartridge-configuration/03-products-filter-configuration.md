@@ -3,7 +3,7 @@ id: 03-products-filter-configuration
 themes: cartridge-configuration
 title: How can I filter only PIM products I want to import in SFCC?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
 ---
 
 # How to import PIM product data from a specific channel?
