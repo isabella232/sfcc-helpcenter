@@ -20,13 +20,21 @@ Please note that this **free version** connector **will not** give you access to
 
 * On [**Akeneo Partner Portal**](https://partners.akeneo.com), within a private **Github repository**.
 
-:::warning
+:::info
 This up-to-date version provides early access to **latest patches and new features** for Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
 :::
 
 Please [**contact us**](mailto:demandware@akeneo.com) to get access to the private **Github repository** where the supported version of the connector is hosted.
 
 Akeneo teams will then get back to you on how to download the connector via our [**Partner Portal**](https://help.akeneo.com/portal/index.html) and how to benefit from **Akeneo support**.
+
+::warning
+**Important:**
+
+1- In the Partner Portal, be sure to have configured your [SSH key](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#import-my-public-key) for your Partner Portal profile.
+
+2- Be sure to set up the same SSH key to interact with GitHub and to be able to access to our private Github repository using commands described below.  
+:::
 
 # Download the connector
 
