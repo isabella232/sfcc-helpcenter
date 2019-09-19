@@ -1,45 +1,45 @@
 ---
 id: 08-reference-entities
 themes: cartridge-configuration
-title: How to retrieve PIM Reference Entities
+title: How to retrieve PIM reference entities in SFCC?
 popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
 ---
 
 
-# Understand the difficulty of mapping PIM Reference Entities in SFCC...
+# Understand the PIM reference entities mapping in SFCC
 
-Since Akeneo Connector for SFCC `V19.8.0`, the Connector can manage PIM Reference Entity.
+Since Akeneo Connector for SFCC `V19.8.0` version, the connector can manage PIM reference entities.
 
-There are no special objects in SFCC corresponding to PIM Reference Entities. Because of this limit, the connector imports the PIM `Reference Entities` to special SFCC `Content Asset` objects.
+There are no special objects in SFCC corresponding to the PIM reference entities. Because of this limit, the connector imports the PIM `reference entities` to special SFCC `Content Asset` objects.
 
-Each PIM `Reference Entity` will be represented by a `Content Asset` in SFCC.
+Each PIM reference entity will be represented by a `Content Asset` in SFCC.
 
-For example, a PIM `Reference Entity` of a brand (code: “**brand**”) will be imported into a the `Content Asset` “akeneo_entity_**brand**” in SFCC.
+For example, a PIM `reference entity` of a brand (code: “**brand**”) will be imported into a the `Content Asset` “akeneo_entity_**brand**” in SFCC.
 
-PIM `Reference Entity Records` will be imported as **JSON** objects into the corresponding `custom attributes` of the SFCC `Content Asset`.
+PIM `reference entity records` will be imported as **JSON** objects into the corresponding `custom attributes` of the SFCC `Content Asset`.
 
-For example, after successfully importing all PIM `Reference Entity Records`, the JSON object of `Reference Entity Record` “**dyson**” (an element of `Reference Entity` “**brand**”) will be available in SFCC as `custom attribute` “**akeneo_entity_brand_dyson**“ of `Content Asset`  “**akeneo_entity_brand**”.
+For example, after successfully importing all PIM `reference entity records`, the JSON object of the “**dyson**” `reference entity record` (which is an element of the “**brand**” reference entity) will be available in SFCC as the “**akeneo_entity_brand_dyson**“ `custom attribute` of “**akeneo_entity_brand**” `Content Asset`.
 
 :::warning
-**Scalability limit:** by default, the connector does not automatically add any PIM `Reference Entity Record` (as SFCC `custom attributes`) to any `attribute group`.
+**Scalability limit:** by default, the connector does not automatically add any PIM `reference entity record` (as SFCC custom attributes) to any SFCC `attribute group`. Importing PIM `reference entity records` as JSON code, makes the structure becomes heavier.
 
-This is due to the fact that when importing PIM `Reference entity Records` as **JSON** code, the structure becomes too heavy. Furthermore, when there are too many of them, it may cause problems when trying to load SFCC `Content Asset page` in `Business Manager` (because the page becomes too heavy).
+Furthermore, having too many records may affect the loading of SFCC `Business Manager/Content Asset` page.
 :::
 
-Integrators/Merchants can then choose one of these options:
+Integrators/merchants can then choose one of these options:
 
-* **Option 1:** To make sure that the JSON structure of `Content Asset attribute` is ok, Integrators/Merchants can manually add a selection of PIM `Reference Entity Records` to the SFCC `attribute group` of their choice.
+* **Option 1:** make sure that the JSON structure of the `Content Asset attribute` is ok, they can manually add a selection of PIM `reference entity records` to the desired SFCC `attribute group`.
 
-* **Option 2:** Integrators/Merchants can use **5-Akeneo-Entity-Record-Grouping** special job to automatically add some of PIM `Reference Entity Records` to an SFCC `attribute group`.
+* **Option 2:** use **5-Akeneo-Entity-Record-Grouping** special job to automatically add some PIM `reference entity records` to an SFCC `attribute group`.
 
-Before running the **5-Akeneo-Entity-Record-Grouping** job, the following `Site Preferences` (2 parameters) can be configured according to your needs:
+Before running the **5-Akeneo-Entity-Record-Grouping** job, the following two `Site Preferences` parameters must be configured according to your needs:
 
-In the [connector configuration page](01-where-configuration.html), fill in the following parameter with your list of PIM `Reference Entity` **Codes** and corresponding PIM `Reference Entity Records` **Codes**:
+In the [connector configuration page](01-where-configuration.html), fill in the following connector parameter with your list of PIM **reference entity codes** and corresponding PIM **reference entity records codes**:
 
 | Connector parameter           | PIM information                     |
 | :-----------------------------| :---------------------------------: |
-| Entity Records In Group       |  JSON structure: Reference Entity<br>Codes and corresponding Reference<br>Entity Records Code.               |    
+| Entity Records In Group       |  JSON structure: reference entity<br>codes and corresponding reference<br>entity records code.               |    
 
 Example :
 
@@ -62,15 +62,15 @@ Example :
 
 ```
 
-In the [connector configuration page](01-where-configuration.html), fill in the following parameter with the SFCC Attribute group ID of Content Asset entity records (Attributes) or let this parameter empty to keep the default value:
+In the [connector configuration page](01-where-configuration.html), fill in the following second parameter with the SFCC Attribute group ID of Content Asset entity records (Attributes) or let this parameter empty to keep the default value:
 
 | Connector parameter           | SFCC information               |
 | :-----------------------------| :----------------------------: |
 | Content Attribute Group ID    |  SFCC attribute group ID       |
 
-#  How to choose in which SFCC "library", PIM References Entities will be imported as Content Assets?
+#  How to choose in which SFCC "library" PIM references entities will be imported as Content Assets?
 
-In the [connector configuration page](01-where-configuration.html), fill in the following parameter with your SFCC **shared** library ID or let this parameter empty to keep your site's **private** library as the destination of your PIM `Reference Entities`.
+In the [connector configuration page](01-where-configuration.html), fill in the following parameter with your SFCC **shared** library ID or let this parameter empty to keep your site's **private** library as the destination of your PIM `reference entities`.
 
 | Connector parameter   | SFCC information               |
 | :---------------------| :----------------------------: |
