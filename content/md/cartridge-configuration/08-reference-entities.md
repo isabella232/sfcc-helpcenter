@@ -1,7 +1,7 @@
 ---
 id: 08-reference-entities
 themes: cartridge-configuration
-title: How to retrieve PIM reference entities in SalesForce
+title: How to retrieve PIM reference entities in SFCC?
 popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
 ---
