@@ -202,8 +202,8 @@ To set up a "Product bundle" in your PIM you need therefore:
 4. **Associate products** with the help of your "Product bundle" **Association** type to populate your product bundle.
 
 :::warning
-**Limit of the PIM modeling:**
-Since a product bundle is represented by a specific product association  in the PIM, it is therrforce impossible to indicate **a quantity** for each product in this bundle.
+**Limit of this model:**
+Since a product bundle is represented by a specific product association in the PIM, it is impossible to indicate **a quantity** for each product in this bundle.
 It is therefore impossible to put the same product several times in an SFCC bundle.
 :::
 
