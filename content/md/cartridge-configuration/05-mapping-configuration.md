@@ -3,7 +3,7 @@ id: 05-mapping-configuration
 themes: cartridge-configuration
 title: How to map PIM data content with SFCC data content?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities
 ---
 # Catalog mapping
 ## How to define which SFCC master catalog will be used to spread your PIM product data?
@@ -159,17 +159,17 @@ In this example:
 Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
 :::
 
-# Product set (Connector V19.5.0 and higher)
+# SFCC Product set (Connector V19.5.0 and higher)
 
 ## How to create SFCC "Product set" with the PIM?
 
-As there is no concept of a **Product set** in the PIM, it is modelled by combining :
+As there is no concept of a **Product set** in the PIM, it is modeled by combining :
 * A specific **Family** (allowing "Product set" attributes to be defined)
 * A specific **Product association type** (allowing products to be associated with this "Product set").
 
 To set up a "Product set" in your PIM you need therefore:
-1. Create a "Product set" **Family** ()
-2. Create a "Product set" **Association type** ()
+1. Create a "Product set" **Family**
+2. Create a "Product set" **Association type**
 3. Create a **Product** representing your "Product set" with the help of the "Product set" **Family** you previously created.
 4. **Associate products** with the help of your "Product set" **Association** type to populate your product set.
 
@@ -186,6 +186,42 @@ Then, configure your "Product set" Association type:
 | Connector parameter          | PIM information                        |
 | :----------------------------| :------------------------------------: |
 | Product Set Association Type |  PIM "Product set" Association type ID |
+
+# SFCC Product bundle (Connector V19.9.0 and higher)
+
+## How to create SFCC "Product bundle" with the PIM?
+
+As there is no concept of a **Product bundle** in the PIM, it is modeled by combining :
+* A specific **Family** (allowing "Product bundle" attributes to be defined)
+* A specific **Product association type** (allowing products to be associated with this "Product bundle").
+
+To set up a "Product bundle" in your PIM you need therefore:
+1. Create a "Product bundle" **Family**
+2. Create a "Product bundle" **Association type**
+3. Create a **Product** representing your "Product bundle" with the help of the "Product bundle" **Family** you previously created.
+4. **Associate products** with the help of your "Product bundle" **Association** type to populate your product bundle.
+
+:::warning
+**Limit of this model:**
+Since a product bundle is represented by a specific product association in the PIM, it is impossible to indicate **a quantity** for each product in this bundle.
+It is therefore impossible to put the same product several times in an SFCC bundle.
+:::
+
+
+## How to configure the Connector for "Product bundle"?
+
+First, in the [connector configuration page](01-where-configuration.html), configure your "Product bundle" Family:
+
+| Connector parameter         | PIM information                 |
+| :---------------------------| :-----------------------------: |
+| Product Bundle Family       |  PIM "Product bundle" Family ID |
+
+Then, configure your "Product bundle" Association type:
+
+| Connector parameter             | PIM information                            |
+| :-------------------------------| :-----------------------------------------: |
+| Product Bundle Association Type |  PIM "Product bundle" Association type ID |
+
 
 # Product model
 
