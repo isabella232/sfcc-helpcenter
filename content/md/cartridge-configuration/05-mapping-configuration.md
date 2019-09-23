@@ -212,14 +212,14 @@ It is therefore impossible to put the same product several times in an SFCC bund
 
 First, in the [connector configuration page](01-where-configuration.html), configure your "Product bundle" Family:
 
-| Connector parameter         | PIM information              |
-| :---------------------------| :--------------------------: |
-| Product Bundle Family          |  PIM "Product bundle" Family ID |
+| Connector parameter         | PIM information                 |
+| :---------------------------| :-----------------------------: |
+| Product Bundle Family       |  PIM "Product bundle" Family ID |
 
 Then, configure your "Product bundle" Association type:
 
-| Connector parameter          | PIM information                        |
-| :----------------------------| :------------------------------------: |
+| Connector parameter             | PIM information                            |
+| :-------------------------------| :-----------------------------------------: |
 | Product Bundle Association Type |  PIM "Product bundle" Association type ID |
 
 
