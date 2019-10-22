@@ -24,7 +24,7 @@ Please note that this **free version** connector **will not** give you access to
 This up-to-date version provides early access to **latest patches and new features** for Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
 :::
 
-Please [**contact us**](mailto:demandware@akeneo.com) to get access to the private **Github repository** where the supported version of the connector is hosted.
+Please [**contact us**](mailto:demandware@akeneo.com) to get access to the **Akeneo private repository** where the supported version of the connector is hosted.
 
 Akeneo teams will then get back to you on how to download the connector via our [**Partner Portal**](https://help.akeneo.com/portal/index.html) and how to benefit from **Akeneo support**.
 
@@ -32,7 +32,7 @@ Akeneo teams will then get back to you on how to download the connector via our 
 
 **Pre-requisites:**
 
-Because the Akeneo Connector for Salesforce Commerce Cloud is hosted on the **Project Console** of the **Akeneo portal** ([partners.akeneo.com](https://partners.akeneo.com) or [customers.akeneo.com](https://customers.akeneo.com)), as [Project manager](https://help.akeneo.com/portal/articles/manage-project-managers.html), you need to check that:
+Because the Akeneo Connector for SFCC is hosted on the **Project Console** of the **Akeneo portal** ([partners.akeneo.com](https://partners.akeneo.com) or [customers.akeneo.com](https://customers.akeneo.com)), as [Project manager](https://help.akeneo.com/portal/articles/manage-project-managers.html), you need to check that:
 
 1. You have [access to the connector](https://help.akeneo.com/portal/articles/extension-access.html#get-the-akeneo-extensions-and-their-documentation) (if you have not already done so).
 2. You have created your developer in your organization (The person who will install the Connector) and [have given him access to the **project Console**](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-access-to-the-project-console).
