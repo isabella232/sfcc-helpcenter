@@ -18,7 +18,7 @@ You will need a Salesforce Xchange account to get access to this archive.
 Please note that this **free version** connector **will not** give you access to the latest version of Akeneo Connector for SFCC as well as the Akeneo official support.
 :::
 
-* On [**Akeneo Partner Portal**](https://partners.akeneo.com), within a private **Github repository**.
+* On [**Akeneo Partner Portal**](https://partners.akeneo.com), within an **Akeneo private repository**.
 
 :::info
 This up-to-date version provides early access to **latest patches and new features** for Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
@@ -28,15 +28,16 @@ Please [**contact us**](mailto:demandware@akeneo.com) to get access to the priva
 
 Akeneo teams will then get back to you on how to download the connector via our [**Partner Portal**](https://help.akeneo.com/portal/index.html) and how to benefit from **Akeneo support**.
 
-::warning
-**Important:**
-
-1- In the Partner Portal, be sure to have configured your [SSH key](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#import-my-public-key) for your Partner Portal profile.
-
-2- Be sure to set up the same SSH key to interact with GitHub and to be able to access to our private Github repository using commands described below.  
-:::
-
 # Download the connector
+
+**Pre-requisites:**
+
+Because the Akeneo Connector for Salesforce Commerce Cloud is hosted on the **Project Console** of the **Akeneo portal** ([partners.akeneo.com](https://partners.akeneo.com) or [customers.akeneo.com](https://customers.akeneo.com)), as [Project manager](https://help.akeneo.com/portal/articles/manage-project-managers.html), you need to check that:
+
+1. You have [access to the connector](https://help.akeneo.com/portal/articles/extension-access.html#get-the-akeneo-extensions-and-their-documentation) (if you have not already done so).
+2. You have created your developer in your organization (The person who will install the Connector) and [have given him access to the **project Console**](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-access-to-the-project-console).
+3. This developer has declared his SSH key on his profile and that you have [given him the access rights to the Enterprise Repository](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-the-access-to-the-enterprise-repository).
+4. Be sure that your developer use his SSH key (**the same SSH key you configured in our Akeneo portal**) before starting to type the following git commands.
 
 Clone the repository by using this command:
 
@@ -53,12 +54,12 @@ If you encounter a HEAD error, please perform the following actions :
 git tag
 ```
 
-`3.` Select the latest tag (**the following example is for 19.7.0**) to retrieve all files:
+`3.` Select the latest tag (**the following example is for 19.10.0**) to retrieve all files:
 ```bash
-git checkout v19.7.0
+git checkout v19.10.0
 ```
 
-`4.` Please read carefully all instructions from the previous Github command.
+`4.` Please read carefully all instructions from the previous Git command.
 
 
 # Install the connector
