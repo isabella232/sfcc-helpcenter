@@ -5,8 +5,6 @@ var del = require('del');
 var requireDir = require('require-dir');
 var tasks = requireDir('./tasks');
 
-var majorVersion = 'v19';
-
 // Clean dist directory
 gulp.task('clean-dist', function () {
   return del(['dist/*', 'tmp/*']);
@@ -30,7 +28,8 @@ gulp.task('launch-webserver', ['create-dist'], function() {
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
-      open: '/sfcc/' + majorVersion + '/'
+      open: '/sfcc/v19/',
+      host: '0.0.0.0',
     }));
 });
 
