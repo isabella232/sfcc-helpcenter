@@ -8,18 +8,18 @@ related: 01-where-configuration, 03-products-filter-configuration, 04-import-ima
 
 # How to configure my PIM API?
 
-Before setting up the Akeneo Connector for SFCC, you first need to generate a "client ID" and a "secret" couple in the PIM to enable the API connection.
+Before setting up the Akeneo Connector for SFCC, you first need to generate a "client ID" and "secret" couple in the PIM to enable the API connection.
 
 Please refer to our specific [documentation](https://api.akeneo.com/getting-started-admin.html) to do so.
 
-Then, note the below information:
+Then, fill in the following information:
 1. Your PIM URL (ex: https://mypim.cloud.akeneo.com)
 2. Your PIM API `Client ID` and `Secret`
-3. Your PIM user dedicated to the use of the API (`Username` and `Password`).
+3. Your PIM user who will be dedicated to the use of the API (`Username` and `Password`).
 
 # How to configure the connector with my PIM API information?
 
-In the [connector configuration page](01-where-configuration.html), fill in the below parameters with the PIM information collected above:
+In the [connector configuration page](01-where-configuration.html), fill in the parameters below with the PIM information collected above:
 
 | Connector parameter           | PIM information    |
 | :-----------------------------| :-----------------:|
