@@ -14,5 +14,5 @@ related: 02-configure-PIM-API, 03-products-filter-configuration, 04-import-image
 ![Connector configuration](../img/sfcc-cartridge-configuration.png)
 
 :::info
-You will find on this page different Akeneo **Custom site preference groups** (prefixed with the heading `Akeneo -`) which will allow you to configure the Akeneo Connector for SFCC.
+On this page, you will find different Akeneo **Custom site preference groups** (prefixed with the heading `Akeneo -`) which will allow you to configure the Akeneo Connector for SFCC.
 :::

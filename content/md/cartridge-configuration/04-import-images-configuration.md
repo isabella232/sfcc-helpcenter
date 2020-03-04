@@ -6,43 +6,43 @@ popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
 ---
 
-# But what "images" are we talking about exactly!?
+# First of all, what "images" are we talking about exactly?!
 
 Akeneo PIM has 2 ways to store images for your products.
 
 Either with several `Image` attributes or by using the `Asset collection` attribute that points to one or more images from the `Assets` management feature of your PIM Enterprise Edition.
 
-The Akeneo connector for SFCC can retrieve images from either `Image` attributes, from `Asset collection` attributes, or both.
+The SFCC Akeneo connector can retrieve images from the `Image` attributes, the `Asset collection` attributes, or both.
 
-# How can I retrieve images from "image" attributes?
+# How can I retrieve images from the "image" attributes?
 
-In the [connector configuration page](01-where-configuration.html), you need to select `Images` for the following parameter if you want to retrieve images from "image" attributes.
+In the [connector configuration page](01-where-configuration.html), you need to select `Images` for the following parameter to retrieve images from the "image" attributes.
 
 | Connector parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
 | akeneoImageType               |  Images(images)        |
 
 
-# How can I retrieve images from "asset collection" attributes?
+# How can I retrieve images from the "asset collection" attributes?
 
-In the [connector configuration page](01-where-configuration.html), you need to select `Assets` for the following parameter if you want to retrieve images from "asset collection" attributes.
+In the [connector configuration page](01-where-configuration.html), you need to select `Assets` for the following parameter to retrieve images from the "asset collection" attributes.
 
 | Connector parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
 | akeneoImageType               |  Assets(assets)        |
 
 ::: info
-The order of images defined in the "Asset collection" attribute is well respected when the connector imports images in SFCC.
+The order of images defined in the "Asset collection" attribute is respected when the connector imports images in SFCC.
 :::
 
 ::: info
 PIM asset images are imported into the "Images" section of SFCC products.
-In addition, a SFCC attribute is created for each "Asset collection" PIM attribute to store image IDs and define the assets order.
+In addition, an SFCC attribute is created for each "Asset collection" PIM attribute to store image IDs and define the asset order.
 :::
 
-# How can I retrieve images from my "image" and "asset collection" attributes at the same time?
+# How can I retrieve images from both my "image" and "asset collection" attributes at the same time?
 
-In the [connector configuration page](01-where-configuration.html), you need to select `Both` for the following parameter if you want to retrieve images from "image" AND "asset collection" attributes.
+In the [connector configuration page](01-where-configuration.html), you need to select `Both` for the following parameter if you want to retrieve images from both "image" AND "asset collection" attributes.
 
 | Connector parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
@@ -57,7 +57,7 @@ In the [connector configuration page](01-where-configuration.html), you can defi
 | Akeneo Image View Types       |  Image view types       |
 
 ::: warning
-This field must be in JSON format.
+This field must be in JSON.
 Here is an example of "Akeneo Image View Types" you can use for your connector:
 ```json
 

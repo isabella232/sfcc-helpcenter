@@ -1,14 +1,14 @@
 ---
 id: 03-products-filter-configuration
 themes: cartridge-configuration
-title: How can I filter only PIM products I want to import in SFCC?
+title: How can I filter only the PIM products I want to import in SFCC?
 popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
 ---
 
 # How to import PIM product data from a specific channel?
 
-In the [**connector configuration page**](01-where-configuration.html), you can decide which **PIM channel** you want to retrieve your product information from.
+In the [**connector configuration page**](01-where-configuration.html), you can decide from which **PIM channel** you want to retrieve your product information.
 
 | Connector parameter   | PIM information  |
 | :---------------------| :--------------: |
@@ -22,20 +22,20 @@ In the [**connector configuration page**](01-where-configuration.html), with the
 | :---------------------| :------------------: |
 | Import Type           |  "Simple" or "Advanced"  |
 
-If you select `Simple` **all** PIM product will be imported in SFCC.
+If you select `Simple` **all** PIM products will be imported in SFCC.
 
-If you select `Advanced`, the connector will **only import PIM products that match your search filters** defined in `Import builder config` parameters (`Product Model Import builder config` for filtering on Product models and `Products Import builder config` for filtering on Products).
+If you select `Advanced`, the connector will **only import the PIM products that match the search filters** defined in the `Import builder config` parameters. You will use the `Product Model Import builder config` to filter product models and the `Products Import builder config` to filter Products).
 
-For example, you can filter on product properties or product values...
+For example, you can filter product properties or product values.
 
 ::: warning
-This field must be written in **JSON format**.<br>
+This field must be written in **JSON**.<br>
 <br>
-To know all the filtering possibilities and the **JSON syntax**, please refer to this [documentation on the filters](https://api.akeneo.com/documentation/filter.html) of our API.
+To discover all the filtering possibilities of our API and the **JSON syntax**, please refer to this [documentation](https://api.akeneo.com/documentation/filter.html).
 <br>
 
 
-For example, the below filter enables to import products from `led_tvs` family whose completeness is greater than `99`% for `en_US` and `fr_FR` locales, for the channel `ecommerce`:
+For example, the filter below enables you to import products from the `led_tvs` family when the completeness is greater than `99`% for the `en_US` and `fr_FR` locales, for the `ecommerce` channel:
 
 ```json
 
@@ -57,9 +57,9 @@ For example, the below filter enables to import products from `led_tvs` family w
 :::
 
 :::info
-Since SFCC Connector version 19.5.3, you can also filter "product value" and "locales".
+Since the SFCC Connector version 19.5.3, you can also filter "product value" and "locales".
 
-For example, the below filter enables to import products with a completeness greater than `99%` in the `en_US` and `fr_FR` locales ine the `ecommerce` channel **and ONLY retrieves `name`, `description` and `mytext` attributes from these products**:
+For example, the filter below enables you to import products with a completeness greater than `99%` in the `en_US` and `fr_FR` locales in the `ecommerce` channel. **It ONLY retrieves the following attributes: `name`, `description` and `mytext`**:
 
 ```json
 
