@@ -8,7 +8,7 @@ related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-config
 # Catalog mapping
 ## How to define which SFCC master catalog will be used to spread your PIM product data?
 
-In the [connector configuration page](01-where-configuration.html), fill in the below parameter with your SFCC "master catalog ID" for your website:
+In the [connector configuration page](01-where-configuration.html), fill in the parameter below with your SFCC "master catalog ID" for your website:
 
 | Connector parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
@@ -17,24 +17,24 @@ In the [connector configuration page](01-where-configuration.html), fill in the 
 
 ## How to define which PIM categories will be used for my storefront catalog?
 
-Depending on your needs, since Akeneo connector **version 19.7.0**, you can configure witch PIM categories will be used for your storefront catalog.
+Since the **version 19.7.0** Akeneo connector, and depending on your needs, you can configure which PIM categories will be used for your storefront catalog.
 
-In the [connector configuration page](01-where-configuration.html), fill in the below parameter with your PIM level category ID that represent your storefront categories:
+In the [connector configuration page](01-where-configuration.html), fill in the parameter below with the PIM level category ID that represents your storefront categories:
 
 | Connector parameter                       | PIM information         |
 | :-----------------------------------------| :---------------------: |
 | Top Level Category for Storefront Catalog |  PIM category ID        |
 
 ::: info
-Please read our [documentation](07-multi-storefront-configuration.html) on how to manage multiple organizations, multiple storefronts with Akeneo Connector for SFCC if you want to know more about these settings.
+Want to know more? Please read our [documentation](07-multi-storefront-configuration.html) on how to manage multiple organizations, multiple storefronts with the Akeneo Connector for SFCC.
 :::               
 
 
 # Attribute mapping
 ## Why should I map PIM attributes with SFCC "default" product attributes?
 
-By default, SFCC products include a handful of attributes assigned to each product: `Name`, `Brand`, `Manufacturer`, `Description`,...
-For performance and cleaning reasons, it will be more convenient to map the default attributes with the PIM ones to avoid duplicates in the SFCC product edit forms. If no mapping is performed on a default attribute, SFCC will import the PIM attribute as a custom one. The attribute value will be populated in this custom attribute rather than the standard one.
+By default, SFCC products include a handful of attributes assigned to each product: `Name`, `Brand`, `Manufacturer`, `Description`, etc.
+For performance and cleaning purposes, it would be more convenient to map the default attributes with the PIM's to avoid duplicates in the SFCC product edit forms. If no mapping is performed on a default attribute, SFCC will import the PIM attribute as a custom one. The attribute value will be populated in this custom attribute rather in than the standard one.
 
 ## How to map PIM attributes with SFCC "default" product attributes?
 
@@ -60,7 +60,7 @@ Here is an example of content for this "Akeneo Product attributes mapping" param
 ```
 Please note that each PIM attribute is prefixed with the "`akeneo_`" label in Salesforce Commerce Cloud.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({}).
+Note: If you don't want to use this feature, please leave a space between curly brackets ({}).
 :::
 
 ## How to map PIM attributes with SFCC "custom" product attributes?
@@ -87,7 +87,7 @@ Here is an example of content for this "Akeneo Custom Attributes Mapping" parame
 ```
 Please, note that each PIM attribute is prefixed with the `akeneo_` label in Salesforce Commerce Cloud.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
+Note: If you don't want to use this feature, please leave a space between curly brackets ({ }).
 :::
 
 # Product association mapping
@@ -118,14 +118,14 @@ In this example:
 X_SELL is the PIM product association type ID.
 1 is the SFCC recommendation type number.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
+Note: If you don't want to use this feature, please leave a space between curly brackets ({ }).
 :::
 
 ## How to map PIM "Product Associations" with Product "Links" in SFCC? (Connector V19.4.1 and higher)
 
-By default, according to Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
+By default, according to the Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
 
-But since Akeneo Connector for SFCC V19.4.1, in the [connector configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
+But since the V19.4.1 Akeneo Connector for SFCC, in the [connector configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
 
 
 | Connector parameter            | PIM/SFCC information                                 |
@@ -156,24 +156,24 @@ In this example:
 "X_SELL" is the PIM product association type ID.
 "cross-sell" is the SFCC product link type ID.
 
-Note: If you don't want to use this feature, please leave a space in curly brackets ({ }).
+Note: If you don't want to use this feature, please leave a space between curly brackets ({ }).
 :::
 
 # SFCC Product set (Connector V19.5.0 and higher)
 
-## How to create SFCC "Product set" with the PIM?
+## How to create an SFCC "Product set" with the PIM?
 
-As there is no concept of a **Product set** in the PIM, it is modeled by combining :
+As there is no concept of a **Product set** in the PIM, it is modeled by combining:
 * A specific **Family** (allowing "Product set" attributes to be defined)
-* A specific **Product association type** (allowing products to be associated with this "Product set").
+* A specific **Product association type** (allowing products to be associated to this "Product set").
 
-To set up a "Product set" in your PIM you need therefore:
+To set up a "Product set" in your PIM you need to:
 1. Create a "Product set" **Family**
 2. Create a "Product set" **Association type**
 3. Create a **Product** representing your "Product set" with the help of the "Product set" **Family** you previously created.
 4. **Associate products** with the help of your "Product set" **Association** type to populate your product set.
 
-## How to configure the Connector for "Product set"?
+## How to configure the Connector for your "Product set"?
 
 First, in the [connector configuration page](01-where-configuration.html), configure your "Product set" Family:
 
@@ -189,20 +189,20 @@ Then, configure your "Product set" Association type:
 
 # SFCC Product bundle (Connector V19.9.0 and higher)
 
-## How to create SFCC "Product bundle" with the PIM?
+## How to create an SFCC "Product bundle" with the PIM?
 
-As there is no concept of a **Product bundle** in the PIM, it is modeled by combining :
+As there is no such thing as a **Product bundle** in the PIM, it is modeled by combining:
 * A specific **Family** (allowing "Product bundle" attributes to be defined)
 * A specific **Product association type** (allowing products to be associated with this "Product bundle").
 
-To set up a "Product bundle" in your PIM you need therefore:
+To set up a "Product bundle" in your PIM you need to:
 1. Create a "Product bundle" **Family**
 2. Create a "Product bundle" **Association type**
 3. Create a **Product** representing your "Product bundle" with the help of the "Product bundle" **Family** you previously created.
 4. **Associate products** with the help of your "Product bundle" **Association** type to populate your product bundle.
 
 :::warning
-**Limit of this model:**
+**Limitation of this model:**
 Since a product bundle is represented by a specific product association in the PIM, it is impossible to indicate **a quantity** for each product in this bundle.
 It is therefore impossible to put the same product several times in an SFCC bundle.
 :::
@@ -229,7 +229,7 @@ Then, configure your "Product bundle" Association type:
 
 ### Product model with 1 level of variation
 
-By default, without any configuration, PIM product models with 1 level of variation are modeled in this way in SFCC:
+By default, without any configuration, PIM product models with 1 level of variation are modeled this way in SFCC:
 
 **PIM Product models with 1 level of variation:**
 - PIM product models `common` layer is mapped with SFCC `Variation master`
@@ -245,15 +245,15 @@ Since SFCC v19.6.0, with the following parameter, you can obtain 2 types of mode
 
 
 **Master-Variation modelization:**
-- PIM product models `common` part is mapped with SFCC `Variation master`
-- PIM product models variation `level 1`+ variation `level 2` parts are mapped with SFCC `Variation products`
+- The PIM product models `common` part is mapped with SFCC `Variation master`
+- The PIM product models variation `level 1` and variation `level 2` parts are mapped with SFCC `Variation products`
 
 **Master-Group-Variation modelization:**
-- PIM product models `common` part is mapped with SFCC `Variation master`
-- PIM product models variation `level 1` part is mapped with SFCC `Variation group`
-- PIM product models variation `level 2` part is mapped with SFCC `Variation products`
+- The PIM product models `common` part is mapped with SFCC `Variation master`
+- The PIM product models variation `level 1` part is mapped with SFCC `Variation group`
+- The PIM product models variation `level 2` part is mapped with SFCC `Variation products`
 
-We advise you to use the "Master-Group-Variation" modelization instead, which will give you more flexibility in managing your product model with 2 levels of variation.
+We recommend you to use the "Master-Group-Variation" modelization instead, which will give you more flexibility in managing your product model with 2 levels of variation.
 
 :::warning
 **Known limitation:**
@@ -266,7 +266,7 @@ In the PIM, an attribute of the family could be a variant axis only if its attri
 - Metric
 - Boolean (Yes/No)
 
-But the current version of Akeneo Connector for SFCC only retrieve Product model based on **simple select** attribute type to define the variation axis.
+But the current version of the Akeneo Connector for SFCC only retrieves product models based on **simple select** attribute type to define the variation axis.
 
-We are currently thinking about how to improve our connector compared to  SFCC capabilities to take into account other attribute types.
+We are currently thinking about how to improve our connector compared to SFCC capabilities to take into account other attribute types.
 :::
