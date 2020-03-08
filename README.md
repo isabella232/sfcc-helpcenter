@@ -11,7 +11,7 @@ Install [Docker Engine](https://docs.docker.com/engine/installation/)
 make build
 ```
 
-This is only building the documentation. The documentation is not available with this command, as it does not launch the HTTP server. 
+This is only building the documentation. The documentation is not available with this command, as it does not launch the HTTP server.
 
 ### Build and launch HTTP server with docker
 
@@ -19,7 +19,7 @@ This is only building the documentation. The documentation is not available with
 make watch
 ```
 
-The help center website is then available on `http://localhost:8000/sfcc/v19/`.
+The help center website is then available on `http://localhost:8000/sfcc/v20/`.
 Files located in the content and src directories are watched for changes, so when developing or writing new articles you do not need to launch any other task.
 
 ## Deployment of master version
