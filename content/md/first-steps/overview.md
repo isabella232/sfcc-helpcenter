@@ -19,13 +19,17 @@ The PIM is considered as the master tool for product data, it should not be hand
 
 # Process overview
 
-The connector is composed by **6 main jobs**:
+The connector is composed by **9 jobs**:
 - `1- Akeneo-Import-Attributes`									
 - `2- Akeneo-Import-Media-Assets-Pricebook`
 - `3-1-1 Akeneo-Differential-Import-Master`
 - `3-1-2 Akeneo-Differential-Import-Storefront`
 - `3-2-1 Akeneo-Full-Import-Master`
-- `3-2-2 Akeneo-Full-Import-Storefront`
+- `3-2-2 Akeneo-Full-Import-Master-Variation`
+- `3-2-3 Akeneo-Full-Master-Image`
+- `4- Akeneo-Entity-Import`
+- `5- Akeneo-Entity-Record-Grouping`
+
 
 Each job can be triggered manually or automatically on its own.
 
@@ -54,8 +58,8 @@ Depending on your [connector configuration](05-mapping-configuration.html), some
 
 "Full import" and "Differential import" jobs are quite similar and **should not be used at the same time**: they both import products from Akeneo PIM.
 
-- `3-2.x Akeneo-Full-Import` imports **all products** from Akeneo PIM.
-- `3-1.x Akeneo-Differential-Import` imports **only new products** since the last "**successful**" import made.
+- `3-2.x Akeneo-Full-Import-xxx` jobs import **all products** from Akeneo PIM.
+- `3-1.x Akeneo-Differential-Import-xxx` jobs import **only new products** since the last "**successful**" import made.
 
 These jobs import:
 - PIM categories
@@ -65,3 +69,11 @@ These jobs import:
 ::: info
 Depending on your [connector configuration](03-products-filter-configuration.html), you can create some filters to run partial imports on products that match with your defined criteria.
 :::
+
+## 4- Akeneo-Entity-Import
+
+`4- Akeneo-Entity-Import` job imports:
+- PIM Reference Entity Records
+
+
+## 5- Akeneo-Entity-Record-Grouping

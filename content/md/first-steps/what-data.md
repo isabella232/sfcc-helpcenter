@@ -9,6 +9,8 @@ related: trigger, overview
 # Attribute types
 
 The Akeneo Connector imports the following PIM attribute types to SFCC:
+
+
 - Text
 - Text area
 - Date
