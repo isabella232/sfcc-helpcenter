@@ -73,7 +73,14 @@ Depending on your [connector configuration](03-products-filter-configuration.htm
 ## 4- Akeneo-Entity-Import
 
 `4- Akeneo-Entity-Import` job imports:
+- PIM Reference Entities
 - PIM Reference Entity Records
 
 
 ## 5- Akeneo-Entity-Record-Grouping
+
+`5- Akeneo-Entity-Import` job add some Reference Entity Records to an SFCC attribute group.
+
+::: info
+Depending on your [connector configuration](08-reference-entities.html), you can manage how your reference entities will be mapped into SFCC.
+:::
