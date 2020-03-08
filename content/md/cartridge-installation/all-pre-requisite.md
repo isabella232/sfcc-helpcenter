@@ -20,7 +20,7 @@ Ensuring compatibility from one version to another remains our priority. Thanks 
 ## SFCC compatibility
 
 Salesforce Commerce Cloud is a Cloud solution that **automatically updates itself**.<br>
-The latest connector version is therefore compatible with the latest SFCC version.
+The latest connector version works in SFCC `Compatibility mode 19.10` so it is therefore compatible with the latest SFCC version.
 
 ## SFRA compliance
 

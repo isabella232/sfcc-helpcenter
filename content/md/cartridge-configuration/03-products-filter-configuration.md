@@ -3,7 +3,7 @@ id: 03-products-filter-configuration
 themes: cartridge-configuration
 title: How can I filter only the PIM products I want to import in SFCC?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities 
+related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities
 ---
 
 # How to import PIM product data from a specific channel?
@@ -56,7 +56,20 @@ For example, the filter below enables you to import products from the `led_tvs` 
 ```
 :::
 
-:::info
+::: warning
+
+It is important to understand that there is a inheritance link between the filter on **products** (`Products Import builder config`) and the filter on **product models** (`Product Model Import builder config`).  
+
+Indeed, a product with 2 levels of variation is a structure with:
+* A `product model` for the **common part**
+* A `product model` for **variation level 1** (example: "color")
+* A `product` for **variation level 2** (example: "size")
+
+As the `product` for **variation level 2** part inherits data from its 2 `product models` parent levels, if you apply a filter on a `product model` part, you have to put the same filter on the `product` part.
+
+:::
+
+
 Since the SFCC Connector version 19.5.3, you can also filter "product value" and "locales".
 
 For example, the filter below enables you to import products with a completeness greater than `99%` in the `en_US` and `fr_FR` locales in the `ecommerce` channel. **It ONLY retrieves the following attributes: `name`, `description` and `mytext`**:
@@ -75,4 +88,3 @@ For example, the filter below enables you to import products with a completeness
     "attributes": ["name", "description", "mytext"]
 }
 ```
-:::

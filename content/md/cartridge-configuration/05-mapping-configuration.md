@@ -123,7 +123,9 @@ Note: If you don't want to use this feature, please leave a space between curly 
 
 ## How to map PIM "Product Associations" with Product "Links" in SFCC? (Connector V19.4.1 and higher)
 
-By default, according to the Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/index.jsp?topic=%2Fcom.demandware.dochelp%2FProducts%2FLinkingProducts.html&resultof=%22product%22%20%22link%22%20)).
+::: warning
+According to the Salesforce guidance, PIM "product associations" should be mapped with SFCC product "recommendations" instead of product "links" (Please refer to the [SFCC documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Products/linkingproducts.html)).
+:::
 
 But since the V19.4.1 Akeneo Connector for SFCC, in the [connector configuration page](01-where-configuration.html), you can define that PIM "product associations" can be mapped with SFCC product "links" by changing this parameter:
 
@@ -266,7 +268,7 @@ In the PIM, an attribute of the family could be a variant axis only if its attri
 - Metric
 - Boolean (Yes/No)
 
-But the current version of the Akeneo Connector for SFCC only retrieves product models based on **simple select** attribute type to define the variation axis.
+But the current version of the Akeneo Connector for SFCC only retrieves product models based on "size" or "color" **simple select** attribute type to define the variation axis.
 
-We are currently thinking about how to improve our connector compared to SFCC capabilities to take into account other attribute types.
+We are currently working to improve our connector compared to SFCC capabilities to take into account other attribute types.
 :::

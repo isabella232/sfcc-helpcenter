@@ -3,7 +3,7 @@ id: 06-categories-configuration
 themes: cartridge-configuration
 title: How to configure my categories?
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 07-multi-storefront-configuration, 08-reference-entities 
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 07-multi-storefront-configuration, 08-reference-entities
 ---
 
 # How to define which PIM category trees I want to push to SFCC?
@@ -26,7 +26,7 @@ In the [connector configuration page](01-where-configuration.html), select `Yes`
 
 # How to define automatically the "Primary" category for my SFCC products?
 
-In the [connector configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become your "primary" category for that product. (Please refer to [Salesforce documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC2/topic/com.demandware.dochelp/Products/Classificationvsprimarycategory.html?resultof=%22%70%72%69%6d%61%72%79%22%20%22%63%61%74%65%67%6f%72%79%22%20) to better understand what a primary category is).
+In the [connector configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become your "primary" category for that product. (Please refer to [Salesforce documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC1/topic/com.demandware.dochelp/Products/Classificationvsprimarycategory.html) to better understand what a primary category is).
 
 | Connector parameter                | SFCC information        |
 | :----------------------------------| :---------------------: |

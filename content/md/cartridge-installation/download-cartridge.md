@@ -39,7 +39,11 @@ Because the Akeneo Connector for SFCC is hosted on the **Project Console** of th
 3. This developer has declared his SSH key on his profile and that you have [given him the access rights to the Enterprise Repository](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-the-access-to-the-enterprise-repository).
 4. Be sure that your developer use his SSH key (**the same SSH key you configured in our Akeneo portal**) before starting to type the following git commands.
 
-Clone the repository by using this command:
+::: info
+Please don't hesitate to contact your Akeneo CSM to check if everything is well configured for the next steps.
+:::
+
+Then clone the repository by using this command:
 
 ```bash
 git clone ssh://git@distribution.akeneo.com:443/sfcc-cartridge
@@ -97,6 +101,14 @@ Ensure that the radio button with label `Local` is enabled (Else click on the ra
 
 *	Click on `OK` button of the confirmation box asking "**Are you sure that you want to import the selected archive?**"
 
+## Log API communication (debug mode)
+
+* Go to Business Manager Menu: `Administration > Operations : Services > AkeneoGetGeneral`
+
+* Tick the checkbox `Communication Log Enabled` if you want API communication to be logged.
+
+* Repeat the same for `AkeneoGetToken`.
+
 # Add the cartridge to your sites
 
 `1.`	Go to Business Manager Menu: `Administration > Sites : Manage Sites`.
@@ -119,7 +131,7 @@ Fill all Akeneo configuration present in [Site Preferences](../themes-for-peter.
 Please read also the **additional documents** in the **"documentation"** folder of the **Github repository** to have more technical information around Akeneo Connector for SFCC.
 :::
 
-# Migration: I have an old "Pipeline" version of the connector, how can I migrate to the "Script" version?
+# Migration: I have a very old "Pipeline" version of the connector, how can I migrate to the "Script" version?
 
 If you have an old **Pipeline** version (`< v19.3.1`) of the connector and want to update to the **Script** version, please follow these steps:
 

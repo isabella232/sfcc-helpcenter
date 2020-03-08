@@ -19,7 +19,7 @@ For example, a PIM `reference entity` of a brand (code: “**brand**”) will be
 
 PIM `reference entity records` will be imported as **JSON** objects into the corresponding `custom attributes` of the SFCC `Content Asset`.
 
-For example, after successfully importing all PIM `reference entity records`, the JSON object of the “**dyson**” `reference entity record` (which is an element of the “**brand**” reference entity) will be available in SFCC as the “**akeneo_entity_brand_dyson**“ `custom attribute` of “**akeneo_entity_brand**” `Content Asset`.
+For example, after successfully importing all PIM `reference entity records`, the JSON object of the “**dyson**” `reference entity record` (which is an element of the “**brand**” reference entity) will be available in SFCC as a “**akeneo_entity_brand_dyson**“ `custom attribute` of “**akeneo_entity_brand**” `Content Asset`.
 
 :::warning
 **Scalability limit:** by default, the connector does not automatically add any PIM `reference entity record` (as SFCC custom attributes) to any SFCC `attribute group`. Importing PIM `reference entity records` as JSON code, makes the structure becomes heavier.
@@ -29,7 +29,7 @@ Furthermore, having too many records may affect the loading of SFCC `Business Ma
 
 Integrators/merchants can then choose one of these options:
 
-* **Option 1:** make sure that the JSON structure of the `Content Asset attribute` is ok, they can manually add a selection of PIM `reference entity records` to the desired SFCC `attribute group`.
+* **Option 1:** to make sure that the JSON structure of the `Content Asset attribute` is ok, you can manually add a selection of PIM `reference entity records` to the desired SFCC `attribute group`.
 
 * **Option 2:** use **5-Akeneo-Entity-Record-Grouping** special job to automatically add some PIM `reference entity records` to an SFCC `attribute group`.
 
