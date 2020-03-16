@@ -18,13 +18,13 @@ In the [connector configuration page](01-where-configuration.html), fill in the 
 
 # How to define the status of your SFCC category trees?
 
-In the [connector configuration page](01-where-configuration.html), select `Yes` for the below parameter if you want to push live the PIM category trees on your webstores directly. Otherwise, select `No`.
+In the [connector configuration page](01-where-configuration.html), select `Yes` for the parameter below if you want to push live the PIM category trees on your webstores directly. Otherwise, select `No`.
 
 | Connector parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
 | Akeneo Category Online        |  Yes or No              |
 
-# How to define automatically the "Primary" category for my SFCC products?
+# How to automatically define the "Primary" category for my SFCC products?
 
 In the [connector configuration page](01-where-configuration.html), if you select `Yes` for the following parameter, the first category of products will become your "primary" category for that product. (Please refer to [Salesforce documentation](https://documentation.b2c.commercecloud.salesforce.com/DOC1/topic/com.demandware.dochelp/Products/Classificationvsprimarycategory.html) to better understand what a primary category is).
 

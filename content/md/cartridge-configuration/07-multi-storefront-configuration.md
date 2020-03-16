@@ -8,7 +8,7 @@ related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-config
 
 # How to create multiple organizations and storefront sites?
 
-Since Akeneo Connector for SFCC version `v19.7.0`, you can manage multiple organizations and storefront sites in SFCC.
+Since the version `v19.7.0` of the Akeneo Connector for SFCC, you can manage multiple organizations and storefront sites in SFCC.
 
 To illustrate the configuration of a model containing several organizations and several sites, we will use the example of having:
 
@@ -25,9 +25,9 @@ With the following distribution:
   * Women
   * Kids
 
-## In Akeneo PIM
+## On the Akeneo PIM side
 
-To define the notion of organizations and storefront sites in the PIM, we will implement **two new category tree structures** (one for each **Business Unit**).
+To define the notion of organizations and storefront sites in the PIM, you will implement **two new category tree structures** (one for each **Business Unit**).
 
 :::info
 Please read our [documentation](/pim/v3/articles/what-is-a-category.html#how-to-create-a-new-category) to create the following categories and sub-categories.
@@ -59,7 +59,7 @@ At the end, you'll have something like this in your PIM:
 ![Apparels categories](../img/sfcc-cartridge-cat1.png)
 
 
-## In SFCC
+## On the SFCC side
 
 `1.` Create each **Web-site**:
 
@@ -72,7 +72,7 @@ Go to: `Administration > Sites : Manage Sites`
 * Kids
 
 :::info
-As explained in our integration document (In `Documentation` Cartridge directory), be careful to properly associate the `bc_akeneo` cartridge in each site (`Administration >  Sites >  Manage Sites` then select the site and go to the `Settings` tab and add `bc_akeneo` in the `Cartridges` field)
+As explained in our integration document (In `Documentation` Cartridge directory), make sure you properly associate the `bc_akeneo` cartridge in each site (`Administration >  Sites >  Manage Sites`, then select the site and go to `Settings`  and add `bc_akeneo` in the `Cartridges` field)
 :::
 
 `2.` Create all **master** and **storefront** catalogs
@@ -100,32 +100,32 @@ Select a Website then go to: `Merchant Tools > Site preferences : Custom prefere
 :::info
 **You need to build one specific cartridge configuration for each storefront site.**
 
-You can use the `Edit Across Site` link (on the right of each cartridge parameter) to help you copy/paste certain settings from one site to another... ;-)
+You can use the `Edit Across Site` link (on the right side of each cartridge parameter) to help you copy/paste certain settings from one site to another ;-)
 :::
 
 :::warning
 **Pay particular attention to these three parameters for each site:**<br>
 <br>
-* `Akeneo Main Catalogs`: you need to fill this parameter with the PIM `main category` tree ID code.<br>
+* `Akeneo Main Catalogs`: you need to fill in this parameter with the PIM `main category` tree ID code.<br>
 <br>
 (In our example: `electronics` for **Instruments** and **Software** Website configuration and `apparels` for **Gents**, **Women** and **Kids** Website configuration)<br>
 <br>
-* `SFCC Master Catalog ID`: you need to fill this parameter with the SFCC `master catalog` ID.<br>
+* `SFCC Master Catalog ID`: you need to fill in this parameter with the SFCC `master catalog` ID.<br>
 <br>
 (In our example: `electronics-master` for **Instruments** and **Software** Website configuration and `apparels-master` for **Gents**, **Women** and **Kids** Website configuration)<br>
 <br>
-* `Top Level Category for Storefront Catalog`: you need to fill this parameter with the PIM `category` ID code of your website.<br>
+* `Top Level Category for Storefront Catalog`: you need to fill in this parameter with the PIM `category` ID code of your website.<br>
 <br>
 (In our example: `instruments` for **Instruments** Website configuration, `software` for **Software** Website configuration, `gents` for **Gents** Website configuration, etc...)
 :::
 
-`4.` **Configure cartridge jobs scope**
+`4.` **Configure the cartridge jobs scope**
 
 Go to: `Administration > Operations : jobs`
 
 **1-Akeneo-Import-Attributes job**
 
-Click on `1-Akeneo-Import-Attributes` job then go to `Job Steps` tab.
+Click on `1-Akeneo-Import-Attributes` job then go to the `Job Steps` tab.
 
 Configure the `Scope` of `job-workflow-step-attributes` and `job-workflow-step-prepare-attributes-import` with only one of your Storefronts:
 
@@ -135,14 +135,14 @@ Configure the `Scope` of `job-workflow-step-attributes` and `job-workflow-step-p
 Keep `job-workflow-step-attributes-import` on `Organization` Scope.
 
 :::info
-No need to configure all five storefronts because attribute information will only be used for master catalogs.
+No need to configure all five storefronts because the attribute information will only be used for the master catalogs.
 :::
 
 **2-Akeneo-Import-Media-Assets-Pricebook job**
 
-Click on `2-Akeneo-Import-Media-Assets-Pricebook` job then go to the `Job Steps` tab.
+Click on the `2-Akeneo-Import-Media-Assets-Pricebook` job then go to the `Job Steps` tab.
 
-Configure the job `Scope` with two Storefronts, one for each Business Unit:
+Configure the job `Scope` with two Storefronts, one for each business unit:
 
 **Scope:**
 * Instruments
@@ -150,9 +150,9 @@ Configure the job `Scope` with two Storefronts, one for each Business Unit:
 
 **3-1.1-Akeneo-Differential-Import-Master job**
 
-Click on `3-1.1-Akeneo-Differential-Import-Master` job, then go to the `Job Steps` tab.
+Click on the `3-1.1-Akeneo-Differential-Import-Master` job, then go to the `Job Steps` tab.
 
-Configure the job `Scope` with two Storefronts, one for each Business Unit:
+Configure the job `Scope` with two storefronts, one for each business unit:
 
 **Scope:**
 * Instruments
@@ -175,7 +175,7 @@ Configure this job `Scope` with all storefronts.
 
 Click on `3-2.1-Akeneo-Full-Import-Master` job, then go to the `Job Steps` tab.
 
-Configure the job `Scope` with two Storefronts, one foreach Business Unit:
+Configure the job `Scope` with two storefronts, one for each business unit:
 
 **Scope:**
 * Instruments
@@ -183,7 +183,7 @@ Configure the job `Scope` with two Storefronts, one foreach Business Unit:
 
 **3-2.2-Akeneo-Full-Import-Storefront job**
 
-Click on `3-2.2-Akeneo-Full-Import-Storefront` jobn then go to the `Job Steps` tab.
+Click on `3-2.2-Akeneo-Full-Import-Storefront` job then go to the `Job Steps` tab.
 
 Configure this job `Scope` with all storefronts.
 
