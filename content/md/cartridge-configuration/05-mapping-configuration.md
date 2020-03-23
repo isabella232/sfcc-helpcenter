@@ -34,7 +34,7 @@ Want to know more? Please read our [documentation](07-multi-storefront-configura
 ## Why should I map PIM attributes with SFCC "default" product attributes?
 
 By default, SFCC products include a handful of attributes assigned to each product: `Name`, `Brand`, `Manufacturer`, `Description`, etc.
-For performance and cleaning purposes, it would be more convenient to map the default attributes with the PIM's to avoid duplicates in the SFCC product edit forms. If no mapping is performed on a default attribute, SFCC will import the PIM attribute as a custom one. The attribute value will be populated in this custom attribute rather in than the standard one.
+For performance and cleaning purposes, it would be more convenient to map the default attributes with the PIM's to avoid duplicates in the SFCC product edit forms. If no mapping is performed on a default attribute, SFCC will import the PIM attribute as a custom one. The attribute value will be populated in this custom attribute rather than in the standard one.
 
 ## How to map PIM attributes with SFCC "default" product attributes?
 
