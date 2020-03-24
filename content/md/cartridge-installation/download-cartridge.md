@@ -6,22 +6,22 @@ popular: true
 related: all-pre-requisite, where-configuration
 ---
 
-# Where can I get Akeneo Connector for SFCC?
+# Where can I get the Akeneo Connector for SFCC?
 
-There are 2 ways to put your hands on Akeneo Connector for SFCC:
+There are 2 ways for you to put your hands on the Akeneo Connector for SFCC:
 
-* On [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download the **free version** that includes the latest certified version of the connector.
+* First, you can find it on the [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download the **free version** that includes the latest certified version of the connector.
 
 You will need a Salesforce Xchange account to get access to this archive.
 
 :::warning
-Please note that this **free version** connector **will not** give you access to the latest version of Akeneo Connector for SFCC as well as the Akeneo official support.
+Please note that this **free version** of the connector **will not** give you access to the latest version of the Akeneo Connector for SFCC as well as the Akeneo official support.
 :::
 
-* On [**Akeneo Partner Portal**](https://partners.akeneo.com), within an **Akeneo private repository**.
+* The other place where you can download it is the [**Akeneo Partner Portal**](https://partners.akeneo.com), within an **Akeneo private repository**.
 
 :::info
-This up-to-date version provides early access to **latest patches and new features** for Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
+This up-to-date version provides early access to **the latest patches and features** of the Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
 :::
 
 Please [**contact us**](mailto:demandware@akeneo.com) to get access to the **Akeneo private repository** where the supported version of the connector is hosted.
@@ -32,15 +32,15 @@ Akeneo teams will then get back to you on how to download the connector via our 
 
 **Pre-requisites:**
 
-Because the Akeneo Connector for SFCC is hosted on the **Project Console** of the **Akeneo portal** ([partners.akeneo.com](https://partners.akeneo.com) or [customers.akeneo.com](https://customers.akeneo.com)), as [Project manager](https://help.akeneo.com/portal/articles/manage-project-managers.html), you need to check that:
+Because the Akeneo Connector for SFCC is hosted on the **Project Console** of the **Akeneo portal** (either [partners.akeneo.com](https://partners.akeneo.com) or [customers.akeneo.com](https://customers.akeneo.com)), as an [Akeneo Portal project manager](https://help.akeneo.com/portal/articles/manage-project-managers.html), you need to check that:
 
 1. You have [access to the connector](https://help.akeneo.com/portal/articles/extension-access.html#get-the-akeneo-extensions-and-their-documentation) (if you have not already done so).
-2. You have created your developer in your organization (The person who will install the Connector) and [have given him access to the **project Console**](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-access-to-the-project-console).
-3. This developer has declared his SSH key on his profile and that you have [given him the access rights to the Enterprise Repository](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-the-access-to-the-enterprise-repository).
-4. Be sure that your developer use his SSH key (**the same SSH key you configured in our Akeneo portal**) before starting to type the following git commands.
+2. You created your software engineer's profile in your organization (i.e. the person who will install the Connector) and [have given them access to the **project console**](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-access-to-the-project-console).
+3. The software engineer has declared their SSH key on their profile and that you have [given them access to the Enterprise Repository](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-the-access-to-the-enterprise-repository).
+4. Your software engineer uses their SSH key (**the same SSH key you configured in our Akeneo portal**) before starting to type the following git commands.
 
 ::: info
-Please don't hesitate to contact your Akeneo CSM to check if everything is well configured for the next steps.
+Please don't hesitate to contact your Akeneo CSM to check if everything is up and running for the next steps.
 :::
 
 Then clone the repository by using this command:
@@ -49,63 +49,63 @@ Then clone the repository by using this command:
 git clone ssh://git@distribution.akeneo.com:443/sfcc-cartridge
 ```
 
-If you encounter a HEAD error, please perform the following actions :
+If you encounter a HEAD error, please perform the following actions:
 
 `1.` Go to your project repository
 
-`2.` List all available tag:
+`2.` List all the available tags:
 ```bash
 git tag
 ```
 
-`3.` Select the latest tag (**the following example is for 19.10.0**) to retrieve all files:
+`3.` Select the latest tag (**the following example is for 19.10.0**) to retrieve all the files:
 ```bash
 git checkout v19.10.0
 ```
 
-`4.` Please read carefully all instructions from the previous Git command.
+`4.` Please read carefully all the instructions from the previous Git command.
 
 
 # Install the connector
 
 ## Upload the cartridge
 
-Upload the `bc_akeneo` cartridge into the Salesforce Commerce Cloud Studio Workspace:
+Upload the `bc_akeneo` cartridge to the Salesforce Commerce Cloud Studio Workspace:
 
 *	Open **Salesforce Commerce Cloud Studio**.
 
-*	Click `File` -> `Import` -> `General` -> `Existing Projects into Workspace`.
+*	Click on `File` -> `Import` -> `General` -> `Existing Projects into Workspace`.
 
-*	Browse to the directory where you have saved the `bc_akeneo` cartridge.
+*	Go to the directory where you saved the `bc_akeneo` cartridge.
 
 *	Click on `Finish`.
 
-* Click `OK` when prompted to link the cartridge to the sandbox.
+* Select `OK` when you are ready to link the cartridge to the sandbox.
 
 ## Metadata Import
 
-For Akeneo Connector for SFCC to work, the following object structures (metadata) need to be imported and configured in the Business manager.
+For the Akeneo Connector for SFCC to work, the following object structures (metadata) need to be imported and configured in the Business manager.
 
 Follow the steps below:
 
-*	In the cartridge bundle find `metadata/simple-akeneo-workflow_site-import` and compress it to generate `simple-akeneo-workflow_site-import.zip` file.
+*	In the cartridge bundle find `metadata/simple-akeneo-workflow_site-import` and compress it to generate the `simple-akeneo-workflow_site-import.zip` file.
 
-*	Go to Business Manager Menu: `Administration > Site Development : Site Import & Export`
+*	Go to the Business Manager Menu: `Administration > Site Development : Site Import & Export`
 
 *	Under `Import : Upload archive`:
-Ensure that the radio button with label `Local` is enabled (Else click on the radio button to enable it).
+Make sure that the radio button with label `Local` is enabled (otherwise click on the radio button to enable it).
 
-* Click on `Choose File` input field, select the `simple-akeneo-workflow_site-import.zip` file from `open dialog box` and click on `Upload` button.
+* Click on the `Choose File` input field, select the `simple-akeneo-workflow_site-import.zip` file from the `open dialog box` and click on `Upload`.
 
-*	After finishing the upload, from the `Archives` list click the radio button corresponding to `simple-akeneo-workflow_site-import.zip` and click on `Import` button.
+*	After finishing the upload, from the `Archives` list click on the radio button corresponding to `simple-akeneo-workflow_site-import.zip` and click on `Import`.
 
-*	Click on `OK` button of the confirmation box asking "**Are you sure that you want to import the selected archive?**"
+*	Click on the `OK` button of the confirmation box asking "**Are you sure that you want to import the selected archive?**"
 
 ## Log API communication (debug mode)
 
 * Go to Business Manager Menu: `Administration > Operations : Services > AkeneoGetGeneral`
 
-* Tick the checkbox `Communication Log Enabled` if you want API communication to be logged.
+* Tick the `Communication Log Enabled` checkbox if you want API communication to be logged.
 
 * Repeat the same for `AkeneoGetToken`.
 
@@ -119,58 +119,58 @@ Ensure that the radio button with label `Local` is enabled (Else click on the ra
 
 `4.`	Append "`:bc_akeneo`" to the `Cartridges` field.
 
-`5.`	Click on `Apply` button.
+`5.`	Click on `Apply`.
 
-`6.`	Repeat steps `2.` to `5.` for all sites including Business Manager site.
+`6.`	Repeat steps `2.` to `5.` for all sites including the Business Manager one.
 
-Fill all Akeneo configuration present in [Site Preferences](../themes-for-peter.html#cartridge-configuration).
+Fill in all Akeneo configuration in [Site Preferences](../themes-for-peter.html#cartridge-configuration).
 
-[Schedule job](trigger.html) as needed, and start synchronization with Akeneo instance ! ;-)
+[Schedule job](trigger.html) as needed, and start the synchronization with the Akeneo instance! ;-)
 
 ::: info
-Please read also the **additional documents** in the **"documentation"** folder of the **Github repository** to have more technical information around Akeneo Connector for SFCC.
+Please read also the **additional documents** in the **"documentation"** folder of the **Github repository** to have more technical information about the Akeneo Connector for SFCC.
 :::
 
-# Migration: I have a very old "Pipeline" version of the connector, how can I migrate to the "Script" version?
+# Migration: You have a very old "Pipeline" version of the connector, how can you migrate to the "Script" version?
 
 If you have an old **Pipeline** version (`< v19.3.1`) of the connector and want to update to the **Script** version, please follow these steps:
 
-## Step 1:  Upload latest cartridge code to active code version
+## Step 1:  Upload the latest cartridge code to the active code version
 
 * Get the latest cartridge code from Akeneo.
-* Replace the cartridge `bc_akeneo` in UX Studio (Eclipse).
-* Upload the cartridge in to the active code version of the sandbox
+* Replace the `bc_akeneo` cartridge in the UX Studio (Eclipse).
+* Upload the cartridge to the active code version of the sandbox
 
 ## Step 2:  Re-import Jobs
 
-To setup Jobs, as mentioned below, import the `Jobs.xml` file which is available in `metadata` folder in the cartridge bundle. (`metadata/simple-akeneo-workflow_site-import`)
+To setup Jobs, as mentioned below, import the `Jobs.xml` file which is available in the `metadata` folder in the cartridge bundle. (`metadata/simple-akeneo-workflow_site-import`)
 
 * In the Business Manager, go to `Administration > Operations : Import & Export`
-* Under section titled as `Import & Export Files`, find the `Upload` button and click on it
+* Under the `Import & Export Files` section, click on `Upload`
 * Upload the `metadata/simple-akeneo-workflow_site-import/jobs.xml` file using the `Upload File` form
 * Come back to `Administration > Operations : Import & Export`
-* Under section titled as `Jobs`, find the `Import` button and click on it
-* Select the radio button corresponding to `jobs.xml` that you uploaded and click in `Next` button
-* After automatic validation of file, click on `Next` button
-When you import the `jobs.xml` properly, the jobs list under `Administration > Operations : Jobs` get updated with script version.
-* On re-import of Jobs, all the jobs are reset to use for SiteGenesis Site.
+* Under the `Jobs`section, click on `Import`
+* Select the radio button corresponding to `jobs.xml` and click on the `Next` button
+* After the file is automatically validated, click on `Next`
+When you import the `jobs.xml` properly, the jobs list under `Administration > Operations : Jobs` get updated with the script version.
+* When Jobs are imported again, they will be reset to use the SiteGenesis Site.
 * You may go through all the `Job Steps` in all the jobs.
 * Find the `Job Steps` which are assigned to SiteGenesis Site.
 * Reassign them to your preferred site(s).
 * Leave the `Job Steps` which are assigned to Organization intact.
 
 
-# What can I do if I have a question, if I want to report a bug or a suggestion for the connector?
+# What can you do if you have a question, if you want to report a bug or a suggestion for the connector?
 
 Please use our [**Helpdesk**](https://helpdesk.akeneo.com) platform to contact us.
 
 **In the event of a bug report, please install the latest version of the connector and try to reproduce the bug again before reporting it**
 
-If the issue occurs with the latest version of the connector, feel free to report the bug to us. Please provide us with the below information when you open a ticket on our Help Center:
+If the issue occurs with the latest version of the connector, feel free to report the bug to us. Please provide us with the information below when you open a ticket on our Help Center:
 - The version of your PIM instance
 - The version of your Salesforce Commerce Cloud instance
 - The version of the installed connector
-- Steps to reproduce your issue (please be as precise as possible).
+- Steps to reproduce your issue (please be as specific as possible).
 
 ::: warning
 **For our Support team to be able to take this issue into account, the steps to reproduce should be performed in a non-customized environment on both Akeneo and SFCC sides, with a vanilla connector.**
