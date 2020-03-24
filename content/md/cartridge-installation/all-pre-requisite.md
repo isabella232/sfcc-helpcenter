@@ -39,7 +39,7 @@ If you need help setting up your Akeneo PIM, please refer to our [**PIM Help Cen
 
 # Configure your Salesforce Commerce Cloud
 
-`1.` Set up at least one activated **site** to associate (a) job to (the) site scope<br>
+`1.` Set up at least one activated **site** to associate a job to the site scope<br>
 (`Administration > Sites : Manager sites`)
 
 `2.` Set up at least one **master catalog** to store the details of all the products<br>
