@@ -45,7 +45,7 @@ If you need help setting up your Akeneo PIM, please refer to our [**PIM Help Cen
 `2.` Set up at least one **master catalog** to store the details of all the products<br>
 (`Merchant Tools > Products and Catalogs : Catalogs`)
 
-`3.` Set up at least one **storefront catalog** to associate (to) your current site<br>
+`3.` Set up at least one **storefront catalog** you want to associate to your current site<br>
 (`Merchant Tools > Products and Catalogs : Catalogs`)
 
 # Who can install the connector?
