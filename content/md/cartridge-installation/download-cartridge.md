@@ -10,7 +10,7 @@ related: all-pre-requisite, where-configuration
 
 There are 2 ways for you to put your hands on the Akeneo Connector for SFCC:
 
-* First, you can find it on the [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download the **free version** that includes the latest certified version of the connector.
+* First , you can find it on the [**Salesforce marketplace**](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/), where you can download the **free version** that includes the latest certified version of the connector.
 
 You will need a Salesforce Xchange account to get access to this archive.
 
