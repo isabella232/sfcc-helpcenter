@@ -11,5 +11,5 @@ related: where-categories, where-attributes, where-groups, where-product-associa
 
 **Since the concept of "family" (attribute set) does not exist in SFCC, Akeneo Connector for SFCC will not import the PIM families.**
 
-Whatever the family they belong to, all attributes will be exported to each product in Salesforce Commerce Cloud.
+Regardless of the family they belong to, all attributes will be exported to each product in Salesforce Commerce Cloud.
 Attributes values will also be fetched according to what has been filled in the PIM.
