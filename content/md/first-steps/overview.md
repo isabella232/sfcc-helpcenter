@@ -19,7 +19,7 @@ The PIM is considered as the master tool for product data, it should not be hand
 
 # Process overview
 
-The connector is composed by **9 jobs**:
+The connector is composed by **10 jobs**:
 - `1- Akeneo-Import-Attributes`									
 - `2- Akeneo-Import-Media-Assets-Pricebook`
 - `3-1-1 Akeneo-Differential-Import-Master`
@@ -35,7 +35,7 @@ The connector is composed by **9 jobs**:
 Each job can be triggered manually or automatically on its own.
 
 ::: info
-Each job is responsible for importing PIM architecture and data into Salesforce Commerce Cloud. The order above should be observed to build your catalog properly (1 then 2 then 3).
+Each job is responsible for importing PIM architecture and data into Salesforce Commerce Cloud. The order above should be observed to build your catalog properly.
 :::
 
 ## 1- Akeneo-Import-Attributes job
@@ -57,7 +57,7 @@ Depending on your [connector configuration](05-mapping-configuration.html), some
 
 ## 3- Akeneo-Full-Import & Akeneo-Differential-Import jobs
 
-"Full import" and "Differential import" jobs are quite similar and **should not be used at the same time**: they both import products from Akeneo PIM.
+"Full" import and "Differential" import jobs are quite similar and **should not be used at the same time**: they both import products from Akeneo PIM.
 
 - `3-2.x Akeneo-Full-Import-xxx` jobs import **all products** from Akeneo PIM.
 - `3-1.x Akeneo-Differential-Import-xxx` jobs import **only new products** since the last "**successful**" import made.
@@ -81,7 +81,7 @@ Depending on your [connector configuration](03-products-filter-configuration.htm
 
 ## 5- Akeneo-Entity-Record-Grouping
 
-`5- Akeneo-Entity-Import` job add some Reference Entity Records to an SFCC attribute group.
+`5- Akeneo-Entity-Import` job enables you to choose and group PIM reference entities in SFCC "Content Assets". 
 
 ::: info
 Depending on your [connector configuration](08-reference-entities.html), you can manage how your reference entities will be mapped into SFCC.
