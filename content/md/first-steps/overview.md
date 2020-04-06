@@ -27,6 +27,7 @@ The connector is composed by **9 jobs**:
 - `3-2-1 Akeneo-Full-Import-Master`
 - `3-2-2 Akeneo-Full-Import-Master-Variation`
 - `3-2-3 Akeneo-Full-Master-Image`
+- `3-2-4 Akeneo-Full-Import-Storefront`
 - `4- Akeneo-Entity-Import`
 - `5- Akeneo-Entity-Record-Grouping`
 
@@ -65,6 +66,7 @@ These jobs import:
 - PIM categories
 - PIM products and product models
 - PIM product associations
+- Relation between products and images
 
 ::: info
 Depending on your [connector configuration](03-products-filter-configuration.html), you can create some filters to run partial imports on products that match with your defined criteria.
