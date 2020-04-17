@@ -32,39 +32,18 @@ Akeneo teams will then get back to you on how to download the connector via our 
 
 **Pre-requisites:**
 
-Because the Akeneo Connector for SFCC is hosted on the **Project Console** of the **Akeneo portal** (either [partners.akeneo.com](https://partners.akeneo.com) or [customers.akeneo.com](https://customers.akeneo.com)), as an [Akeneo Portal project manager](https://help.akeneo.com/portal/articles/manage-project-managers.html), you need to check that:
+First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed for.
 
-1. You have [access to the connector](https://help.akeneo.com/portal/articles/extension-access.html#get-the-akeneo-extensions-and-their-documentation) (if you have not already done so).
-2. You created your software engineer's profile in your organization (i.e. the person who will install the Connector) and [have given them access to the **project console**](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-access-to-the-project-console).
-3. The software engineer has declared their SSH key on their profile and that you have [given them access to the Enterprise Repository](https://help.akeneo.com/portal/articles/get-akeneo-pim-enterprise-archive.html#give-the-access-to-the-enterprise-repository).
-4. Your software engineer uses their SSH key (**the same SSH key you configured in our Akeneo portal**) before starting to type the following git commands.
-
-::: info
-Please don't hesitate to contact your Akeneo CSM to check if everything is up and running for the next steps.
+:::info
+Your CSM has to activate the connector access for this project to see the Download link.
 :::
 
-Then clone the repository by using this command:
+Once you have clicked, you will have to select the archive version that you want to install.
+![SFCC download button](./img/Download-cartridge-button.gif)
 
-```bash
-git clone ssh://git@distribution.akeneo.com:443/sfcc-cartridge
-```
-
-If you encounter a HEAD error, please perform the following actions:
-
-`1.` Go to your project repository
-
-`2.` List all the available tags:
-```bash
-git tag
-```
-
-`3.` Select the latest tag (**the following example is for 19.10.0**) to retrieve all the files:
-```bash
-git checkout v19.10.0
-```
-
-`4.` Please read carefully all the instructions from the previous Git command.
-
+:::info
+We strongly recommended to get the last version
+:::
 
 # Install the connector
 
