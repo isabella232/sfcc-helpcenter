@@ -38,7 +38,7 @@ First of all, you need to access the [**Akeneo partner Portal**](https://partner
 Your CSM has to activate the connector access for this project for you to able able to see the download link.
 :::
 
-Once you have clicked, you will have to select the archive version that you want to install.
+Once you clicked, you will have to select the archive version that you want to install.
 ![SFCC download button](./img/Download-cartridge-button.gif)
 
 :::info
