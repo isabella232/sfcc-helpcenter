@@ -35,7 +35,7 @@ Akeneo teams will then get back to you on how to download the connector via our 
 First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed.
 
 :::info
-Your CSM has to activate the connector access for this project to see the Download link.
+Your CSM has to activate the connector access for this project for you to able able to see the download link.
 :::
 
 Once you have clicked, you will have to select the archive version that you want to install.
