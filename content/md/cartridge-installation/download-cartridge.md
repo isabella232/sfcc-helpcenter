@@ -35,7 +35,7 @@ Your CSM has to activate the connector access for this project for you to able a
 :::
 
 Once you clicked, you will have to select the archive version that you want to install.
-![SFCC download button](./img/Download-cartridge-button.gif)
+![SFCC download button](../img/Download-cartridge-button.gif)
 
 :::info
 We strongly recommend you to get the latest version.
