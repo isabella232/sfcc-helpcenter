@@ -32,7 +32,7 @@ Akeneo teams will then get back to you on how to download the connector via our 
 
 **Pre-requisites:**
 
-First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed for.
+First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed.
 
 :::info
 Your CSM has to activate the connector access for this project to see the Download link.
