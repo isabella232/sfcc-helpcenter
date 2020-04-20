@@ -28,17 +28,17 @@ This up-to-date version provides early access to **the latest patches and featur
 
 **Pre-requisites:**
 
-First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed for.
+First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed.
 
 :::info
-Your CSM has to activate the connector access for this project to see the Download link.
+Your CSM has to activate the connector access for this project for you to able able to see the download link.
 :::
 
-Once you have clicked, you will have to select the archive version that you want to install.
+Once you clicked, you will have to select the archive version that you want to install.
 ![SFCC download button](./img/Download-cartridge-button.gif)
 
 :::info
-We strongly recommended to get the last version
+We strongly recommend you to get the latest version.
 :::
 
 # Install the connector
