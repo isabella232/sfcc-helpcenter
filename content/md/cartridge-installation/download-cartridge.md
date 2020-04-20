@@ -42,7 +42,7 @@ Once you clicked, you will have to select the archive version that you want to i
 ![SFCC download button](./img/Download-cartridge-button.gif)
 
 :::info
-We strongly recommended to get the last version
+We strongly recommend you to get the latest version.
 :::
 
 # Install the connector
