@@ -1,16 +1,16 @@
 ---
 id: where-product-association
 themes: find-data
-title: Where can I find my PIM product associations?
+title: Where can you find your PIM product associations?
 popular: false
 related: where-categories, where-family, where-groups, where-attributes, where-reference-entities
 ---
 
-# Where to find my PIM product associations in SFCC?
+# Where can you find your PIM product associations in SFCC?
 
 1. Select your SFCC site, then click on `Merchant Tools`
-2. Then click on `Products` menu
-3. Use the search engine to find the product associations bound to your product.
+2. Click on the `Products` menu
+3. Use the search engine to find the product associations linked to your product.
 4. Click on the `Recommendations` tab of this product.
 
 ![Product association](../img/sfcc-where-association.png)
