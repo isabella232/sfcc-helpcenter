@@ -257,9 +257,8 @@ Since SFCC v19.6.0, with the following parameter, you can obtain 2 types of mode
 
 We recommend you to use the "Master-Group-Variation" modelization instead, which will give you more flexibility in managing your product model with 2 levels of variation.
 
-:::warning
-**Known limitation:**
-In the PIM, when you define a [**Family variant**](https://help.akeneo.com/pim/v3/articles/manage-your-families.html#create-a-new-family-variant) in order to create a **Product model**, you must define your **variation axes**.
+
+:::info
 
 In the PIM, an attribute of the family could be a variant axis only if its attribute type is structured:
 - Simple select
@@ -268,7 +267,5 @@ In the PIM, an attribute of the family could be a variant axis only if its attri
 - Metric
 - Boolean (Yes/No)
 
-But the current version of the Akeneo Connector for SFCC only retrieves product models based on "size" or "color" **simple select** attribute type to define the variation axis.
-
-We are currently working to improve our connector compared to SFCC capabilities to take into account other attribute types.
+This is now possible to handle all those type of attribute in the SFCC connector since its 20.2.0 version
 :::
