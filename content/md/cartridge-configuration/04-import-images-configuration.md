@@ -12,7 +12,7 @@ Akeneo PIM has 2 ways to store images for your products.
 
 Either with several `Image` attributes or by using the `Asset collection` attribute that points to one or more images from the `Assets` management feature of your PIM Enterprise Edition (using image files or image URLs).
 
-The SFCC Akeneo connector can retrieve images from the `Image` attributes, the `Asset Collection` attributes, or both. This is managed by Akeneo Image Import Type (akeneoImageImportType). If ‘both’ is selected, Media links are managed using product custom Attributes.
+The SFCC Akeneo connector can retrieve images from the `Image` attributes, the `Asset Collection` attributes, or both. This is managed by Akeneo Image Import Type (akeneoImageImportType). If ‘both’ is selected, Media links are managed using product custom Attributes in SFCC.
 
 ::: info
 
