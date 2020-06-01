@@ -57,7 +57,7 @@ With the Assets option selected (akeneoImageType):
 akeneo_<camelizedAssetCode>_<camelizedAssetAttributeCode>
 ```
 
-SFCC does not support locale specific image links. This is handled by the connector by appending view-type with locale (e.g.: large_en-US, swatch_fr-FR etc). This must be handled in storefront logic by the developer.
+Natively, SFCC does not support locale specific image links. This is handled by the connector by appending view-type with locale (e.g.: large_en-US, swatch_fr-FR etc). This must be handled in storefront logic by the developer.
 
 :::info
 You can define asset attributes that can be linked to SFCC viewtypes. Please note that these attributes must have the same code across all asset families. This mapping should be filled in Image Link View-Types Mapping (akeneoImageLinkViewTypesMapping) configuration.
