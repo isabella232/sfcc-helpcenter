@@ -22,7 +22,7 @@ Please note that the SFCC cartridge is Asset Manager compliant for images since 
 
 ::: warning
 
-When you use the system in 'both' mode, only image files will be visible into the grid vew in Salesforce.
+When you use the system in 'both' mode, only image files will be visible into the grid view in Salesforce.
 
 :::
 
