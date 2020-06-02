@@ -262,9 +262,8 @@ We recommend you to use the "Master-Group-Variation" modelization instead, which
 
 In the PIM, an attribute of the family could be a variant axis only if its attribute type is structured:
 - Simple select
-- Simple reference data
 - Reference entity single link (EE only)
-- Metric
+- Measurement (ex-Metric)
 - Boolean (Yes/No)
 
 This is now possible to handle all those type of attribute in the SFCC connector since its 20.2.0 version

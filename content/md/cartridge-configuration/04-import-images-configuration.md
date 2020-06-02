@@ -50,9 +50,9 @@ In the [connector configuration page](01-where-configuration.html), you need to 
 With the Assets option selected (akeneoImageType):
 * `Asset System Version` (akeneoAssetSytem): Select what type of Asset system you use, for PAM (version < 4.0) select the old Asset system and for Asset Management system (version >= 4.0) select new asset system.
 * `Akeneo Image Import Type` (akeneoImageImportType): you can select here if you rather prefer to:
-** *import Image binaries only* (Image Media File only) In this mode image binaries will be linked to products.
-** *import Image media links only* (Image Media Links Only) In this mode image links will be linked to products using SFCC’s external Image Management system.
-** *import both media files and media links* (Both) In this mode image binaries will be linked to products and image links will be imported to product custom attribute with the ID matching the following pattern,
+  * *import Image binaries only* (Image Media File only) In this mode image binaries will be linked to products.
+  * *import Image media links only* (Image Media Links Only) In this mode image links will be linked to products using SFCC’s external Image Management system.
+  * *import both media files and media links* (Both) In this mode image binaries will be linked to products and image links will be imported to product custom attribute with the ID matching the following pattern,
 ```json
 akeneo_<camelizedAssetCode>_<camelizedAssetAttributeCode>
 ```
@@ -63,11 +63,11 @@ Natively, SFCC does not support locale specific image links. This is handled by 
 You can define asset attributes that can be linked to SFCC viewtypes. Please note that these attributes must have the same code across all asset families. This mapping should be filled in Image Link View-Types Mapping (akeneoImageLinkViewTypesMapping) configuration.
 :::
 
-<!--
+
 ::: warning
 For any change in configuration related to Images and Assets management, there must be a run of Full Import of assets and products to rebuild the correct caches necessary for correct imports. In addition, the target catalogs may be deleted and created and assigned to the Sites again.
 :::
--->
+
 
 ::: info
 Akeneo PIM allows 2 levels of localization and scope-management, at the asset attribute level and at the product attribute level. SFCC connector will read the locale and scope values from *asset attributes*. This is why the product attributes of the type `pim_catalog_asset_collection` must be non-localizable and non-scopable.
