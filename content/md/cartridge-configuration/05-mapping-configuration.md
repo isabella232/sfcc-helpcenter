@@ -15,7 +15,7 @@ In the [connector configuration page](01-where-configuration.html), fill in the 
 | SFCC Master Catalog ID        |  SFCC master catalog ID |
 | (or Products Catalog ID)      |                         |
 
-Please consider that a mapping (by definition) is the way to link a variable with another one. This is why - if the mapping is doable by the system - the PIM attribute will not appear in the SFCC attribute board, but for sure its value will appear in the mapped SFCC field.
+Please consider that a mapping (by definition) is the way to link a variable with another one. This is why - if the mapping is accurate - the PIM attribute will not appear in the SFCC attribute board, but for sure its value will appear in the mapped SFCC field.
 
 ## How to define which PIM categories will be used for my storefront catalog?
 
