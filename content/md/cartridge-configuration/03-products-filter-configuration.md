@@ -101,5 +101,5 @@ with the SalesForce online status:
 ![SalesForce configuration](../img/sfcc-cartridge-sf-onlineStatus.png)
 
 :::info
-The use of this feature will overwrite the manual link you maybe created according to the SalesForce std attribute mapping described into the [filter configuration page](05-mapping-configuration.html)
+The use of this feature will overwrite the manual link you maybe created according to the SalesForce system attribute mapping described into the [filter configuration page](05-mapping-configuration.html)
 :::
