@@ -89,7 +89,7 @@ For example, the filter below enables you to import products with a completeness
 }
 ```
 
-# How can I synchronize my product PIM status with the SaloesForce online status (onlineFlag)?
+# How can I synchronize my product PIM status with the SalesForce online status (onlineFlag)?
 
 Since the 20.2.2 version, you are able to configure in the [**connector configuration page**](01-where-configuration.html), your choice to use the automated PIM Product synchronization:
 
