@@ -88,3 +88,18 @@ For example, the filter below enables you to import products with a completeness
     "attributes": ["name", "description", "mytext"]
 }
 ```
+
+# How can I synchronize my product PIM status with the SalesForce online status (onlineFlag)?
+
+Since the 20.2.2 version, you are able to configure in the [**connector configuration page**](01-where-configuration.html), how you want to synchronize your PIM Product status with Salesforce:
+
+![Connector configuration](../img/sfcc-cartridge-PIM-status-synchro.png)
+
+This configuration will allow you to map the PIM product status
+![PIM configuration](../img/sfcc-cartridge-PIM-status-set.png)
+with the SalesForce online status:
+![SalesForce configuration](../img/sfcc-cartridge-sf-onlineStatus.png)
+
+:::info
+The use of this feature will overwrite the manual link you maybe created according to the SalesForce system attribute mapping described into the [filter configuration page](05-mapping-configuration.html)
+:::
