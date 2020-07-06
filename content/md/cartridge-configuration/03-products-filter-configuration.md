@@ -97,7 +97,7 @@ Since the 20.2.2 version, you are able to configure in the [**connector configur
 
 This configuration will allow you to map the PIM product status
 ![PIM configuration](../img/sfcc-cartridge-PIM-status-set.png)
-to the SalesForce online status:
+with the SalesForce online status:
 ![SalesForce configuration](../img/sfcc-cartridge-sf-onlineStatus.png)
 
 :::info
