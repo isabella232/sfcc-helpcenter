@@ -91,7 +91,7 @@ For example, the filter below enables you to import products with a completeness
 
 # How can I synchronize my product PIM status with the SalesForce online status (onlineFlag)?
 
-Since the 20.2.2 version, you are able to configure in the [**connector configuration page**](01-where-configuration.html), your choice to use the automated PIM Product synchronization:
+Since the 20.2.2 version, you are able to configure in the [**connector configuration page**](01-where-configuration.html), how you want to synchronize your PIM Product status with Salesforce:
 
 ![Connector configuration](../img/sfcc-cartridge-PIM-status-synchro.png)
 
