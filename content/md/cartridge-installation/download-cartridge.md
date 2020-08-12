@@ -152,3 +152,7 @@ If the issue occurs with the latest version of the connector, feel free to repor
 <br>
 Please note that we do not offer support on the **free version** of Akeneo connector for SFCC (which you get from [Salesforce marketplace](https://www.salesforce.com/products/commerce-cloud/partner-marketplace/partners/akeneo/))
 :::
+
+::: warning
+Custom product attributes fields are automatically created while the *cartridge installation process* (and then not while the import process), so do not delete them or you will have to re install the connector to retrieve your custom fields.
+:::

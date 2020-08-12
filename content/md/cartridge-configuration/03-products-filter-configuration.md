@@ -1,9 +1,9 @@
 ---
 id: 03-products-filter-configuration
 themes: cartridge-configuration
-title: How can I filter only the PIM products I want to import in SFCC?
+title: Filter on the PIM products
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities
+related: 01-where-configuration, 02-configure-PIM-API, 04-import-images-configuration, 05-import-media-configuration, 06-mapping-configuration, 07-categories-configuration, 08-multi-storefront-configuration, 09-reference-entities
 ---
 
 # How to import PIM product data from a specific channel?
@@ -101,5 +101,5 @@ with the SalesForce online status:
 ![SalesForce configuration](../img/sfcc-cartridge-sf-onlineStatus.png)
 
 :::info
-The use of this feature will overwrite the manual link you maybe created according to the SalesForce system attribute mapping described into the [filter configuration page](05-mapping-configuration.html)
+The use of this feature will overwrite the manual link you maybe created according to the SalesForce system attribute mapping described into the [filter configuration page](06-mapping-configuration.html)
 :::

@@ -1,9 +1,9 @@
 ---
-id: 08-reference-entities
+id: 09-reference-entities
 themes: cartridge-configuration
-title: How to retrieve PIM reference entities in SFCC?
+title: Manage your Reference entities synchronization
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-import-media-configuration, 06-mapping-configuration, 07-categories-configuration, 08-multi-storefront-configuration
 ---
 
 
@@ -11,7 +11,7 @@ related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-config
 
 Since the `V19.8.0` version of the Akeneo Connector for SFCC, the connector can manage PIM reference entities.
 
-Reference entities in the PIM don't have an exact equivalent in SFCC. This is the reason why `reference entities` will be imported as  `Content Asset` objects. 
+Reference entities in the PIM don't have an exact equivalent in SFCC. This is the reason why `reference entities` will be imported as  `Content Asset` objects.
 
 Each PIM reference entity will be represented by a `Content Asset` in SFCC.
 
@@ -19,7 +19,7 @@ For example, a PIM `reference entity` of a given brand (code: “**brand**”) w
 
 PIM `reference entity records` will be imported as **JSON** objects in the corresponding `custom attributes` of the SFCC `Content Asset`.
 
-To be extra clear, let's take a look at a specific example. 
+To be extra clear, let's take a look at a specific example.
 First of all, you need to import all your PIM `reference entity records`. Among them all, you can find, for example, a JSON object of the “**dyson**” `reference entity record`. It belongs to the the “**brand**” reference entity. In SFCC, it will be available as a “**akeneo_entity_brand_dyson**“ `custom attribute` of “**akeneo_entity_brand**” `Content Asset`.
 
 :::warning

@@ -1,9 +1,9 @@
 ---
-id: 06-categories-configuration
+id: 07-categories-configuration
 themes: cartridge-configuration
-title: How to configure my categories?
+title: configuration of categories
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-mapping-configuration, 07-multi-storefront-configuration, 08-reference-entities
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-import-media-configuration, 06-mapping-configuration, 08-multi-storefront-configuration, 09-reference-entities
 ---
 
 # How to define which PIM category trees I want to push to SFCC?

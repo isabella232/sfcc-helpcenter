@@ -1,9 +1,9 @@
 ---
 id: 04-import-images-configuration
-themes: connector-configuration
-title: How to configure the cartridge to import PIM images?
+themes: cartridge-configuration
+title: configuration to import PIM images
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 05-mapping-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 05-import-media-configuration, 06-mapping-configuration, 07-categories-configuration, 08-multi-storefront-configuration, 09-reference-entities
 ---
 
 # First of all, what images are we talking about exactly?!
@@ -15,15 +15,11 @@ Either with several `Image` attributes or by using the `Asset collection` attrib
 The SFCC Akeneo connector can retrieve images from the `Image` attributes, the `Asset Collection` attributes, or both. This is managed by Akeneo Image Import Type (akeneoImageImportType). If ‘both’ is selected, Media links are managed using product custom Attributes in SFCC.
 
 ::: info
-
 Please note that the SFCC cartridge is Asset Manager compliant for images since the 20.2.0 version.
-
 :::
 
 ::: warning
-
 When you use the system in 'both' mode, only image files will be visible into the grid view in Salesforce.
-
 :::
 
 # How can I retrieve images from the "image" attributes?
@@ -63,12 +59,6 @@ Natively, SFCC does not support locale specific image links. This is handled by 
 You can define asset attributes that can be linked to SFCC viewtypes. Please note that these attributes must have the same code across all asset families. This mapping should be filled in Image Link View-Types Mapping (akeneoImageLinkViewTypesMapping) configuration.
 :::
 
-
-::: warning
-For any change in configuration related to Images and Assets management, there must be a run of Full Import of assets and products to rebuild the correct caches necessary for correct imports. In addition, the target catalogs may be deleted and created and assigned to the Sites again.
-:::
-
-
 ::: info
 Akeneo PIM allows 2 levels of localization and scope-management, at the asset attribute level and at the product attribute level. SFCC connector will read the locale and scope values from *asset attributes*. This is why the product attributes of the type `pim_catalog_asset_collection` must be non-localizable and non-scopable.
 :::
@@ -83,10 +73,16 @@ In addition, an SFCC attribute is created for each "Asset Collection" PIM attrib
 :::
 
 ::: warning
+If you already have implemented the 20.2.X cartridge for your images assets (with the asset manager model), please note that the frontend will now reach the information by adding `product.custom.` before your `akeneo_myVar`
+:::
 
+::: warning
+For any change in configuration related to Images and Assets management, there must be a run of Full Import of assets and products to rebuild the correct caches necessary for correct imports. In addition, the target catalogs may be deleted and created and assigned to the Sites again.
+:::
+
+::: warning
 If you use images URLs:
 All images must be hosted with the same provider and the base URL for that provider should be filled in External Image Location (akeneoExternalImageLocation) configuration.
-
 :::
 
 # How can I retrieve images from both my "Image" and "Asset Collection" attributes at the same time?
