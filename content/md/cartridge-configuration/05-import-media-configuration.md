@@ -24,7 +24,7 @@ Please note that since Akeneo Connector for SFCC version 20.3.0,  we have slight
 1. your asset collection will be created as a SFCC custom attribute (whatever the media is a link or a file)
 ![Asset collection converted into a product attribute](../img/sfcc-cartridge-attribute-link-array.png)
 
-2. The related information is stored as an index array (the sorting of the media in the PIM is maintained into this index order). By searching in the product attribute the ID you will find the related media information.
+2. The related information is stored as an index array (the sorting of the media in the PIM is maintained into this index order). By searching the ID in the product attribute, you will find the related media information.
 
 3. in our exemple `akeneo_amAssetCollectionLinkAndBinScopable` is equal to `["asset1_vdo_ytb_en"]`. That means: there is only one asset in the asset collection and this asset has `asset1_vdo_ytb_en` for ID. If you search the product attribute `asset1_vdo_ytb_en` then you will find:
 
@@ -51,7 +51,7 @@ Exactly the same that the PIM do: **Youtube** or **Vimeo** videos links only.
 
 # What are the files that the connectors can handle?
 
-You have to know that the "files" can be either "PDF" or "Other". The main difference is related to the PIM thumbnail generation. Anyway for the files (PDF & Other) you are able to use **URL** or **binaries**.
+You have to know that the "files" can be either "PDF" or "Other". The main difference is related to the PIM thumbnail generation. Anyway for the files (PDF & Other) you are able to use **URL** or **binaries**. If you choose `other`as media type, you will be able to manage any kind of media (please consider that bigger is the file, longer the processing time will be).
 
 ::: warning
 Even if you can upload video files by using "Other", please consider That
