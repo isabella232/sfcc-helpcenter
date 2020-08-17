@@ -57,4 +57,7 @@ You have to know that the "files" can be either "PDF" or "Other". The main diffe
 Even if you can upload video files by using "Other", please consider That
 1. the PIM **is not** a CDN nor a DAM
 2. the upload processing time can be extremely long, depending the size of your files.
+
+We don't recommend storing media at the PIM level (unless you have very few files).
+For performance reasons, we strongly recommend that you use a DAM associated with a CDN (or equivalent) to store your media so that the connector synchronization only transfers URL-type information in SFCC.
 :::
