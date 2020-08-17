@@ -21,7 +21,7 @@ The media gathering process will be impacted by the way you have configured the 
 
 Please note that since Akeneo Connector for SFCC version 20.3.0,  we have slightly changed the way to manage media (and then images): in order to not be constrained by the SharedLibraries limits anymore, we have changed the way to store the media information: you will have the PIM **asset collection and its content described as a SFCC custom product attribute**.
 
-1. your asset collection will be created as a custom attribute (whatever the media is a link or a file)
+1. your asset collection will be created as a SFCC custom attribute (whatever the media is a link or a file)
 ![Asset collection converted into a product attribute](../img/sfcc-cartridge-attribute-link-array.png)
 
 2. The related information is stored as an index array (the sorting of the media in the PIM is maintained into this index order). By searching in the product attribute the ID you will find the related media information.
