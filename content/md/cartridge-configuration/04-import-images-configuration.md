@@ -59,7 +59,7 @@ Natively, SFCC does not support locale specific image links. This is handled by 
 You can define asset attributes that can be linked to SFCC viewtypes. Please note that these attributes must have the same code across all asset families. This mapping should be filled in Image Link View-Types Mapping (akeneoImageLinkViewTypesMapping) configuration.
 :::
 
-::: info
+::: warning
 Akeneo PIM allows 2 levels of localization and scope-management: at the asset attribute level and at the product attribute level. SFCC connector will read the locale and scope values from *asset attributes*. Because SFCC doesn't manage both level, the product attributes of the type `pim_catalog_asset_collection` **must be non-localizable and non-scopable**.
 :::
 
