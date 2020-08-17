@@ -60,7 +60,7 @@ You can define asset attributes that can be linked to SFCC viewtypes. Please not
 :::
 
 ::: info
-Akeneo PIM allows 2 levels of localization and scope-management, at the asset attribute level and at the product attribute level. SFCC connector will read the locale and scope values from *asset attributes*. This is why the product attributes of the type `pim_catalog_asset_collection` must be non-localizable and non-scopable.
+Akeneo PIM allows 2 levels of localization and scope-management: at the asset attribute level and at the product attribute level. SFCC connector will read the locale and scope values from *asset attributes*. Because SFCC doesn't manage both level, the product attributes of the type `pim_catalog_asset_collection` **must be non-localizable and non-scopable**.
 :::
 
 ::: info
