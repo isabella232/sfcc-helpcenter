@@ -77,7 +77,7 @@ If you already have implemented the 20.2.X cartridge for your images assets (wit
 :::
 
 ::: warning
-For any change in configuration related to Images and Assets management, there must be a run of Full Import of assets and products to rebuild the correct caches necessary for correct imports. In addition, the target catalogs may be deleted and created and assigned to the Sites again.
+For any change in configuration related to Images and Assets management (for exemple, switching from PAM 3.2 to Asset Manager 4.0 model), there must be a run of **Full Import** to rebuild the correct caches necessary for correct imports. if the full reimport is not efficient, then consider to recreate your catalog.
 :::
 
 ::: warning
