@@ -44,7 +44,7 @@ Alternative: since the SFCC Connector **v19.6.0** version, you can model PIM Pro
 - PIM product models variation `level 1` part is mapped with SFCC `Variation group`
 - PIM product models variation `level 2` part is mapped with SFCC `Variation products`
 
-Please consult our [cartridge configuration page](05-mapping-configuration.html) to know how to configure this alternative.
+Please consult our [cartridge configuration page](06-mapping-configuration.html) to know how to configure this alternative.
 
 :::
 
@@ -66,7 +66,7 @@ After your product attributes review, **don't forget to click on the `Unlock` li
 
 On this page, you will find all your PIM product attributes.
 
-Depending on the [configuration of your connector](05-mapping-configuration.html) the mapping of SFCC attributes may be as follows:
+Depending on the [configuration of your connector](06-mapping-configuration.html) the mapping of SFCC attributes may be as follows:
 - Some PIM attributes could be mapped with SFCC product default attributes
 - The remaining PIM attributes will appear in the `Akeneo Attributes` part of the page
 

@@ -53,7 +53,7 @@ If you have some **scopable** attributes (attributes that can have different val
 
 # Categories
 
-Depending on your [category configuration](06-categories-configuration.html), Akeneo Connector for SFCC could import all PIM category trees.
+Depending on your [category configuration](07-categories-configuration.html), Akeneo Connector for SFCC could import all PIM category trees.
 
 ::: info
 **Mapping between Akeneo PIM and SFCC:**<br>
@@ -90,16 +90,16 @@ Alternative: since version SFCC Connector **v19.6.0**, you can model PIM Product
 
 # Product associations
 
-Depending on your [product association mapping configuration](05-mapping-configuration.html), Akeneo Connector for SFCC will import your PIM product associations.
+Depending on your [product association mapping configuration](06-mapping-configuration.html), Akeneo Connector for SFCC will import your PIM product associations.
 
 **Mapping between your PIM and SFCC:**<br>
 Akeneo Connector for SFCC maps PIM `product associations` with SFCC `product recommendations`.<br>
-Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` will be mapped with SFCC `product recommendation type`.
+Depending on your [product association mapping configuration](06-mapping-configuration.html), each PIM `product association type` will be mapped with SFCC `product recommendation type`.
 
 ::: info
 ** Since Akeneo Connector for SFCC V19.3.3 **
 Akeneo Connector for SFCC can also map PIM `product associations` with SFCC `product links`.<br>
-Depending on your [product association mapping configuration](05-mapping-configuration.html), each PIM `product association type` will be mapped with SFCC `product link type`.
+Depending on your [product association mapping configuration](06-mapping-configuration.html), each PIM `product association type` will be mapped with SFCC `product link type`.
 :::
 
 # Currencies
@@ -121,4 +121,4 @@ As there is no such thing as Product Groups in SFCC, the connector does not impo
 
 Since Akeneo Connector for SFCC `V19.8.0`, the Connector can manage PIM Reference Entity Records.
 
-Depending on your [Reference entity configuration](08-reference-entities.html), PIM `Reference Entity Records` will be mapped with SFCC `Content assets`.
+Depending on your [Reference entity configuration](09-reference-entities.html), PIM `Reference Entity Records` will be mapped with SFCC `Content assets`.

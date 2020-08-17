@@ -56,7 +56,7 @@ Each job is responsible for importing PIM architecture and data into Salesforce 
 - **PIM attribute options** (from simple and multi select attribute type)
 
 ::: info
-Depending on your [connector configuration](05-mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
+Depending on your [connector configuration](06-mapping-configuration.html), some attributes can be mapped with default SFCC product attributes.
 :::
 
 ## 2-1-Akeneo-Differential-Import-Assets job
@@ -99,7 +99,7 @@ Depending on your [connector configuration](03-products-filter-configuration.htm
 `5- Akeneo-Entity-Import` job enables you to choose and group PIM reference entities in SFCC "Content Assets". 
 
 ::: info
-Depending on your [connector configuration](08-reference-entities.html), you can manage how your reference entities will be mapped into SFCC.
+Depending on your [connector configuration](09-reference-entities.html), you can manage how your reference entities will be mapped into SFCC.
 :::
 
 ## 6-Akeneo-Save-Catalog-Refinements

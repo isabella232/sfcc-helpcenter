@@ -1,9 +1,9 @@
 ---
-id: 05-mapping-configuration
+id: 06-mapping-configuration
 themes: cartridge-configuration
-title: How to map PIM data content with SFCC data content?
+title: Configuration your PIM-SFCC mapping
 popular: false
-related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 06-categories-configuration, 07-multi-storefront-configuration, 08-reference-entities
+related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-import-media-configuration, 07-categories-configuration, 08-multi-storefront-configuration, 09-reference-entities
 ---
 # Catalog mapping
 ## How to define which SFCC master catalog will be used to spread your PIM product data?
@@ -17,6 +17,10 @@ In the [connector configuration page](01-where-configuration.html), fill in the 
 
 Please consider that a mapping (by definition) is the way to link a variable with another one. This is why - if the mapping is accurate - the PIM attribute will not appear in the SFCC attribute board, but for sure its value will appear in the mapped SFCC field.
 
+:::info
+The way to use the mapping in our connectors is based on the unique association. That means that a PIM value can be mapped on only one SFCC value.
+:::
+
 ## How to define which PIM categories will be used for my storefront catalog?
 
 Since the **version 19.7.0** Akeneo connector, and depending on your needs, you can configure which PIM categories will be used for your storefront catalog.
@@ -28,7 +32,7 @@ In the [connector configuration page](01-where-configuration.html), fill in the 
 | Top Level Category for Storefront Catalog |  PIM category ID        |
 
 ::: info
-Want to know more? Please read our [documentation](07-multi-storefront-configuration.html) on how to manage multiple organizations, multiple storefronts with the Akeneo Connector for SFCC.
+Want to know more? Please read our [documentation](08-multi-storefront-configuration.html) on how to manage multiple organizations, multiple storefronts with the Akeneo Connector for SFCC.
 :::               
 
 

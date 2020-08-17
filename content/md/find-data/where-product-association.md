@@ -16,7 +16,7 @@ related: where-categories, where-family, where-groups, where-attributes, where-r
 ![Product association](../img/sfcc-where-association.png)
 
 :::info
-Depending on the [configuration of your connector](05-mapping-configuration.html#product-association-mapping), the `Recommendation Type` column will indicate the PIM `association type` used.
+Depending on the [configuration of your connector](06-mapping-configuration.html#product-association-mapping), the `Recommendation Type` column will indicate the PIM `association type` used.
 :::
 
 # What about "product links" in SFCC?
@@ -25,5 +25,5 @@ Salesforce recommends to use `Recommendations` instead of `Product links` in Com
 
 :::info
 However, please note that some users could use the `product links` feature to handle their product associations in SFCC. We have also added the possibility to map **PIM product associations** with **SFCC Product links** since Akeneo Connector for SFCC **version 19.4.1**.<br>
-Please have a look at the [specific configuration](05-mapping-configuration.html) for this feature.
+Please have a look at the [specific configuration](06-mapping-configuration.html) for this feature.
 :::

@@ -14,7 +14,7 @@ related: where-attributes, where-family, where-groups, where-product-association
 ![Categories](../img/sfcc-where-categories.png)
 
 :::info
-Depending on the [configuration of your connector](06-categories-configuration.html), browsing through categories and sub-categories on this page will feature all PIM Categories as well as Products associated with these categories.
+Depending on the [configuration of your connector](07-categories-configuration.html), browsing through categories and sub-categories on this page will feature all PIM Categories as well as Products associated with these categories.
 :::
 
 # Where can you see categories associated with a specific product?
@@ -27,5 +27,5 @@ Depending on the [configuration of your connector](06-categories-configuration.h
 ![Product categories](../img/sfcc-where-product-categories.png)
 
 :::info
-Depending on the [configuration of your connector](06-categories-configuration.html), you will find which categories are online in the `Status` column.
+Depending on the [configuration of your connector](07-categories-configuration.html), you will find which categories are online in the `Status` column.
 :::
