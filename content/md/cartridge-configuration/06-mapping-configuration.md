@@ -121,7 +121,7 @@ Note: If you don't want to use this feature, please leave a space between curly 
 
 ## How to exclude Attribute groups from the import process?
 
-More and more users need to exclude a whole attribute group from their import process. Most of the time, you need that feature because you have PIM technical attributes you don't want to be copied in SFCC. To do so, please use [**the Connection rights**](https://help.akeneo.com/pim/serenity/articles/manage-your-connections.html#configure-the-connection-user-group) to exclude this attribute group(s) from the connector access right and then to avoid to import the group(s).
+More and more users need to exclude a whole attribute group from their import process. Most of the time, you need that feature because you have PIM technical attributes you don't want to be copied in SFCC. To do so, please use [**the Connection rights**](https://help.akeneo.com/pim/serenity/articles/manage-your-connections.html#configure-the-connection-user-group) to exclude this attribute group(s) from the connector access right and then to avoid importing the group(s).
 
 Once you have created the user right group, please consider to add it to every single attribute group **you want to import**.
 
