@@ -119,11 +119,11 @@ Please, note that each PIM attribute is prefixed with the `akeneo_` label in Sal
 Note: If you don't want to use this feature, please leave a space between curly brackets ({ }).
 :::
 
-## How to exclude Attribute groups from the import process?
+## How to exclude an attribute groups from the import process?
 
-More and more users need to exclude a whole attribute group from their import process. Most of the time, you need that feature because you have PIM technical attributes you don't want to be copied in Magento. To do so, please use [**the Connection rights**](https://help.akeneo.com/pim/serenity/articles/manage-your-connections.html#configure-the-connection-user-group) to exclude this attribute group(s) from the connector access right and then to avoid to import the group(s).
+More and more users need to exclude a whole attribute group from their import process. Most of the time, you need that feature because you have PIM technical attributes you don't want to import into SFCC. To do so, please use [**the Connection permission**](https://help.akeneo.com/pim/serenity/articles/manage-your-connections.html#configure-the-connection-user-group).
 
-Once you have created the user right group, please consider to add it to every single attribute group **you want to import**.
+Once you have created the permission group, add it to the attribute in the permission section for every single attribute group **you want to import**.
 
 :::info
 Due to the user right management, this solution is available only for EE users.
