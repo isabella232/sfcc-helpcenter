@@ -34,8 +34,8 @@ In the [connector configuration page](01-where-configuration.html), if you selec
 
 # How to not import PIM categories in SFCC?
 
-In the [connector configuration page](01-where-configuration.html), select `Yes` for the parameter below if you want to copy the PIM categories in SFCC. Otherwise, select `No`.
+In the [connector configuration page](01-where-configuration.html), select `Yes` for the parameter below if you want to copy the PIM categories into SFCC. Otherwise, select `No`.
 
 | Connector parameter           | SFCC information        |
 | :-----------------------------| :---------------------: |
-| akeneoWriteCategories        |  None, Yes (default value) or No              |
+| akeneoWriteCategories        |  Yes (default value) or No              |
