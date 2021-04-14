@@ -104,7 +104,7 @@ Depending on your [connector configuration](03-products-filter-configuration.htm
 - PIM Reference Entity Records
 
 ::: info
-This is useless to run this job with a **Growth Edition** PIM.
+This is useless to run this job with a **Growth Edition** nor a **Community Edition** PIM.
 :::
 
 ## 5- Akeneo-Entity-Record-Grouping
@@ -116,7 +116,7 @@ Depending on your [connector configuration](09-reference-entities.html), you can
 :::
 
 ::: info
-This is useless to run this job with a **Growth Edition** PIM.
+This is useless to run this job with a **Growth Edition** nor a **Community Edition** PIM.
 :::
 
 ## 6-Akeneo-Save-Catalog-Refinements
