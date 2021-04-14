@@ -17,6 +17,16 @@ The connector is an **unidirectional** system: it exports PIM data to SFCC. **No
 
 The PIM is considered as the master tool for product data, it should not be handled in SFCC.
 
+## Growth Edition Compatibility
+The Akeneo Connector for SFCC is compatible with our Akeneo PIM **Growth Edition**. As you know some features managed by the Akeneo Connector for SFCC are not included in the Growth Edition:
+- Reference entities
+- Asset manager
+- User Rights
+
+::: info
+We will do our best to deactivate the errors generated in the logs, due to API calls related to those features, but be sure that your full/differential import will be successful.
+:::
+
 # Process overview
 
 The connector is composed by **12 jobs**:
@@ -93,13 +103,20 @@ Depending on your [connector configuration](03-products-filter-configuration.htm
 - PIM Reference Entities
 - PIM Reference Entity Records
 
+::: info
+This is useless to run this job with a **Growth Edition** PIM.
+:::
 
 ## 5- Akeneo-Entity-Record-Grouping
 
-`5- Akeneo-Entity-Import` job enables you to choose and group PIM reference entities in SFCC "Content Assets". 
+`5- Akeneo-Entity-Import` job enables you to choose and group PIM reference entities in SFCC "Content Assets".
 
 ::: info
 Depending on your [connector configuration](09-reference-entities.html), you can manage how your reference entities will be mapped into SFCC.
+:::
+
+::: info
+This is useless to run this job with a **Growth Edition** PIM.
 :::
 
 ## 6-Akeneo-Save-Catalog-Refinements
