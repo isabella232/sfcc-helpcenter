@@ -18,8 +18,6 @@ var frontMatter = require('gulp-front-matter');
 var rename = require('gulp-rename');
 var revReplace = require('gulp-rev-replace');
 
-var majorVersion = 'v20';
-
 function getTocMarkdown(currentPage) {
     return "\n\n:::: toc\n@[toc]\n\n::::\n\n";
 }
@@ -234,14 +232,13 @@ gulp.task('build-articles', ['clean-dist','less', 'build-themes'], function () {
                             eeOnly: eeOnly,
                             relatedArticles: relatedArticles,
                             mainContent: fs.readFileSync('tmp/' + fileName),
-                            filePath: 'articles/' + id + '.html',
-                            majorVersion: majorVersion
+                            filePath: 'articles/' + id + '.html'
                         }, {
                         partialsDirectory: ['./src/partials']
                     }))
                     .pipe(rename(id + '.html'))
                     .pipe(revReplace({manifest: gulp.src("./tmp/rev/rev-manifest.json")}))
-                    .pipe(gulp.dest('./dist/sfcc/'+ majorVersion + '/articles'));
+                    .pipe(gulp.dest('./dist/sfcc/articles'));
                 });
             });
         }));
