@@ -28,7 +28,7 @@ gulp.task('launch-webserver', ['create-dist'], function() {
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
-      open: '/sfcc/v20/',
+      open: '/sfcc/',
       host: '0.0.0.0',
     }));
 });
