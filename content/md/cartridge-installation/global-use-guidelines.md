@@ -6,7 +6,7 @@ popular: true
 related: download-cartridge, 01-where-configuration
 ---
 
-*This page aims at sharing some best practices regarding our Akeneo connector implementation and some basic guidelines to keep in mind.*
+*This page aims at sharing some best practices regarding our Akeneo connector **for SalesForce Commerce Cloud** implementation and some basic guidelines to keep in mind.*
 
 # What you need to know?
 First of all, Akeneo Connector is a bridge between Akeneo PIM (in its core version) and Salesforce Commerce Cloud (in its core version). Why is it important to notice? Because our Akeneo Connector is an agnostic connector that is independent of customer's specificities. Our goal is to provide a solid technical basis to plug Akeneo PIM into a Salesforce Commerce Cloud (SFCC) instance. If some particularities are required, this is not a problem; ask your IT referral (integrator or IT team) to **[customize the connector](#what-are-the-best-practices-to-customize-akeneo-connector)**.
