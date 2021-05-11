@@ -62,7 +62,7 @@ You should ask yourself:
 
 1. Are Akeneo **PIM and/or the eCommerce platform customized in any way**? If they are, that should raise a warning.
 2. Are all the project actors **aware of their responsibilities?** Check the RACI, if there are any doubts, make sure everyone attends the [Akeneo Akademy Training](https://akademy.akeneo.com/). Confusions around responsibilities may lead to errors in commercial quotations and therefore unnecessary frustrations.
-3. does the system integrator (or the IT team in charge of the integration) know that:
+3. Does the system integrator (or the IT team in charge of the integration) know that:
     * every month, there will be a **new version** of Akeneo Connector and they will have to update their Connector accordingly (with or without customizations)?
     * if there is a customization, the related **support** (level 1 to 3) and **maintenance** fall with the team that has developed this customization.
 4. **The bigger** the catalog, the sooner the Connector has to be tested, especially in terms of performance and synchro data policy definition.
