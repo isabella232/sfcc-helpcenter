@@ -55,7 +55,7 @@ As part of our [**SFCC online training**](https://akademy.akeneo.com/akeneo-conn
 
 This is pretty easy: you should **test the Connector as early as possible in the integration process**. By doing so, you will challenge the data model and ensure the efficiency of the mapping.
 :::info
-Please note that evaluating the core connector version to know if it fits your needs belongs to your technical team or your integrator. This is why the earlier you are testing, the earlier you will be confident in the connector compatibility and its adoption.
+Please note that evaluating the core connector version to know if it fits your needs belongs to your technical team or your integrator. This is why the earlier you start testing, the earlier you are confident in the connector compatibility and its adoption.
 :::
 
 You should ask yourself:
