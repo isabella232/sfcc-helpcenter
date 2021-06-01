@@ -29,3 +29,7 @@ In the [connector configuration page](01-where-configuration.html), fill in the 
 | Akeneo Login                  |  PIM user username |
 | Akeneo Password               |  PIM user password |
 | Akeneo Service General URL    |  PIM URL           |
+
+:::info
+In the case of an Akeneo API unavailability, there is no automatic procedure to re-connect. However, the connector will try three times to reach the API before stopping.
+:::
