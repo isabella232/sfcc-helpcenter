@@ -11,7 +11,7 @@ related: download-cartridge, 01-where-configuration
 # What you need to know?
 First of all, Akeneo Connector is a bridge between Akeneo PIM (in its core version) and Salesforce Commerce Cloud (in its core version). Why is it important to notice? Because our Akeneo Connector is an agnostic connector that is independent of customer's specificities. Our goal is to provide a solid technical basis to plug Akeneo PIM into a Salesforce Commerce Cloud (SFCC) instance. If some particularities are required, this is not a problem; ask your IT referral (integrator or IT team) to **[customize the connector](#what-are-the-best-practices-to-customize-akeneo-connector)**.
 
-Another important notion here is to consider that Akeneo Connectors are 3rd-party plug-ins and therefore, we are fully impacted by the SalesForce system limitations. Basically, SF is made to manage a massive volume of data, but with as little data transformation as possible. The very first rule you need to keep in mind is "**When you model your product data in Akeneo PIM, always prefer a native SFCC approach**". This means that, if in SFCC a piece of data is managed as an integer, please highly prefer creating an integer field in your Akeneo PIM rather than considering the connector will take care of it (the connector will do the job, but the performance will decrease).
+Another important notion here is to consider that Akeneo Connectors are 3rd-party plug-ins and therefore, we are fully impacted by the SalesForce system limitations. Basically, SF is made to manage a massive volume of data, but with as little data transformation as possible. The very first rule you need to keep in mind is "**Think agnostic**" (*if you have to choose between many data model in the PIM, prefer a native M2 approach*). This means that, if in SFCC a piece of data is managed as an integer, please highly prefer creating an integer field in your Akeneo PIM rather than considering the connector will take care of it (the connector will do the job, but the performance will decrease).
 
 ## Talking about performance
 We are often asked about the metrics and performance of Akeneo Connectors. Unfortunately, this is not that easy. In general, please note that four main criteria impact the performance of the connector:
@@ -61,7 +61,7 @@ Please note that evaluating the core connector version to know if it fits your n
 You should ask yourself:
 
 1. Are Akeneo **PIM and/or the eCommerce platform customized in any way**? If they are, that should raise a warning.
-2. Are all the project actors **aware of their responsibilities?** Check the RACI, if there are any doubts, make sure everyone attends the [Akeneo Akademy Training](https://akademy.akeneo.com/). Confusions around responsibilities may lead to errors in commercial quotations and therefore unnecessary frustrations.
+2. Are all the project actors **aware of their responsibilities?**, if there are any doubts, make sure everyone attends the [Akeneo Akademy Training](https://akademy.akeneo.com/).
 3. Does the system integrator (or the IT team in charge of the integration) know that:
     * every month, there will be a **new version** of Akeneo Connector and they will have to update their Connector accordingly (with or without customizations)?
     * if there is a customization, the related **support** (level 1 to 3) and **maintenance** fall with the team that has developed this customization.
