@@ -259,12 +259,6 @@ To set up a "Product bundle" in your PIM you need to:
 3. Create a **Product** representing your "Product bundle" with the help of the "Product bundle" **Family** you previously created.
 4. **Associate products** with the help of your "Product bundle" **Association** type to populate your product bundle.
 
-:::warning
-**Limitation of this model:**
-Since a product bundle is represented by a specific product association in the PIM, it is impossible to indicate **a quantity** for each product in this bundle.
-It is therefore impossible to put the same product several times in an SFCC bundle.
-:::
-
 
 ## How to configure the Connector for "Product bundle"?
 
