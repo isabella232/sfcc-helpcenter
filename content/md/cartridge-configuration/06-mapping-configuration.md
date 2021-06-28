@@ -201,6 +201,22 @@ In this example:
 Note: If you don't want to use this feature, please leave a space between curly brackets ({ }).
 :::
 
+## How to map association with quantity
+
+Since the 20.5.0 version of the Akeneo connector for SFCC (EE only), it is possible to handle product association with quantity.
+
+| Connector parameter         | PIM/SFCC information                        |
+| :---------------------------| :-----------------------------------------: |
+| akeneoProductBundleAssociationType |  Product Bundle Association Type |
+
+
+All the associations under this type will be imported as “bundled-products” into SFCC.
+It is possible to use the association with quantity features in Akeneo. All association with quantity will be synchronized in a bundle AssociationType into SFCC. Associations with quantities are only synchronized in SFCC if the name of the Akeneo’s association is entered in the configuration. For this, it is necessary to fill the `productBundleAssociationType` option in the Custom Site Preference Groups section of the Business Manager.
+
+:::info
+**Important notice:** the deletion of quantity in Akeneo will not be synchronized in SFCC. Manual action will be necessary to remove the quantity in the bundle.
+:::
+
 # SFCC Product set (Connector V19.5.0 and higher)
 
 ## How to create an SFCC "Product set" with the PIM?
