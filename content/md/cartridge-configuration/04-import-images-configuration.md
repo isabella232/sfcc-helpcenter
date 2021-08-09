@@ -24,7 +24,7 @@ When you use the system in 'both' mode, only image files will be visible into th
 
 # How can I retrieve images from the "image" attributes?
 
-In the [connector configuration page](01-where-configuration.html), you need to select `Images` for the following parameter to retrieve images from the "image" attributes.
+In the [connector configuration page](01-where-configuration.html), you need to select `Images` for the following parameter to retrieve images from the "image" attributes:
 
 | Connector parameter           | PIM information        |
 | :-----------------------------| :---------------------: |
