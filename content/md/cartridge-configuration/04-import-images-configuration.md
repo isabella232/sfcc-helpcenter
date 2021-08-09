@@ -1,7 +1,7 @@
 ---
 id: 04-import-images-configuration
 themes: cartridge-configuration
-title: configuration to import PIM images
+title: Configuration to import PIM images
 popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 05-import-media-configuration, 06-mapping-configuration, 07-categories-configuration, 08-multi-storefront-configuration, 09-reference-entities
 ---
