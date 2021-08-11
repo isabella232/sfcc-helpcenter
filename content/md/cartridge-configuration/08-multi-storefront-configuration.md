@@ -72,7 +72,9 @@ Go to: `Administration > Sites : Manage Sites`
 * Kids
 
 :::info
-As explained in our integration document (In `Documentation` Cartridge directory), make sure you properly associate the `bc_akeneo` cartridge in each site (`Administration >  Sites >  Manage Sites`, then select the site and go to `Settings`  and add `bc_akeneo` in the `Cartridges` field)
+Note: if you use a 21.0.0 version or higher of the cartridge, use `bm_akeneo` as a cartridge name instead of `bc_akeneo`.
+
+As explained in our integration document (In `Documentation` Cartridge directory), make sure you properly associate the `bc_akeneo` cartridge in each site (`Administration >  Sites >  Manage Sites`, then select the site and go to `Settings`  and add `bm_akeneo` in the `Cartridges` field)
 :::
 
 `2.` Create all **master** and **storefront** catalogs

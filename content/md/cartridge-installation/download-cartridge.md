@@ -45,6 +45,10 @@ We strongly recommend you to get the latest version.
 
 ## Upload the cartridge
 
+:::warning
+For the 21.0.0 or higher version of the cartridge, the name is `bm_akeneo` instead of `bc_akeneo`
+:::
+
 Upload the `bc_akeneo` cartridge to the Salesforce Commerce Cloud Studio Workspace:
 
 *	Open **Salesforce Commerce Cloud Studio**.
@@ -92,7 +96,7 @@ Make sure that the radio button with label `Local` is enabled (otherwise click o
 
 `3.`	Click on the `Settings` tab.
 
-`4.`	Append "`:bc_akeneo`" to the `Cartridges` field.
+`4.`	Append "`:bc_akeneo`" (or `bm_akeneo` depending on the cartridge version) to the `Cartridges` field.
 
 `5.`	Click on `Apply`.
 
@@ -113,7 +117,7 @@ If you have an old **Pipeline** version (`< v19.3.1`) of the connector and want 
 ## Step 1:  Upload the latest cartridge code to the active code version
 
 * Get the latest cartridge code from Akeneo.
-* Replace the `bc_akeneo` cartridge in the UX Studio (Eclipse).
+* Replace the `bc_akeneo` (or `bm_akeneo` depending on the cartridge version) cartridge in the UX Studio (Eclipse).
 * Upload the cartridge to the active code version of the sandbox
 
 ## Step 2:  Re-import Jobs
