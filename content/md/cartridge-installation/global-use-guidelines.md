@@ -49,7 +49,7 @@ You will have to define your data update policy to adjust the threshold between 
 As part of our [**SFCC online training**](https://akademy.akeneo.com/akeneo-connector-fundamentals-sfcc), here are the tech guidelines to help you create a customization on top of the Akeneo Core version of the cartridge:
 
 :::warning
-if you are using a 21.0.0 or higher version of the cartridge, use `bm_akeneo_custom` and `bm_akeneo` instead of `bc_akeneo`.
+if you are using a 21.0.0 or a higher version of the cartridge, use `bm_akeneo_custom` and `bm_akeneo` instead of `bc_akeneo`. 
 :::
 
 1. As a standard practice in SFCC cartridge development, do not edit Akeneo Connector for SFCC directly. Create another cartridge (`bc_akeneo_custom`) and place it on the cartridge path before `bc_akeneo`. Customized files will be copied here. It will be helpful when newer versions of Akeneo Connector for SFCC are released.
