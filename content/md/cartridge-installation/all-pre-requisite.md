@@ -11,7 +11,7 @@ related: download-cartridge, 01-where-configuration
 ## PIM compatibility
 
 The Akeneo Connector for SFCC was originally built with Akeneo PIM 1.7. It has been maintained eversince, to support the latest versions and features of Akeneo PIM.
-Please refer to our [**Marketplace website**](https://marketplace.akeneo.com/extension/akeneo-connector-salesforce-commerce-cloud) to know if our connector is compatible with your **PIM version**.
+Please refer to our [**Marketplace website**](https://marketplace.akeneo.com/extension/akeneo-connector-salesforce-commerce-cloud) to know if our connector is compatible with your **PIM version**
 
 :::info
 Ensuring compatibility from one version to another remains our priority. Thanks to the Akeneo API, the Akeneo Connector for SFCC is natively compatible with the latest versions of Akeneo PIM although it may not include all latest features. Get in touch with Akeneo to learn about our product roadmap.
@@ -20,7 +20,7 @@ Ensuring compatibility from one version to another remains our priority. Thanks 
 ## SFCC compatibility
 
 Salesforce Commerce Cloud is a Cloud solution that **self-updates automatically**.<br>
-The latest connector version works in SFCC `Compatibility mode 18.10` so it is therefore compatible with the latest SFCC version.
+The latest connector version works in SFCC `Compatibility mode 19.10` so it is therefore compatible with the latest SFCC version.
 
 ## SFRA compliance
 
