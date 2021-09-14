@@ -11,7 +11,7 @@ related: download-cartridge, 01-where-configuration
 # What you need to know?
 First of all, Akeneo Connector is a bridge between Akeneo PIM (in its core version) and Salesforce Commerce Cloud (in its core version). Why is it important to notice? Because our Akeneo Connector is an agnostic connector that is independent of customer's specificities. Our goal is to provide a solid technical basis to plug Akeneo PIM into a Salesforce Commerce Cloud (SFCC) instance. If some particularities are required, this is not a problem; ask your IT referral (integrator or IT team) to **[customize the connector](#what-are-the-best-practices-to-customize-akeneo-connector)**.
 
-Another important notion here is to consider that Akeneo Connectors are 3rd-party plug-ins and therefore, we are fully impacted by the SalesForce system limitations. Basically, SF is made to manage a massive volume of data, but with as little data transformation as possible. The very first rule you need to keep in mind is "**Think agnostic**" (*if you have to choose between many data model in the PIM, prefer a native M2 approach*). This means that, if in SFCC a piece of data is managed as an integer, please highly prefer creating an integer field in your Akeneo PIM rather than considering the connector will take care of it (the connector will do the job, but the performance will decrease).
+Another important notion here is to consider that Akeneo Connectors are 3rd-party plug-ins and therefore, we are fully impacted by the SalesForce system limitations. Basically, SF is made to manage a massive volume of data, but with as little data transformation as possible. The very first rule you need to keep in mind is "**Think agnostic**" (*if you have to choose between many data model in the PIM, prefer a native SFCC approach*). This means that, if in SFCC a piece of data is managed as an integer, please highly prefer creating an integer field in your Akeneo PIM rather than considering the connector will take care of it (the connector will do the job, but the performance will decrease).
 
 ## Talking about performance
 We are often asked about the metrics and performance of Akeneo Connectors. Unfortunately, this is not that easy. In general, please note that four main criteria impact the performance of the connector:
@@ -49,7 +49,7 @@ You will have to define your data update policy to adjust the threshold between 
 As part of our [**SFCC online training**](https://akademy.akeneo.com/akeneo-connector-fundamentals-sfcc), here are the tech guidelines to help you create a customization on top of the Akeneo Core version of the cartridge:
 
 :::warning
-if you are using a 21.0.0 or a higher version of the cartridge, use `bm_akeneo_custom` and `bm_akeneo` instead of `bc_akeneo`. 
+if you are using a 21.0.0 or a higher version of the cartridge, use `bm_akeneo_custom` and `bm_akeneo` instead of `bc_akeneo`.
 :::
 
 1. As a standard practice in SFCC cartridge development, do not edit Akeneo Connector for SFCC directly. Create another cartridge (`bc_akeneo_custom`) and place it on the cartridge path before `bc_akeneo`. Customized files will be copied here. It will be helpful when newer versions of Akeneo Connector for SFCC are released.
