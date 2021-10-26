@@ -29,7 +29,7 @@ We are often asked about the metrics and performance of Akeneo Connectors. Unfor
 ## Full import or partial import?
 There are two ways to import product data:
 
-* **Full import**: this is the longest import process because everything, including media, will be synchronized between Akeneo PIM and SFCC. However, this full import happens once for the very first synchronization used to build your catalog on SFCC side. Then, most of the time, it is automatically executed every night to resync everything. The four performance criteria, listed above, highly impact this import process, and this is why this process is often an **automated task**. To illustrate the catalog volume vs. complexity, please consider those figures:
+* **Full import**: this is the longest import process because everything, including media, will be synchronized between Akeneo PIM and SFCC. However, this full import happens once for the very first synchronization used to build your catalog on SFCC side. Then, most of the time, full import jobs are scheduled and automatically executed to resynchronize all data when needed (every night, every 2 days...depending on your process, the full import frequency can change). The four performance criteria, listed above, highly impact this import process, and this is why this process is often an **automated task**. To illustrate the catalog volume vs. complexity, please consider those figures:
 
 |Industries|Product Amount|Average full import time|
 |-------------|-------------|-----|
@@ -67,7 +67,7 @@ You should ask yourself:
 1. Are Akeneo **PIM and/or the eCommerce platform customized in any way**? If they are, that should raise a warning.
 2. Are all the project actors **aware of their responsibilities?**, if there are any doubts, make sure everyone attends the [Akeneo Akademy Training](https://akademy.akeneo.com/).
 3. Does the system integrator (or the IT team in charge of the integration) know that:
-    * every month, there will be a **new version** of Akeneo Connector and they will have to update their Connector accordingly (with or without customizations)?
+    * the Akeneo Connector can evolve and, when it happens, they will have to update their Connector accordingly (with or without customizations)?
     * if there is a customization, the related **support** (level 1 to 3) and **maintenance** fall with the team that has developed this customization.
 4. **The bigger** the catalog, the sooner the Connector has to be tested, especially in terms of performance and synchro data policy definition.
 5. The more **complex** the catalog, the sooner the connector mapping has to be considered. Waiting until the end of the project would take a lot more time which might lead to delaying the go-live date and create frustration.
