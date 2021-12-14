@@ -95,7 +95,7 @@ Depending on the [configuration of your connector](03-products-filter-configurat
 # Where can I find Table attribute information in SFCC?
 
 :::info
-The table attribute has been recovered in the most **native** way for the SFCC in order to preserve the connector's performance.
+The table attribute has been recovered in the most **native** way (for SFCC) to preserve the connector's performance.
 Raw data recovered from the Akeneo's API are not processed in any way, therefore:
 - The order of the attribute values & translations is given to us by the Akeneo's API
 - The empty attribute values (as for the other attributes) are not transmitted to the connector.
