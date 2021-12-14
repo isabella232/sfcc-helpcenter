@@ -1,7 +1,7 @@
 ---
 id: 08-multi-storefront-configuration
 themes: cartridge-configuration
-title: configuration for a multiple organizations/web sites
+title: Configuration for a multiple organizations/web sites
 popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-import-media-configuration, 06-mapping-configuration, 07-categories-configuration, 09-reference-entities
 ---

@@ -129,6 +129,24 @@ Once you have created the permission group, add it to the attribute in the permi
 Due to the user right management, this solution is available only for EE users.
 :::
 
+## How to manage an empty attribute value in my Connector after initial import?
+
+For the Connector to take into account the attribute values that have been delated after the initial import, please select the REPLACE Import mode before triggering your job.
+This mode will allow you to acknowledge the empty values.
+
+REPLACE mode means that an object is recreated with the data provided in the feed. The object doesn't have to exist. Existing attributes that are not provided in the feed are removed during the import.
+Technically, REPLACE mode equals a DELETE followed by a MERGE.
+
+This import mode is available for all 3-X-X jobs.
+![Listing of the jobs](../img/Jobs-listing.png)
+
+In order to change the import mode please go to: Administration >> Job >> Select one of the 3-X-X jobs >> Select job-workflow-step-import-catalog >> Under Importmode select REPLACE
+![Replace mode](../img/Replace-mode.png)
+
+::: warning
+The REPLACE mode will influence the performance and, therefore, the processing time because two actions are performed when the job is triggered.
+To optimize the performance of your imports, please use the default MERGE value on a daily basis.
+:::
 
 # Product association mapping
 
