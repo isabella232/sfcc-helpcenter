@@ -131,7 +131,7 @@ Due to the user right management, this solution is available only for EE users.
 
 ## How to manage an empty attribute value in my Connector after initial import?
 
-For the Connector to take into account the **attribute values** that have been delated **after** the initial import, please select the **REPLACE Import mode** before triggering your job.
+For the Connector to take into account the **attribute values** that have been deleted **after** the initial import, please select the **REPLACE Import mode** before triggering your job.
 This mode will allow the connector to acknowledge the empty values.
 
 **REPLACE mode** means that an object is recreated with the data provided in the feed. The object doesn't have to exist. Existing attributes that are not provided in the feed are removed during the import.
