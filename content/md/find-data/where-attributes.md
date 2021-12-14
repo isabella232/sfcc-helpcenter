@@ -95,7 +95,7 @@ Depending on the [configuration of your connector](03-products-filter-configurat
 # Where can I find Table attribute information in SFCC?
 
 :::info
-The table attribute has been recovered in the most native way for the SFCC in order to preserve the connector's performance.
+The table attribute has been recovered in the most **native** way for the SFCC in order to preserve the connector's performance.
 Raw data recovered from the Akeneo's API are not processed in any way, therefore:
 - The order of the attribute values & translations is given to us by the Akeneo's API
 - The empty attribute values (as for the other attributes) are not transmitted to the connector.
@@ -103,16 +103,16 @@ Raw data recovered from the Akeneo's API are not processed in any way, therefore
 
 Table attribute is stored in **two places** in the SFCC interface.
 
-On the product level, you will be able to recover table attribute values for the specific table under table attribute under its PIM Identifier (ex. akeneo_FoodComposition).
+On the **product level**, you will be able to recover table attribute values for the specific table in the dedicated field - one field per table (ex. akeneo_FoodComposition).
 Those values will be automatically transmitted to the SFCC during import.
 
 ![Table attribute](../img/Table-attribute1.png)
 
-To recover translation & table structure, you will need to retrieve them from the custom object created during import.
+To recover translations and table structure, you will need to retrieve them from the custom object created during import.
 
-Go to `Merchant tools` >> `Custom Objects` >> Look for `AkeneoAttributeTable` Object or the name of the table directly (ex. Food_Composition)
+Go to `Merchant tools` >> `Custom Objects` >> Look for `AkeneoAttributeTable` Object or search the Custom Object directly by its name (ex. Food_Composition)
 
-This custom object is used to store the definition of the structure of the attribute table (columns order/columns translation / etc.). Each new element corresponds to a “table attribute” in the PIM. You can use this information to display the table correctly on SFRA or headless. Please consider this custom object as a mirror of the attribute definition in Akeneo.        
+This custom object is used to store the definition of the structure of the attribute table (columns order/columns translation / etc.). Each new element corresponds to a **“table attribute”** in the PIM. You can use this information to display the table correctly on **SFRA or headless**. Please consider this custom object as a mirror of the attribute definition in Akeneo.        
 You can retrieve the translation of the column in the “labels” node. However, the translated values corresponding to a product are defined in the System Product Object as a new custom attribute (a standard attribute from Akeneo).
 
 ![Table attribute](../img/Table-attribute2.png)

@@ -1,7 +1,7 @@
 ---
 id: 07-categories-configuration
 themes: cartridge-configuration
-title: configuration of categories
+title: Configuration of categories
 popular: false
 related: 01-where-configuration, 02-configure-PIM-API, 03-products-filter-configuration, 04-import-images-configuration, 05-import-media-configuration, 06-mapping-configuration, 08-multi-storefront-configuration, 09-reference-entities
 ---
