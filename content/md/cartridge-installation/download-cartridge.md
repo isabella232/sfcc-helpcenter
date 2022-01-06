@@ -44,7 +44,8 @@ We strongly recommend you to get the latest version.
 # Install the connector
 
 :::info
-In case of the upgrade of the cartridge for the new version, you need to reinstall it and follow exact same steps as for the installation :::
+In case of the upgrade of the cartridge for the new version, you need to reinstall it and follow exact same steps as for the installation
+:::
 
 ## Upload the cartridge
 
