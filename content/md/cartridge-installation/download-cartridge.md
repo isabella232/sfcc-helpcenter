@@ -18,7 +18,7 @@ You will need a Salesforce Xchange account to get access to this archive.
 Please note that this **free version** of the connector **will not** give you access to the latest version of the Akeneo Connector for SFCC as well as the Akeneo official support.
 :::
 
-* The other place where you can download it is the [**Akeneo Partner Portal**](https://partners.akeneo.com).
+* The other place where you can download it is the [**Akeneo Partner Portal**](https://portal.akeneo.com/).
 
 :::info
 This up-to-date version provides early access to **the latest patches and features** of the Akeneo Connector for SFCC. It is also supported and maintained by Akeneo teams.
@@ -28,7 +28,7 @@ This up-to-date version provides early access to **the latest patches and featur
 
 **Pre-requisites:**
 
-First of all, you need to access the [**Akeneo partner Portal**](https://partners.akeneo.com/) and select the project on which the cartridge has to be installed.
+First of all, you need to access the [**Akeneo partner Portal**](https://portal.akeneo.com/) and select the project on which the cartridge has to be installed.
 
 :::info
 Your CSM has to activate the connector access for this project for you to able able to see the download link.
